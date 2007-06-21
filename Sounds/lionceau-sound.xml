@@ -6,7 +6,7 @@
  
   <crank>
    <name>engstart</name>
-   <path>Aircraft/DR400/Sounds/dr400-starter.wav</path>
+   <path>Aircraft/Lionceau/Sounds/dr400-starter.wav</path>
    <property>/engines/engine/cranking</property>
    <volume>
     <offset>0.4</offset>
@@ -40,7 +40,7 @@
   <engine>
    <name>engine</name>
    <mode>looped</mode>
-   <path>Aircraft/DR400/Sounds/dr400-engine.wav</path>
+   <path>Aircraft/Lionceau/Sounds/dr400-engine.wav</path>
    <property>/engines/engine/running</property>
    <volume>
     <property>/engines/engine/mp-osi</property>
@@ -71,7 +71,7 @@
   <propeller>
    <name>propeller</name>
    <mode>looped</mode>
-   <path>Aircraft/DR400/Sounds/dr400-prop.wav</path>
+   <path>Aircraft/Lionceau/Sounds/dr400-prop.wav</path>
    <property>/engines/engine/running</property>
    <volume>
     <property>/orientation/alpha-deg</property>
@@ -133,7 +133,7 @@
   <gear>
    <name>gear-horn</name>
    <mode>looped</mode>
-   <path>Aircraft/DR400/Sounds/dr400-stall.wav</path>
+   <path>Aircraft/Lionceau/Sounds/dr400-stall.wav</path>
    <condition>
     <and>
      <property>/controls/electric/battery-switch</property>
@@ -239,7 +239,7 @@
   <wind>
    <name>wind</name>
    <mode>looped</mode>
-   <path>Aircraft/DR400/Sounds/dr400-wind.wav</path>
+   <path>Aircraft/Lionceau/Sounds/dr400-wind.wav</path>
    <property>/velocities/airspeed-kt</property>
    <volume>
     <property>/position/altitude-ft</property>
@@ -264,7 +264,7 @@
   <stall>
    <name>stall</name>
    <mode>looped</mode>
-   <path>Aircraft/DR400/Sounds/dr400-stall.wav</path>
+   <path>Aircraft/Lionceau/Sounds/dr400-stall.wav</path>
    <condition>
     <and>
      <property>/controls/electric/battery-switch</property>
