@@ -1,0 +1,70 @@
+AC3Db
+MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
+MATERIAL "DefaultWhite.008" rgb 1 1 1 amb 1 1 1 emis 0.15 0.15 0.15 spec 0.5 0.5 0.5 shi 64 trans 0
+OBJECT world
+kids 2
+OBJECT poly
+name "Face"
+data 8
+Mesh.029
+texture "flap-indicator.rgb"
+texrep 1 1
+crease 45.000000
+numvert 8
+0.000261 0.020549 -0.018487
+0.000261 -0.016453 -0.018487
+0.000261 -0.016453 0.018515
+0.000261 0.020549 0.018515
+0.000261 0.021874 -0.018487
+0.000261 0.021874 0.018515
+0.000261 0.020383 -0.019398
+0.000261 -0.016619 -0.019398
+numsurf 3
+SURF 0x00
+mat 1
+refs 4
+0 1.0 1.0
+3 0.0 1.0
+2 0.0 0.0
+1 1.0 0.0
+SURF 0x00
+mat 1
+refs 4
+3 1.0 1.0
+0 0.0 1.0
+4 0.0 0.0
+5 1.0 0.0
+SURF 0x00
+mat 1
+refs 4
+0 1.0 1.0
+1 0.0 1.0
+7 0.0 0.0
+6 1.0 0.0
+kids 0
+OBJECT poly
+name "Needle"
+data 8
+Mesh.028
+crease 45.000000
+numvert 5
+0.001233 0.008918 0.006009
+0.001233 0.010406 0.006009
+0.001233 0.009662 -0.013998
+0.001233 0.010406 -0.007772
+0.001233 0.008918 -0.007772
+numsurf 2
+SURF 0x00
+mat 1
+refs 3
+2 0.0 0.0
+3 0.0 0.0
+4 0.0 0.0
+SURF 0x00
+mat 1
+refs 4
+0 0.0 0.0
+4 0.0 0.0
+3 0.0 0.0
+1 0.0 0.0
+kids 0

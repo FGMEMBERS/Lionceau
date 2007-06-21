@@ -1,0 +1,204 @@
+<?xml version="1.0"?>
+
+<!--
+KR 87 ADF  radio hotspots
+-->
+
+<PropertyList>
+
+  <name>kr87 adf hotspots</name>
+  <w-base>160</w-base>
+  <h-base>36</h-base>
+  <w>160</w>
+  <h>36</h>
+
+ <actions>
+   
+   <!--  ************************        ADF  *****************-->
+   <!--
+   <action>
+     <name>bezel outline</name>
+     <button>0</button>
+     <x>-80</x>
+     <y>-18</y>
+     <w>160</w>
+     <h>36</h>
+   </action>
+   -->
+   
+   <action>
+     <name>adf  frequency decrease small</name>
+     <button>0</button>
+     <x>54</x>
+     <y>-10</y>
+     <w>12</w>
+     <h>20</h>
+     <binding>
+       <command>property-adjust</command>
+       <property>instrumentation/adf/frequencies/selected-khz</property>
+       <step>-1</step>
+       <min>100</min>
+       <max>1300</max>
+       <resolution>1</resolution>
+       <wrap>true</wrap>
+     </binding>
+   </action>
+   
+   <action>
+     <name>adf frequency decrease large</name>
+     <button>1</button>
+     <x>54</x>
+     <y>-10</y>
+     <w>12</w>
+     <h>20</h>
+     <binding>
+       <command>property-adjust</command>
+       <property>instrumentation/adf/frequencies/selected-khz</property>
+       <step>-100</step>
+       <min>100</min>
+       <max>1300</max>
+       <resolution>1</resolution>
+       <wrap>true</wrap>
+     </binding>
+   </action>
+   
+   <action>
+     <name>adf frequency increase small</name>
+     <button>0</button>
+     <x>66</x>
+     <y>-10</y>
+     <w>12</w>
+     <h>20</h>
+     <binding>
+       <command>property-adjust</command>
+       <property>instrumentation/adf/frequencies/selected-khz</property>
+       <step>1</step>
+       <min>100</min>
+       <max>1300</max>
+       <resolution>1</resolution>
+       <wrap>true</wrap>
+     </binding>
+   </action>
+   
+   <action>
+     <name>adf frequency increase large</name>
+     <button>1</button>
+     <x>66</x>
+     <y>-10</y>
+     <w>12</w>
+     <h>20</h>
+     <binding>
+       <command>property-adjust</command>
+       <property>instrumentation/adf/frequencies/selected-khz</property>
+       <step>100</step>
+       <min>100</min>
+       <max>1300</max>
+       <resolution>1</resolution>
+       <wrap>true</wrap>
+     </binding>
+   </action>
+   
+   
+   <action>
+     <name>adf volume increase</name>
+     <button>0</button>
+     <x>40</x>
+     <y>-12</y>
+     <w>8</w>
+     <h>12</h>
+     <condition>
+       <equals>
+         <property>instrumentation/adf/serviceable</property>
+         <value>true</value>
+       </equals>
+     </condition>
+     <binding>
+       <command>property-adjust</command>
+       <property>instrumentation/adf/volume-norm</property>
+       <step>0.05</step>
+       <min>0.0</min>
+       <max>1.0</max>
+       <wrap>false</wrap>
+     </binding>
+   </action>
+   
+   <action>
+     <name>adf power on</name>
+     <button>0</button>
+     <x>40</x>
+     <y>-12</y>
+     <w>8</w>
+     <h>12</h>
+     <condition>
+       <equals>
+         <property>instrumentation/adf/serviceable</property>
+         <value>false</value>
+       </equals>
+     </condition>
+     <binding>
+       <command>property-assign</command>
+       <property>instrumentation/adf/serviceable</property>
+       <value>true</value>
+     </binding>
+   </action>
+   
+   
+   <action>
+     <name>adf volume decrease</name>
+     <button>0</button>
+     <x>32</x>
+     <y>-12</y>
+     <w>8</w>
+     <h>12</h>
+     <condition>
+       <greater-than>
+         <property>instrumentation/adf/volume-norm</property>
+         <value>0.0</value>
+       </greater-than>
+     </condition>
+     <binding>
+       <command>property-adjust</command>
+       <property>instrumentation/adf/volume-norm</property>
+       <step>-0.05</step>
+       <min>0.0</min>
+       <max>1.0</max>
+       <wrap>false</wrap>
+     </binding>
+   </action>
+   
+   <action>
+     <name>adf power off</name>
+     <button>0</button>
+     <x>32</x>
+     <y>-12</y>
+     <w>8</w>
+     <h>12</h>
+     <condition>
+       <equals>
+         <property>instrumentation/adf/volume-norm</property>
+         <value>0</value>
+       </equals>
+     </condition>
+     <binding>
+       <command>property-assign</command>
+       <property>instrumentation/adf/serviceable</property>
+       <value>false</value>
+     </binding>
+   </action>
+   
+   <action>
+     <name>swap adf frequencies</name>
+     <button>0</button>
+     <x>-20</x>
+     <y>-12</y>
+     <w>12</w>
+     <h>6</h>
+     <binding>
+       <command>property-swap</command>
+       <property>instrumentation/adf/frequencies/selected-khz</property>
+       <property>instrumentation/adf/frequencies/standby-khz</property>
+     </binding>
+   </action>
+ </actions>
+ 
+</PropertyList>

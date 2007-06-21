@@ -1,0 +1,75 @@
+English/Français
+
+[English]
+----------
+
+A little history
+================
+
+Lionceau APM 20
+===============
+
+Manufacturer                  : 
+Type                          : 
+Year                          : 
+Powerplant                    : 
+Wingspan                      : 
+Length                        : 
+Height                        : 
+weight                        : 
+Cruise speed                  : 
+Range                         : 
+Crew                          :  
+
+Some useful keys:
+=================
+
+d : canopy
+
+Thanks
+======
+
+===============
+BARANGER Emmanuel
+May, 25, 2007. 
+
+http://helijah.free.fr/flightgear/hangar.htm
+embaranger@free.fr
+
+
+[Français]
+----------
+
+Un peu d'histoire
+=================
+
+Lionceau APM 20
+===============
+
+Constructeur                  :
+Type                          :
+Année                         :
+Moteur                        :
+Envergure                     :
+Longueur                      :
+Hauteur                       :
+Poids estimé au décollage     :
+Vitesse estimée de croisière  :
+Autonomie estimée             :
+Equipage                      :
+
+
+Quelques touches utiles :
+=========================
+
+d : cockpit
+
+Remerciements
+=============
+
+===============
+BARANGER Emmanuel
+25 Mai 2007.
+
+http://helijah.free.fr/flightgear/hangar.htm
+embaranger@free.fr

@@ -1,0 +1,148 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>panel1.ac</path>
+
+<!-- Altimètre -->
+  <model>
+    <path>Aircraft/Lionceau/Models/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.138 </y-m>
+      <z-m>  0.059 </z-m>
+    </offsets>
+  </model>
+
+<!-- Horizon -->
+  <model>
+    <path>Aircraft/Lionceau/Models/Instruments/ai/ai.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.218 </y-m>
+      <z-m>  0.059 </z-m>
+    </offsets>
+  </model>
+
+<!-- Anémomètre -->
+  <model>
+    <path>Aircraft/Lionceau/Models/Instruments/asi/asi.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.299 </y-m>
+      <z-m>  0.059 </z-m>
+    </offsets>
+  </model>
+
+<!-- Variomètre -->
+  <model>
+    <path>Aircraft/Lionceau/Models/Instruments/vsi/vsi.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.138 </y-m>
+      <z-m> -0.010 </z-m>
+    </offsets>
+  </model>
+
+<!-- Conservateur de cap -->
+  <model>
+    <path>Aircraft/Lionceau/Models/Instruments/hi/hi.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.218 </y-m>
+      <z-m> -0.010 </z-m>
+    </offsets>
+  </model>
+
+<!-- Indicateur de virage -->
+  <model>
+    <path>Aircraft/Lionceau/Models/Instruments/tc/tc.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.299 </y-m>
+      <z-m> -0.010 </z-m>
+    </offsets>
+  </model>
+
+<!-- Indicateur position des volets -->
+  <model>
+    <path>Aircraft/Lionceau/Models/Instruments/flap-ind/flap-indicator.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.150 </y-m>
+      <z-m> -0.044 </z-m>
+    </offsets>
+  </model>
+
+<!-- Horloge -->
+  <model>
+    <path>Aircraft/Lionceau/Models/Instruments/clock/clock.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.270 </y-m>
+      <z-m> -0.042 </z-m>
+    </offsets>
+  </model>
+
+<!-- GPS -->
+  <model>
+    <path>Aircraft/Lionceau/Models/Instruments/gps-ind/gps.xml</path>
+    <offsets>
+      <x-m>  0.002 </x-m>
+      <y-m> -0.373 </y-m>
+      <z-m>  0.031 </z-m>
+    </offsets>
+  </model>
+
+<!-- VOR -->
+  <model>
+    <path>Aircraft/Lionceau/Models/Instruments/vor/vor.xml</path>
+    <offsets>
+      <x-m>  0.002 </x-m>
+      <y-m> -0.400 </y-m>
+      <z-m> -0.015 </z-m>
+    </offsets>
+  </model>
+
+<!-- Transpondeur KT70 -->
+  <model>
+    <path>Aircraft/Lionceau/Models/Instruments/kt70/kt70.xml</path>
+    <offsets>
+      <x-m> -0.004 </x-m>
+      <y-m>  0.009 </y-m>
+      <z-m> -0.070 </z-m>
+    </offsets>
+  </model>
+
+<!-- empty (DME) -->
+  <model>
+    <path>Aircraft/Lionceau/Models/Instruments/empty/empty.xml</path>
+    <offsets>
+      <x-m> -0.004 </x-m>
+      <y-m>  0.009 </y-m>
+      <z-m> -0.028 </z-m>
+    </offsets>
+  </model>
+
+<!-- Radio compas Kr87 Bendix/King ADF Reciever -->
+  <model>
+    <path>Aircraft/Lionceau/Models/Instruments/kr87-adf/kr87.xml</path>
+    <offsets>
+      <x-m> -0.003 </x-m>
+      <y-m>  0.010 </y-m>
+      <z-m>  0.010 </z-m>
+    </offsets>
+  </model>
+
+<!-- empty (Radio de navigation et boite d'écoute) -->
+  <model>
+    <path>Aircraft/Lionceau/Models/Instruments/empty/empty2.xml</path>
+    <offsets>
+      <x-m> -0.005 </x-m>
+      <y-m>  0.010 </y-m>
+      <z-m>  0.054 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>
+

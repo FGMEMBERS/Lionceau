@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <sim>
+
+    <author>BARANGER Emmanuel</author>
+    <aircraft-version>0.1</aircraft-version>
+    <status>Alpha</status>
+
+    <fuel-fraction>1.0</fuel-fraction>
+
+    <startup>
+      <splash-texture>Aircraft/Lionceau/lionceau-splash.rgb</splash-texture>
+    </startup>
+
+    <sound>
+      <path archive="y">Aircraft/Lionceau/Sounds/lionceau-sound.xml</path>
+    </sound>
+
+    <model>
+      <path archive="y">Aircraft/Lionceau/Models/lionceau.xml</path>
+    </model>
+
+    <panel>
+      <visibility archive="y">false</visibility>
+    </panel>
+
+    <view n="0">
+      <internal archive="y">true</internal>
+      <config>
+         <x-offset-m archive="y"> -0.170 </x-offset-m>	<!-- Right -->
+         <y-offset-m archive="y">  0.364 </y-offset-m>	<!-- Up    -->
+         <z-offset-m archive="y"> -1.003 </z-offset-m>	<!-- Back  -->
+         <pitch-offset-deg>-15</pitch-offset-deg>
+      </config>
+    </view>
+
+  </sim>
+ 
+  <input>
+    <keyboard include="Nasal/lionceau-keyboard.xml"/>
+  </input>
+ 
+  <nasal>
+    <lionceau>
+      <file>Aircraft/Lionceau/Nasal/doors.nas</file>
+    </lionceau>
+  </nasal>
+  
+</PropertyList>

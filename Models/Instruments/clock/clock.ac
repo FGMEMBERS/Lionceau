@@ -1,0 +1,106 @@
+AC3Db
+MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
+MATERIAL "DefaultWhite.010" rgb 1 1 1 amb 1 1 1 emis 0.15 0.15 0.15 spec 0.5 0.5 0.5 shi 64 trans 0
+OBJECT world
+kids 4
+OBJECT poly
+name "Face"
+data 8
+Mesh.030
+texture "clock.rgb"
+texrep 1 1
+crease 30.000000
+numvert 4
+0 0.018612 -0.018611
+0 -0.018603 -0.018611
+0 -0.018603 0.018603
+0 0.018612 0.018603
+numsurf 1
+SURF 0x00
+mat 1
+refs 4
+0 1.0 1.0
+3 0.0 1.0
+2 0.0 0.0
+1 1.0 0.0
+kids 0
+OBJECT poly
+name "HourHand"
+data 8
+Mesh.031
+crease 30.000000
+numvert 5
+0.003241 0.007584 -4e-06
+0.003241 -0.004762 -0.000503
+0.003241 -0.004762 0.000496
+0.003241 0.004787 0.000914
+0.003241 0.004787 -0.000922
+numsurf 2
+SURF 0x00
+mat 1
+refs 3
+0 0.0 0.0
+3 0.0 0.0
+4 0.0 0.0
+SURF 0x00
+mat 1
+refs 4
+1 0.0 0.0
+4 0.0 0.0
+3 0.0 0.0
+2 0.0 0.0
+kids 0
+OBJECT poly
+name "MinuteHand"
+data 8
+Mesh.032
+crease 30.000000
+numvert 5
+0.002142 0.013581 -4e-06
+0.002142 -0.004762 -0.000503
+0.002142 -0.004762 0.000496
+0.002142 0.004787 0.000743
+0.002142 0.004787 -0.00075
+numsurf 2
+SURF 0x00
+mat 1
+refs 3
+0 0.0 0.0
+3 0.0 0.0
+4 0.0 0.0
+SURF 0x00
+mat 1
+refs 4
+1 0.0 0.0
+4 0.0 0.0
+3 0.0 0.0
+2 0.0 0.0
+kids 0
+OBJECT poly
+name "SecondHand"
+data 8
+Mesh.033
+crease 30.000000
+numvert 6
+0.001086 0.014336 -0.000503
+0.001086 -0.004762 -0.000503
+0.001086 -0.004762 0.000496
+0.001086 0.014336 0.000496
+0.001086 0.004787 0.000496
+0.001086 0.004787 -0.000503
+numsurf 2
+SURF 0x00
+mat 1
+refs 4
+0 0.0 0.0
+3 0.0 0.0
+4 0.0 0.0
+5 0.0 0.0
+SURF 0x00
+mat 1
+refs 4
+1 0.0 0.0
+5 0.0 0.0
+4 0.0 0.0
+2 0.0 0.0
+kids 0
