@@ -4,8 +4,8 @@
 
   <sim>
 
-    <author>BARANGER Emmanuel</author>
-    <aircraft-version>0.1</aircraft-version>
+    <author>BARANGER Emmanuel (3D), MARQUE Sébastien (FDM)</author>
+    <aircraft-version>0.2</aircraft-version>
     <status>Alpha</status>
 
     <fuel-fraction>1.0</fuel-fraction>
@@ -45,6 +45,7 @@
   <nasal>
     <lionceau>
       <file>Aircraft/Lionceau/Nasal/doors.nas</file>
+      <file>Aircraft/Lionceau/Nasal/lionceau.nas</file>
     </lionceau>
   </nasal>
   

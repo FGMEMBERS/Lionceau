@@ -8,6 +8,24 @@
     <flight-model archive="y">yasim</flight-model>
     <aero archive="y">lionceau-yasim</aero>
 
+  <weight n="0">
+    <name>Pilot</name>
+    <weight-lb>200</weight-lb>
+    <max-lb>200</max-lb>
+  </weight>
+
+  <weight n="1">
+    <name>Copilot</name>
+    <weight-lb>150</weight-lb>
+    <max-lb>200</max-lb>
+  </weight>
+
+  <weight n="2">
+    <name>Bagages</name>
+    <weight-lb>0</weight-lb>
+    <max-lb>45</max-lb>
+  </weight>
+
   </sim>
  
 </PropertyList>
