@@ -242,7 +242,7 @@
 	takeoff-rpm="2552"
 	x="2.374" y="0.0" z="-.225" 
 	mass="124" 
-	moment="1.8"  
+	moment="3.6"  
 	gear-ratio="0.440" >
     <piston-engine 
         eng-rpm="5800" 
@@ -269,15 +269,17 @@
   
 <!-- Nose wheel -->
 <gear 
-   x="1.216" y="0" z="-1.191" 
+   x="1.216" y="0" z="-1.246" 
    compression=".15" 
    spring=".8"
-   on-solid="1">
+   on-solid="1"
+   sfric="1"
+   dfric="1">
   <control-input 
       axis="/controls/flight/rudder" 
       control="STEER"
       src0="-1.0" src1="1.0"
-      dst0="-0.1" dst1="0.1"/>
+      dst0="-.5" dst1=".5"/>
 </gear>
 
 <!-- Left wheel -->
