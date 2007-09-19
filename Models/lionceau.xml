@@ -7,6 +7,7 @@
   <animation>
     <!-- Objets opaques -->
     <object-name>fuselage</object-name>
+    <object-name>entreesair</object-name>
     <object-name>interieur</object-name>
     <object-name>backpanel</object-name>
     <object-name>aile</object-name>
@@ -58,7 +59,9 @@
 
     <!-- Objets transparents -->
     <object-name>verriere</object-name>
+    <object-name>verriere1</object-name>
     <object-name>verriere2</object-name>
+    <object-name>verriere3</object-name>
     <object-name>propdisc</object-name>
     <object-name>propblur</object-name>
   </animation>
@@ -66,11 +69,30 @@
   <animation>
     <type>noshadow</type>
     <object-name>verriere</object-name>
+    <object-name>verriere1</object-name>
     <object-name>verriere2</object-name>
+    <object-name>verriere3</object-name>
     <object-name>propdisc</object-name>
     <object-name>propblur</object-name>
   </animation>
 
+
+  <!-- Une ombre pour OSG -->
+  <model>
+    <name>shadowOSG</name>
+    <path>Aircraft/Lionceau/Models/shadow.xml</path>
+  </model>
+
+  <animation>
+    <type>select</type>
+    <object-name>shadowOSG</object-name>
+    <condition>
+      <equals>
+        <property>/sim[0]/rendering/shadows-ai</property>
+        <value>true</value>
+      </equals>
+    </condition>
+  </animation>
 
   <!-- Planche de bord -->
   <!-- Principal -->
@@ -451,6 +473,7 @@
   <animation>
     <type>translate</type>
     <object-name>verriere2</object-name>
+    <object-name>verriere3</object-name>
     <object-name>barreverriere</object-name>
     <object-name>dosverriere</object-name>
     <object-name>poigne</object-name>

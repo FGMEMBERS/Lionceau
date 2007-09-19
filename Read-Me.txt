@@ -9,17 +9,17 @@ A little history
 Lionceau APM 20
 ===============
 
-Manufacturer                  : 
-Type                          : 
-Year                          : 
-Powerplant                    : 
-Wingspan                      : 
-Length                        : 
-Height                        : 
-weight                        : 
-Cruise speed                  : 
-Range                         : 
-Crew                          :  
+Manufacturer                  : Issoire Avitation
+Type                          : school plane
+Year                          : 1999
+Powerplant                    : Rotax 912 A2 (80 hp)
+Wingspan                      : 8.60 m
+Length                        : 6.60 m
+Height                        : 2.40 m
+weight max                    : 634 kg
+Cruise speed                  : 113 kt
+Range                         : 4 h
+Crew                          : 2 
 
 Some useful keys:
 =================
@@ -48,17 +48,17 @@ Un peu d'histoire
 Lionceau APM 20
 ===============
 
-Constructeur                  :
-Type                          :
-Année                         :
-Moteur                        :
-Envergure                     :
-Longueur                      :
-Hauteur                       :
-Poids estimé au décollage     :
-Vitesse estimée de croisière  :
-Autonomie estimée             :
-Equipage                      :
+Constructeur                  : Issoire Aviation
+Type                          : avion école
+Année                         : 1999
+Moteur                        : Rotax 912 A2 (80ch)
+Envergure                     : 8.60 m
+Longueur                      : 6.60 m
+Hauteur                       : 2.40 m
+Poids max au décollage        : 634 kg
+Vitesse estimée de croisière  : 210 km/h
+Autonomie estimée             : 4 h
+Equipage                      : 2
 
 
 Quelques touches utiles :
