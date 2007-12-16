@@ -29,11 +29,12 @@ d : canopy
 Thanks
 ======
 
-Sébastin MARQUE for the new FDM
+Sébastien MARQUE and Pierre GEOFFROY for the new FDM
 
 ===============
 BARANGER Emmanuel
-August, 04, 2007. 
+August, 04, 2007.
+December, 16, 2007. 
 
 http://helijah.free.fr/flightgear/hangar.htm
 embaranger@free.fr
@@ -69,11 +70,12 @@ d : cockpit
 Remerciements
 =============
 
-Sébastien MARQUE pour le nouveau modèle de vol
+Sébastien MARQUE et Pierre GEOFFROY pour le nouveau modèle de vol
 
 ===============
 BARANGER Emmanuel
 04 Août 2007.
+16 Décembre 2007.
 
 http://helijah.free.fr/flightgear/hangar.htm
 embaranger@free.fr

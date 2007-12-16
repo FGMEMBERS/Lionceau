@@ -2,13 +2,20 @@
 
 <PropertyList>
 
-  <sim>
+  <sim include="Nasal/views.xml">
 
-    <author>BARANGER Emmanuel (3D), MARQUE Sébastien (FDM)</author>
+    <author>BARANGER Emmanuel (3D), MARQUE Sébastien and Pierre GEOFFROY (FDM)</author>
     <aircraft-version>0.2</aircraft-version>
     <status>Alpha</status>
 
     <fuel-fraction>1.0</fuel-fraction>
+
+    <flaps>
+      <setting>0.00</setting>
+      <setting>0.25</setting>
+      <setting>0.75</setting>
+      <setting>1.00</setting>
+    </flaps>
 
     <startup>
       <splash-texture>Aircraft/Lionceau/lionceau-splash.rgb</splash-texture>
@@ -26,15 +33,14 @@
       <visibility archive="y">false</visibility>
     </panel>
 
-    <view n="0">
-      <internal archive="y">true</internal>
-      <config>
-         <x-offset-m archive="y"> -0.170 </x-offset-m>	<!-- Right -->
-         <y-offset-m archive="y">  0.364 </y-offset-m>	<!-- Up    -->
-         <z-offset-m archive="y"> -1.003 </z-offset-m>	<!-- Back  -->
-         <pitch-offset-deg>-15</pitch-offset-deg>
-      </config>
-    </view>
+    <multiplay>
+      <chat_display>1</chat_display>
+    </multiplay> 
+
+    <help>
+      <title>APM 20 Lionceau</title>
+      <line>______________________________________________</line>
+    </help>
 
   </sim>
  

@@ -56,6 +56,7 @@
     <object-name>cacheB</object-name>
     <object-name>cableH</object-name>
     <object-name>cableB</object-name>
+    <object-name>pilote</object-name>
 
     <!-- Objets transparents -->
     <object-name>verriere</object-name>
@@ -75,7 +76,6 @@
     <object-name>propdisc</object-name>
     <object-name>propblur</object-name>
   </animation>
-
 
   <!-- Une ombre pour OSG -->
   <model>
@@ -115,6 +115,18 @@
       <z-m> -0.355 </z-m>
     </offsets>
   </model>
+
+  <!-- Pilote invisible depuis le cockpit -->
+  <animation>
+    <type>select</type>
+    <object-name>pilote</object-name>
+    <condition>
+      <greater-than>
+        <property>sim/current-view/view-number</property>
+        <value>0</value>
+      </greater-than>
+    </condition>
+  </animation>
 
   <!-- L'hélice --> 
   <!-- Séléction de l'objet visible en fonction des rpm -->
