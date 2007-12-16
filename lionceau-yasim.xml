@@ -78,13 +78,13 @@
    idrag="1"/>
 
 <wing 
-   x=".660" y=".536" z="-.497" 
-   taper=".743" 
+   x="0.660" y="0.536" z="-0.497" 
+   taper="0.743" 
    incidence="0"
    twist="0"
-   length="4.33" 
+   length="3.50" 
    chord="1.346" 
-   sweep="0" 
+   sweep="-1" 
    dihedral="2.58" 
    camber="0.1">
   <stall aoa="20" width="1.0" peak="1.5"/>
@@ -102,10 +102,10 @@
   <control-speed control="FLAP0" transition-time="5"/>
 </wing>
 
+<!--    effectiveness="3.0" -->
 <hstab 
    x="-2.905" y="-.067" z=".018" 
    taper="1" 
-   effectiveness="3.0" 
    incidence="0" 
    length="1.245" 
    chord=".681" 
@@ -119,10 +119,10 @@
   <control-output control="FLAP0" prop="/surface-positions/elevator-pos-norm"/>
 </hstab>
 
+<!-- effectiveness="3.0" -->
 <vstab 
    x="-2.553" y="0" z=".126" 
    taper=".506" 
-   effectiveness="3.0"
    length="1.101" 
    chord="1.129" 
    sweep="39.8">
@@ -214,6 +214,6 @@
 <!-- Mass distribution
      panel & instrumentation 
      CG théorique x=0.810 y=0.0 z=-0.507 -->
-<ballast x="0.610" y="0.001" z="-1.35" mass="350"/> 
+<ballast x="0.640" y="0.001" z="-1.355" mass="350"/> 
 
 </airplane>
