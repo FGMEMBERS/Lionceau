@@ -28,7 +28,7 @@
 <!-- Cruise configuration -->
 <cruise speed="113" alt="6000" fuel="0.5">
   <control-setting axis="/controls/engines/engine[0]/throttle" value="0.75"/>
-  <control-setting axis="/controls/engines/engine[0]/mixture" value="0.6"/>
+  <control-setting axis="/controls/engines/engine[0]/mixture" value="1.0"/>
   <control-setting axis="/controls/flight/flaps" value="0.0"/>
   <solve-weight idx="0" weight="170"/>
   <solve-weight idx="1" weight="170"/>
@@ -147,19 +147,19 @@
   ref: http://www.rotax-aircraft-engines.com/a_engine_912.htm  -->
   <propeller 
         radius="0.82"
-	cruise-speed="113" 
-	cruise-rpm="2420"
+	cruise-speed="94" 
+	cruise-rpm="2112"
 	cruise-alt="6000" 
-	cruise-power="78"
-	takeoff-power="80" 
+	cruise-power="58"
+	takeoff-power="81" 
 	takeoff-rpm="2552"
 	x="2.374" y="0.0" z="-.225" 
-	mass="138" 
+	mass="175" 
 	moment="2.69"  
 	gear-ratio="0.440" >
     <piston-engine 
         eng-rpm="5800" 
-        eng-power="80"
+        eng-power="81"
         displacement="73.91" 
         compression="9.0"/>
     <actionpt 
@@ -209,11 +209,11 @@
      It has a capacity of 68 L
      Motorisation accepts Avgas 100LL or Super Sans Plomb 95 (Unlead 85 MON octan indice) without any limitation
 -->
-<tank x=".456" y="0" z="-.310" capacity="74" />
+<tank x=".456" y="0" z="-.310" capacity="107.7" />
 
 <!-- Mass distribution
      panel & instrumentation 
      CG théorique x=0.810 y=0.0 z=-0.507 -->
-<ballast x="0.640" y="0.001" z="-1.355" mass="350"/> 
+<ballast x="0.428" y="0.001" z="-1.364" mass="350"/> 
 
 </airplane>
