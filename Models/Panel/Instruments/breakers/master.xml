@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <path>breaker.ac</path>
+
+ <animation>
+  <type>material</type>
+  <object-name>Fusible</object-name>
+  <object-name>Bague</object-name>
+  <object-name>Ecrou</object-name>
+  <emission>
+   <red>1.0</red>
+   <green>0.2</green>
+   <blue>0.0</blue>
+   <factor-prop>/controls/lighting/panel-norm</factor-prop>
+  </emission>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>Fusible</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+     <command>property-toggle</command>
+     <property>/controls/circuit-breakers/master</property>
+     <value type="bool">true</value>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>translate</type>
+  <object-name>Fusible</object-name>
+  <property>controls/circuit-breakers/master</property>
+  <factor>0.008</factor>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+</PropertyList>

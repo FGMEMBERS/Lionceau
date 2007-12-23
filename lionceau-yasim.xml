@@ -102,7 +102,6 @@
   <control-speed control="FLAP0" transition-time="5"/>
 </wing>
 
-<!--    effectiveness="3.0" -->
 <hstab 
    x="-2.905" y="-.067" z=".018" 
    taper="1" 
@@ -119,7 +118,6 @@
   <control-output control="FLAP0" prop="/surface-positions/elevator-pos-norm"/>
 </hstab>
 
-<!-- effectiveness="3.0" -->
 <vstab 
    x="-2.553" y="0" z=".126" 
    taper=".506" 
@@ -185,7 +183,7 @@
 
 <!-- Left wheel -->
 <gear 
-   x="0.562" y="-1.015" z="-1.192" 
+   x="0.562" y="1.015" z="-1.192" 
    compression=".1" 
    spring=".8" 
    on-solid="1" >
@@ -195,7 +193,7 @@
 
 <!-- Right wheel -->
 <gear 
-   x="0.562" y="1.015" z="-1.192" 
+   x="0.562" y="-1.015" z="-1.192" 
    compression=".1" 
    spring=".8"
    on-solid="1" >

@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <path>fuel.ac</path>
+
+ <animation>
+  <type>material</type>
+  <object-name>FuelCock</object-name>
+  <emission>
+   <red>1.0</red>
+   <green>0.2</green>
+   <blue>0.0</blue>
+   <factor-prop>/controls/lighting/panel-norm</factor-prop>
+  </emission>
+ </animation>
+
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>FuelCock</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+     <command>property-toggle</command>
+     <property>/controls/circuit-breakers/avionic-bus-1</property>
+     <value type="bool">true</value>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>FuelCock</object-name>
+  <property>controls/circuit-breakers/avionic-bus-1</property>
+  <factor>90</factor>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+</PropertyList>

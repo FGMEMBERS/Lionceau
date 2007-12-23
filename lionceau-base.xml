@@ -8,7 +8,7 @@
     <aircraft-version>0.2</aircraft-version>
     <status>Alpha</status>
 
-    <fuel-fraction>1.0</fuel-fraction>
+    <fuel-fraction>0.75</fuel-fraction>
 
     <flaps>
       <setting>0.00</setting>
@@ -35,7 +35,7 @@
 
     <multiplay>
       <chat_display>1</chat_display>
-    </multiplay> 
+    </multiplay>
 
     <help>
       <title>APM 20 Lionceau</title>
@@ -43,16 +43,19 @@
     </help>
 
   </sim>
- 
+
   <input>
     <keyboard include="Nasal/lionceau-keyboard.xml"/>
   </input>
- 
+
   <nasal>
     <lionceau>
       <file>Aircraft/Lionceau/Nasal/doors.nas</file>
       <file>Aircraft/Lionceau/Nasal/lionceau.nas</file>
+      <file>Aircraft/Lionceau/Nasal/instruments.nas</file>
+      <file>Aircraft/Lionceau/Nasal/electrical.nas</file>
+      <file>Aircraft/Lionceau/Nasal/action.nas</file>
     </lionceau>
   </nasal>
-  
+
 </PropertyList>

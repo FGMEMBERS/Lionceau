@@ -16,7 +16,7 @@
 
   <weight n="1">
     <name>Copilot</name>
-    <weight-lb>150</weight-lb>
+    <weight-lb>0</weight-lb>
     <max-lb>200</max-lb>
   </weight>
 
@@ -27,5 +27,5 @@
   </weight>
 
   </sim>
- 
+
 </PropertyList>
