@@ -43,7 +43,7 @@
       <z-m> -0.022 </z-m>
     </offsets>
   </model>
- 
+
   <!-- Indicateur de virage -->
   <model>
     <path>Aircraft/Lionceau/Models/Panel/Instruments/Turn/Turn.xml</path>
@@ -135,23 +135,23 @@
   </model>
 
   <!-- switches -->
-  <!--master-->
-  <model>
-    <path>Aircraft/Lionceau/Models/Panel/Instruments/switches/master.xml</path>
-    <offsets>
-      <x-m>  0.000 </x-m>
-      <y-m> -0.320 </y-m>
-      <z-m> -0.095 </z-m>
-    </offsets>
-  </model>
-
   <!-- battery/generator -->
   <model>
     <path>Aircraft/Lionceau/Models/Panel/Instruments/switches/generator.xml</path>
     <offsets>
-      <x-m>  0.000 </x-m>
+      <x-m>  0.005 </x-m>
       <y-m> -0.335 </y-m>
-      <z-m> -0.095 </z-m>
+      <z-m> -0.105 </z-m>
+    </offsets>
+  </model>
+
+  <!--master-->
+  <model>
+    <path>Aircraft/Lionceau/Models/Panel/Instruments/switches/master.xml</path>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m> -0.320 </y-m>
+      <z-m> -0.105 </z-m>
     </offsets>
   </model>
 
@@ -159,9 +159,9 @@
   <model>
     <path>Aircraft/Lionceau/Models/Panel/Instruments/switches/VOR.xml</path>
     <offsets>
-      <x-m>  0.000 </x-m>
+      <x-m>  0.005 </x-m>
       <y-m> -0.100 </y-m>
-      <z-m> -0.095 </z-m>
+      <z-m> -0.105 </z-m>
     </offsets>
   </model>
 
@@ -169,9 +169,9 @@
   <model>
     <path>Aircraft/Lionceau/Models/Panel/Instruments/switches/gyro.xml</path>
     <offsets>
-      <x-m>  0.000 </x-m>
+      <x-m>  0.005 </x-m>
       <y-m> -0.085 </y-m>
-      <z-m> -0.095 </z-m>
+      <z-m> -0.105 </z-m>
     </offsets>
   </model>
 
@@ -179,9 +179,9 @@
   <model>
     <path>Aircraft/Lionceau/Models/Panel/Instruments/switches/lights.xml</path>
     <offsets>
-      <x-m>  0.000 </x-m>
+      <x-m>  0.005 </x-m>
       <y-m> -0.070 </y-m>
-      <z-m> -0.095 </z-m>
+      <z-m> -0.105 </z-m>
     </offsets>
   </model>
 
@@ -189,9 +189,9 @@
   <model>
     <path>Aircraft/Lionceau/Models/Panel/Instruments/switches/pump.xml</path>
     <offsets>
-      <x-m>  0.000 </x-m>
+      <x-m>  0.005 </x-m>
       <y-m> -0.055 </y-m>
-      <z-m> -0.095 </z-m>
+      <z-m> -0.105 </z-m>
     </offsets>
   </model>
 
@@ -199,9 +199,9 @@
   <model>
     <path>Aircraft/Lionceau/Models/Panel/Instruments/switches/starter.xml</path>
     <offsets>
-      <x-m>  0.000 </x-m>
+      <x-m>  0.005 </x-m>
       <y-m> -0.030 </y-m>
-      <z-m> -0.095 </z-m>
+      <z-m> -0.105 </z-m>
     </offsets>
   </model>
 
@@ -214,7 +214,7 @@
     <offsets>
       <x-m>  0.000 </x-m>
       <y-m>  0.055 </y-m>
-      <z-m> -0.095 </z-m>
+      <z-m> -0.105 </z-m>
     </offsets>
   </model>
 
@@ -224,7 +224,7 @@
     <offsets>
       <x-m>  0.000 </x-m>
       <y-m>  0.070 </y-m>
-      <z-m> -0.095 </z-m>
+      <z-m> -0.105 </z-m>
     </offsets>
   </model>
 
@@ -234,7 +234,7 @@
     <offsets>
       <x-m>  0.000 </x-m>
       <y-m>  0.085 </y-m>
-      <z-m> -0.095 </z-m>
+      <z-m> -0.105 </z-m>
     </offsets>
   </model>
 
@@ -244,7 +244,7 @@
     <offsets>
       <x-m>  0.000 </x-m>
       <y-m>  0.100 </y-m>
-      <z-m> -0.095 </z-m>
+      <z-m> -0.105 </z-m>
     </offsets>
   </model>
 
@@ -254,7 +254,7 @@
     <offsets>
       <x-m>  0.000 </x-m>
       <y-m>  0.125 </y-m>
-      <z-m> -0.095 </z-m>
+      <z-m> -0.105 </z-m>
     </offsets>
   </model>
 
@@ -264,7 +264,7 @@
     <offsets>
       <x-m>  0.000 </x-m>
       <y-m>  0.140 </y-m>
-      <z-m> -0.095 </z-m>
+      <z-m> -0.105 </z-m>
     </offsets>
   </model>
 

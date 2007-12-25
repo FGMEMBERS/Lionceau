@@ -97,7 +97,7 @@
   <!-- Planche de bord -->
   <!-- Principal -->
   <model>
-    <path>Aircraft/Lionceau/Models/Panel/panel1.xml</path>
+    <path>Aircraft/Lionceau/Models/Panel/front-panel.xml</path>
     <offsets>
       <x-m> -1.543 </x-m>
       <y-m>  0.000 </y-m>
@@ -108,7 +108,7 @@
 
   <!-- Secondaire -->
   <model>
-    <path>Aircraft/Lionceau/Models/Panel/panel2.xml</path>
+    <path>Aircraft/Lionceau/Models/Panel/between-seats-panel.xml</path>
     <offsets>
       <x-m> -1.271 </x-m>
       <y-m>  0.000 </y-m>
@@ -128,7 +128,7 @@
     </condition>
   </animation>
 
-  <!-- L'hélice --> 
+  <!-- L'hélice -->
   <!-- Séléction de l'objet visible en fonction des rpm -->
   <animation>
     <type>select</type>
@@ -164,7 +164,7 @@
     <condition>
       <less-than>
         <property>engines/engine[0]/rpm</property>
-	<value>1500</value>
+    <value>1500</value>
       </less-than>
     </condition>
   </animation>
@@ -269,7 +269,7 @@
       <y2-m> -2.903 </y2-m>
       <z2-m> -0.382 </z2-m>
     </axis>
-  </animation> 
+  </animation>
 
   <animation>
     <type>rotate</type>

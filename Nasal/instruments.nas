@@ -10,10 +10,6 @@ var instrumenttimers = func {
 
 # =============================== end timer stuff ===========================================
 
-#var oilpressure = func {
-#
-#}
-
 # ==================== Radio Frequency Display =========================
 
 var radiodisplay = func(radio) {

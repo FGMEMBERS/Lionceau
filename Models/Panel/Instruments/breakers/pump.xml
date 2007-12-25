@@ -34,7 +34,7 @@
  <animation>
   <type>translate</type>
   <object-name>Fusible</object-name>
-  <property>controls/circuit-breakers/instruments</property>
+  <property>controls/circuit-breakers/pump</property>
   <factor>0.008</factor>
   <axis>
    <x>-1</x>
