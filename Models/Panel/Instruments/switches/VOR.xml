@@ -35,7 +35,7 @@
  <animation>
   <type>rotate</type>
   <object-name>Switch</object-name>
-  <property>controls/switches/VOR</property>
+  <property>controls/switches/radios</property>
   <factor>22.5</factor>
   <axis>
    <x>0</x>
