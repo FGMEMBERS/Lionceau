@@ -4,7 +4,7 @@
 
   <sim include="Nasal/views.xml">
 
-    <author>BARANGER Emmanuel (3D), MARQUE Sébastien and Pierre GEOFFROY (FDM)</author>
+    <author>BARANGER Emmanuel (3D), MARQUE Sebastien and GEOFFROY Pierre (FDM)</author>
     <aircraft-version>0.2</aircraft-version>
     <status>Alpha</status>
 
@@ -12,8 +12,7 @@
 
     <flaps>
       <setting>0.00</setting>
-      <setting>0.25</setting>
-      <setting>0.75</setting>
+      <setting>0.50</setting>
       <setting>1.00</setting>
     </flaps>
 
@@ -42,7 +41,33 @@
       <line>______________________________________________</line>
     </help>
 
+    <weight n="0">
+      <name>Pilot</name>
+      <weight-lb>175</weight-lb>
+      <max-lb>200</max-lb>
+    </weight>
+
+    <weight n="1">
+      <name>Copilot</name>
+      <weight-lb>0</weight-lb>
+      <max-lb>200</max-lb>
+    </weight>
+
+    <weight n="2">
+      <name>Bagages</name>
+      <weight-lb>0</weight-lb>
+      <max-lb>45</max-lb>
+    </weight>
+
   </sim>
+
+  <controls>
+    <engines>
+      <engine>
+        <mixture archive="y"> 0.65 </mixture>
+      </engine>
+    </engines>
+  </controls>
 
   <input>
     <keyboard include="Nasal/lionceau-keyboard.xml"/>

@@ -2,7 +2,7 @@ AC3Db
 MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
 MATERIAL "transp" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 0.5 0.5 0.5 shi 64 trans 1
 MATERIAL "InstrumentBezel" rgb 0.042666 0.042666 0.042666 amb 0.5 0.5 0.5 emis 0 0 0 spec 0.123149 0.123149 0.123149 shi 32 trans 0
-MATERIAL "DefaultWhite" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 0.5 0.5 0.5 shi 64 trans 0
+MATERIAL "DefaultWhite.001" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 0.5 0.5 0.5 shi 64 trans 0
 MATERIAL "BlackPlastic" rgb 0.153331 0.153331 0.153331 amb 0.5 0.5 0.5 emis 0 0 0 spec 0.186866 0.186866 0.186866 shi 32 trans 0
 MATERIAL "WhitePaint" rgb 1 1 1 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
 OBJECT world
@@ -11,6 +11,8 @@ OBJECT poly
 name "AdjDn"
 data 5
 Plane
+texture "glass.rgb"
+texrep 1 1
 crease 30.000000
 numvert 4
 0.01 -0.016 0.031
@@ -21,15 +23,17 @@ numsurf 1
 SURF 0x20
 mat 1
 refs 4
-0 0.0 0.0
-3 0.0 0.0
-2 0.0 0.0
-1 0.0 0.0
+0 0.0 0.00153154635336
+3 0.993901848793 0.0
+2 1.0 0.998468279839
+1 0.00609792070463 1.0
 kids 0
 OBJECT poly
 name "AdjUp"
 data 9
 Plane.001
+texture "glass.rgb"
+texrep 1 1
 crease 30.000000
 numvert 4
 0.01 -0.016 0.016
@@ -40,10 +44,10 @@ numsurf 1
 SURF 0x20
 mat 1
 refs 4
-0 0.0 0.0
-3 0.0 0.0
-2 0.0 0.0
-1 0.0 0.0
+0 0.0 0.00153154623695
+3 0.993902087212 0.0
+2 1.0 0.998468399048
+1 0.00609853537753 1.0
 kids 0
 OBJECT poly
 name "Bezel"
