@@ -4,9 +4,9 @@ MATERIAL "DefaultWhite.009" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 0.5 0.5 0.5 shi 
 OBJECT world
 kids 4
 OBJECT poly
-name "Circle.013"
-data 10
-Circle.102
+name "Circle"
+data 6
+Circle
 crease 30.000000
 numvert 96
 0.00249 0.003122 -0.002065

@@ -2,32 +2,12 @@
 
 <PropertyList>
 
-   <key n="77">
-    <name>M</name>
-    <desc>Mixture leaner.</desc>
-    <repeatable type="bool">true</repeatable>
-    <binding>
-     <command>nasal</command>
-     <script>controls.adjMixture(0)</script>
-    </binding>
-   </key>
-
    <key n="100">
     <name>d</name>
     <desc>Canopy</desc>
     <binding>
      <command>nasal</command>
      <script>lionceau.doorsystem.crewexport();</script>
-    </binding>
-   </key>
-
-   <key n="109">
-    <name>m</name>
-    <desc>Mixture richer.</desc>
-    <repeatable type="bool">true</repeatable>
-    <binding>
-     <command>nasal</command>
-     <script>controls.adjMixture(0)</script>
     </binding>
    </key>
 
