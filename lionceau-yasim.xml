@@ -16,7 +16,7 @@
    mass-prop="/sim/weight[2]/weight-lb"/>
 
 <!-- Approach configuration -->
-<approach speed="57" aoa="14" fuel="0.2">
+<approach speed="44" aoa="14" fuel="0.2">
   <control-setting axis="/controls/engines/engine[0]/throttle" value="0.2"/>
   <control-setting axis="/controls/engines/engine[0]/mixture"  value="0.65"/> <!-- Ground adjustment only -->
   <control-setting axis="/controls/flight/flaps" value="1.0"/>
@@ -87,7 +87,7 @@
    sweep="0" 
    dihedral="2.58" 
    camber="0.1">
-  <stall aoa="20" width="4" peak="1.5"/>
+  <stall aoa="20" width="1" peak="1.5"/>
   <flap0 start="0" end="0.557" lift="1.4" drag="1.5"/>
   <flap1 start="0.558" end="0.95" lift="1.2" drag="1.1"/>
 
@@ -109,7 +109,7 @@
    length="1.245" 
    chord=".681" 
    sweep="0">
-  <stall aoa="18" width="4" peak="1.5"/>
+  <stall aoa="20" width="4" peak="1.5"/>
   <flap0 start="0" end="1" lift="2.0" drag="1.1" effectiveness="2"/>
 
   <control-input axis="/controls/flight/elevator" control="FLAP0"/>
