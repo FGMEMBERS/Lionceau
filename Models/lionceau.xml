@@ -87,7 +87,7 @@
     <object-name>shadowOSG</object-name>
     <condition>
       <equals>
-        <property>/sim[0]/rendering/shadows-ai</property>
+        <property>sim[0]/rendering/shadows-ai</property>
         <value>true</value>
       </equals>
     </condition>
@@ -142,7 +142,7 @@
     <object-name>propdisc</object-name>
     <condition>
       <greater-than>
-        <property>/engines/engine[0]/rpm</property>
+        <property>engines/engine[0]/rpm</property>
         <value>1500</value>
       </greater-than>
     </condition>
@@ -153,11 +153,11 @@
     <object-name>propblur</object-name>
     <condition>
       <greater-than>
-        <property>/engines/engine[0]/rpm</property>
+        <property>engines/engine[0]/rpm</property>
         <value>600.000</value>
       </greater-than>
       <less-than>
-        <property>/engines/engine[0]/rpm</property>
+        <property>engines/engine[0]/rpm</property>
         <value>1500.001</value>
       </less-than>
     </condition>
@@ -168,7 +168,7 @@
     <object-name>helice</object-name>
     <condition>
       <less-than>
-        <property>/engines/engine[0]/rpm</property>
+        <property>engines/engine[0]/rpm</property>
         <value>1500</value>
       </less-than>
     </condition>
@@ -177,7 +177,7 @@
   <animation>
     <type>spin</type>
     <object-name>HeliceComplete</object-name>
-    <property>/engines/engine[0]/rpm</property>
+    <property>engines/engine[0]/rpm</property>
     <factor> 1 </factor>
     <center>
       <x-m> -3.092 </x-m>
@@ -196,7 +196,7 @@
     <type>rotate</type>
     <object-name>profondeur</object-name>
     <object-name>trimprof</object-name>
-    <property>/controls/flight/elevator</property>
+    <property>controls/flight/elevator</property>
     <factor>11</factor>
     <center>
       <x-m> 3.108 </x-m>
@@ -214,7 +214,7 @@
   <animation>
     <type>rotate</type>
     <object-name>trimprof</object-name>
-    <property>/controls/flight/elevator-trim</property>
+    <property>controls/flight/elevator-trim</property>
     <interpolation>
       <entry>
         <ind> -1.000 </ind>
@@ -245,7 +245,7 @@
   <animation>
     <type>rotate</type>
     <object-name>direction</object-name>
-    <property>/controls/flight/rudder</property>
+    <property>controls/flight/rudder</property>
     <factor>20</factor>
     <axis>
       <x1-m>  2.774 </x1-m>
@@ -261,7 +261,7 @@
   <animation>
     <type>rotate</type>
     <object-name>aileronG</object-name>
-    <property>/surface-positions/left-aileron-pos-norm</property>
+    <property>surface-positions/left-aileron-pos-norm</property>
     <factor>15.0</factor>
     <axis>
       <x1-m> -0.523 </x1-m>
@@ -276,7 +276,7 @@
   <animation>
     <type>rotate</type>
     <object-name>aileronD</object-name>
-    <property>/surface-positions/right-aileron-pos-norm</property>
+    <property>surface-positions/right-aileron-pos-norm</property>
     <factor>15.0</factor>
     <axis>
       <x1-m> -0.453 </x1-m>
@@ -292,7 +292,7 @@
   <animation>
     <type>rotate</type>
     <object-name>voletG</object-name>
-    <property>/surface-positions/flap-pos-norm</property>
+    <property>surface-positions/flap-pos-norm</property>
     <factor>25.0</factor>
     <axis>
       <x1-m> -0.311 </x1-m>
@@ -307,7 +307,7 @@
   <animation>
     <type>rotate</type>
     <object-name>voletD</object-name>
-    <property>/surface-positions/flap-pos-norm</property>
+    <property>surface-positions/flap-pos-norm</property>
     <factor>25.0</factor>
     <axis>
       <x1-m> -0.240 </x1-m>
@@ -325,7 +325,7 @@
     <object-name>roueA</object-name>
     <object-name>cacheA</object-name>
     <object-name>axeA</object-name>
-    <property>/controls/flight/rudder</property>
+    <property>controls/flight/rudder</property>
     <factor> 10.0 </factor>
     <center>
       <x-m> -2.210 </x-m>
@@ -345,7 +345,7 @@
     <object-name>roueA</object-name>
     <object-name>cacheA</object-name>
     <object-name>axeA2</object-name>
-    <property>/gear/gear[0]/compression-norm</property>
+    <property>gear/gear[0]/compression-norm</property>
     <interpolation>
       <entry>
         <ind>  0.0 </ind>
@@ -372,7 +372,7 @@
     <object-name>disqueG</object-name>
     <object-name>machoireG</object-name>
     <object-name>tuyauG2</object-name>
-    <property>/gear/gear[1]/compression-norm</property>
+    <property>gear/gear[1]/compression-norm</property>
     <interpolation>
       <entry>
         <ind> 0.0 </ind>
@@ -404,7 +404,7 @@
     <object-name>disqueD</object-name>
     <object-name>machoireD</object-name>
     <object-name>tuyauD2</object-name>
-    <property>/gear/gear[2]/compression-norm</property>
+    <property>gear/gear[2]/compression-norm</property>
     <interpolation>
       <entry>
         <ind> 0.0 </ind>
@@ -431,7 +431,7 @@
   <animation>
     <type>spin</type>
     <object-name>roueA</object-name>
-    <property>/gear/gear[0]/rollspeed-ms</property>
+    <property>gear/gear[0]/rollspeed-ms</property>
     <factor> 30 </factor>
     <center>
       <x-m> -2.210 </x-m>
@@ -450,7 +450,7 @@
     <object-name>roueG</object-name>
     <object-name>essieuG</object-name>
     <object-name>disqueG</object-name>
-    <property>/gear/gear[1]/rollspeed-ms</property>
+    <property>gear/gear[1]/rollspeed-ms</property>
     <factor> 30 </factor>
     <center>
       <x-m> -0.562 </x-m>
@@ -469,7 +469,7 @@
     <object-name>roueD</object-name>
     <object-name>essieuD</object-name>
     <object-name>disqueD</object-name>
-    <property>/gear/gear[1]/rollspeed-ms</property>
+    <property>gear/gear[1]/rollspeed-ms</property>
     <factor> 30 </factor>
     <center>
       <x-m> -0.562 </x-m>
@@ -491,7 +491,7 @@
     <object-name>barreverriere</object-name>
     <object-name>dosverriere</object-name>
     <object-name>poigne</object-name>
-    <property>/instrumentation/doors/crew/position-norm</property>
+    <property>instrumentation/doors/crew/position-norm</property>
     <factor>1.1</factor>
     <axis>
       <x> 0.332287 </x>
