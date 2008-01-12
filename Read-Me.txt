@@ -29,7 +29,9 @@ d : canopy
 Thanks
 ======
 
-Sébastien MARQUE and Pierre GEOFFROY for the new FDM
+Sébastien MARQUE for the FDM and the panel
+Pierre GEOFFROY for the new FDM
+Laurent HAYVEL for the new livrery
 
 ===============
 BARANGER Emmanuel
@@ -70,7 +72,9 @@ d : cockpit
 Remerciements
 =============
 
-Sébastien MARQUE et Pierre GEOFFROY pour le nouveau modèle de vol
+Sébastien MARQUE pour le FDM et le tableau de bord
+Pierre GEOFFROY pour le nouveau modèle de vol
+Laurent HAYVEL pour la nouvelle livrée
 
 ===============
 BARANGER Emmanuel
