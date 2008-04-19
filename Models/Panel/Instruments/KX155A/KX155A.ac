@@ -1255,7 +1255,7 @@ OBJECT poly
 name "CommInner"
 data 10
 Circle.006
-texture "KX155A.rgb"
+texture "KX155A.png"
 texrep 1 1
 crease 30.000000
 numvert 129
@@ -2264,7 +2264,7 @@ OBJECT poly
 name "CommOuter"
 data 10
 Circle.005
-texture "KX155A.rgb"
+texture "KX155A.png"
 texrep 1 1
 crease 30.000000
 numvert 256
@@ -4657,7 +4657,7 @@ OBJECT poly
 name "CommSwap"
 data 8
 Cube.001
-texture "KX155A.rgb"
+texture "KX155A.png"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -4678,7 +4678,7 @@ OBJECT poly
 name "CommVol"
 data 6
 Circle
-texture "KX155A.rgb"
+texture "KX155A.png"
 texrep 1 1
 crease 30.000000
 numvert 65
@@ -5251,7 +5251,7 @@ OBJECT poly
 name "Cube.002"
 data 8
 Cube.002
-texture "KX155A.rgb"
+texture "KX155A.png"
 texrep 1 1
 crease 30.000000
 numvert 26
@@ -6167,7 +6167,7 @@ OBJECT poly
 name "NavInner"
 data 10
 Circle.004
-texture "KX155A.rgb"
+texture "KX155A.png"
 texrep 1 1
 crease 30.000000
 numvert 129
@@ -7176,7 +7176,7 @@ OBJECT poly
 name "NavOuter"
 data 10
 Circle.007
-texture "KX155A.rgb"
+texture "KX155A.png"
 texrep 1 1
 crease 30.000000
 numvert 256
@@ -9569,7 +9569,7 @@ OBJECT poly
 name "NavSwap"
 data 4
 Cube
-texture "KX155A.rgb"
+texture "KX155A.png"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -9590,7 +9590,7 @@ OBJECT poly
 name "NavVol"
 data 10
 Circle.008
-texture "KX155A.rgb"
+texture "KX155A.png"
 texrep 1 1
 crease 30.000000
 numvert 65
@@ -10119,6 +10119,8 @@ OBJECT poly
 name "Plane"
 data 5
 Plane
+texture "glass.png"
+texrep 1 1
 crease 30.000000
 numvert 4
 0.01 0.046 -0.075
@@ -10129,10 +10131,10 @@ numsurf 1
 SURF 0x00
 mat 6
 refs 4
-0 0.0 0.0
-3 0.0 0.0
-2 0.0 0.0
-1 0.0 0.0
+0 1.0 0.999999642372
+3 0.0 1.0
+2 0.0 3.92135689253e-07
+1 1.0 0.0
 kids 0
 OBJECT poly
 name "Trim"

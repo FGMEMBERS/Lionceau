@@ -7,8 +7,8 @@
  <animation>
   <type>material</type>
   <object-name>Face</object-name>
-  <object-name>PtrTipL</object-name>   
-  <object-name>PtrTipR</object-name>
+  <object-name>PtrL</object-name>   
+  <object-name>PtrR</object-name>
   <emission>
    <red>1.0</red>
    <green>0.2</green>
@@ -20,11 +20,10 @@
  <animation> 
   <type>rotate</type>
   <object-name>PtrL</object-name>
-  <object-name>PtrTipL</object-name>
-  <property>engines/engine/egt-degf</property>
+  <property>/instrumentation/engine/cht-degf</property>
   <interpolation>
-   <entry><ind>1200</ind><dep> 0</dep></entry>
-   <entry><ind>1750</ind><dep>85</dep></entry>
+   <entry><ind>122</ind><dep> 0</dep></entry>
+   <entry><ind>302</ind><dep>85</dep></entry>
   </interpolation>
   <axis> 
    <x>1</x>
@@ -41,7 +40,6 @@
  <animation> 
   <type>rotate</type>
   <object-name>PtrR</object-name>
-  <object-name>PtrTipR</object-name>
   <property>environment/temperature-degc</property>
   <interpolation>
    <entry><ind>-20</ind><dep> 0</dep></entry>

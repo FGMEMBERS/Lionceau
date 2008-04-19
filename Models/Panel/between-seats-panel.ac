@@ -8,7 +8,7 @@ OBJECT poly
 name "flaps"
 data 5
 flaps
-texture "for-panel.rgb"
+texture "for-panel.png"
 texrep 1 1
 crease 30.000000
 numvert 24
@@ -196,7 +196,7 @@ OBJECT poly
 name "gaz"
 data 3
 gaz
-texture "for-panel.rgb"
+texture "for-panel.png"
 texrep 1 1
 crease 30.000000
 numvert 130
@@ -1312,7 +1312,7 @@ OBJECT poly
 name "panel"
 data 5
 panel
-texture "for-panel.rgb"
+texture "for-panel.png"
 texrep 1 1
 crease 30.000000
 numvert 373
@@ -4069,7 +4069,7 @@ OBJECT poly
 name "starter"
 data 7
 starter
-texture "for-panel.rgb"
+texture "for-panel.png"
 texrep 1 1
 crease 30.000000
 numvert 289
@@ -6352,7 +6352,7 @@ OBJECT poly
 name "trim"
 data 4
 trim
-texture "for-panel.rgb"
+texture "for-panel.png"
 texrep 1 1
 crease 30.000000
 numvert 250

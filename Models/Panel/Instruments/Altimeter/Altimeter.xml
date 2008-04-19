@@ -33,7 +33,6 @@
 
  <animation>
   <type>rotate</type>
-  <object-name>Ptr100c</object-name>
   <object-name>Ptr100t</object-name>
   <property>/instrumentation/altimeter/indicated-altitude-ft</property>
   <factor>0.36</factor>
@@ -46,7 +45,6 @@
 
  <animation>
   <type>rotate</type>
-  <object-name>Ptr1000c</object-name>
   <object-name>Ptr1000t</object-name>
   <property>/instrumentation/altimeter/indicated-altitude-ft</property>
   <factor>0.036</factor>
@@ -59,7 +57,6 @@
 
  <animation>
   <type>rotate</type>
-  <object-name>Ptr10000c</object-name>
   <object-name>Ptr10000t</object-name>
   <property>/instrumentation/altimeter/indicated-altitude-ft</property>
   <factor>0.0036</factor>

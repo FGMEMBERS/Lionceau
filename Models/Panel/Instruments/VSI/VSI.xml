@@ -18,7 +18,6 @@
 
  <animation> 
   <type>rotate</type>
-  <object-name>PointerCentre</object-name>
   <object-name>PointerTip</object-name>
   <property>instrumentation/vertical-speed-indicator/indicated-speed-fpm</property>
   <interpolation>

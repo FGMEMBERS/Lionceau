@@ -8,7 +8,7 @@ OBJECT poly
 name "Bague"
 data 10
 Circle.095
-texture "SwitchPanel.rgb"
+texture "SwitchPanel.png"
 texrep 1 1
 crease 30.000000
 numvert 64
@@ -418,7 +418,7 @@ OBJECT poly
 name "Ecrou"
 data 12
 Cylinder.005
-texture "SwitchPanel.rgb"
+texture "SwitchPanel.png"
 texrep 1 1
 crease 30.000000
 numvert 13
@@ -674,7 +674,7 @@ OBJECT poly
 name "Fusible_1"
 data 10
 Circle.063
-texture "BreakerLabels.rgb"
+texture "BreakerLabels.png"
 texrep 1 1
 crease 30.000000
 numvert 33

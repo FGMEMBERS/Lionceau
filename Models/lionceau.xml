@@ -4,6 +4,15 @@
 
   <path>lionceau.ac</path>
 
+  <nasal>
+    <load>
+      var livery_update = aircraft.livery_update.new("Aircraft/Lionceau/Models/Liveries", 10);
+    </load>
+    <unload>
+      livery_update.stop();
+    </unload>
+  </nasal>
+
   <animation>
     <!-- Objets opaques -->
     <object-name>fuselage</object-name>
@@ -55,7 +64,6 @@
     <object-name>cacheB</object-name>
     <object-name>cableH</object-name>
     <object-name>cableB</object-name>
-    <object-name>pilote</object-name>
 
     <!-- Objets transparents -->
     <object-name>verriere</object-name>
@@ -75,6 +83,54 @@
     <object-name>propdisc</object-name>
     <object-name>propblur</object-name>
   </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>fuselage</object-name>
+    <object-name>entreesair</object-name>
+    <object-name>interieur</object-name>
+    <object-name>aile</object-name>
+    <object-name>aile2</object-name>
+    <object-name>aileronG</object-name>
+    <object-name>aileronD</object-name>
+    <object-name>voletG</object-name>
+    <object-name>voletD</object-name>
+    <object-name>trimprof</object-name>
+    <object-name>profondeur</object-name>
+    <object-name>direction</object-name>
+    <object-name>bol</object-name>
+    <object-name>barreverriere</object-name>
+    <object-name>dosverriere</object-name>
+    <object-name>poigne</object-name>
+    <object-name>axeA</object-name>
+    <object-name>axeG</object-name>
+    <object-name>axeD</object-name>
+    <object-name>axeA2</object-name>
+    <object-name>axeG2</object-name>
+    <object-name>axeD2</object-name>
+    <object-name>cacheA</object-name>
+    <object-name>cacheG</object-name>
+    <object-name>cacheD</object-name>
+    <object-name>pito</object-name>
+    <object-name>antenne</object-name>
+    <object-name>machoireG</object-name>
+    <object-name>machoireD</object-name>
+    <object-name>cacheH</object-name>
+    <object-name>cacheB</object-name>
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>texture</texture-prop>
+    <texture>texture.png</texture>
+  </animation>
+
+  <!-- Pilote -->
+  <model>
+    <path>Aircraft/Lionceau/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -1.377 </x-m>
+      <y-m> -0.243 </y-m>
+      <z-m> -0.274 </z-m>
+    </offsets>
+  </model>
 
   <!-- Une ombre pour OSG -->
   <model>
@@ -114,18 +170,6 @@
       <z-m> -0.355 </z-m>
     </offsets>
   </model>
-
-  <!-- Pilote invisible depuis le cockpit -->
-  <animation>
-    <type>select</type>
-    <object-name>pilote</object-name>
-    <condition>
-      <greater-than>
-        <property>sim/current-view/view-number</property>
-        <value>0</value>
-      </greater-than>
-    </condition>
-  </animation>
 
   <animation>
     <name>HeliceComplete</name>

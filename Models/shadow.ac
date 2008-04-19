@@ -6,7 +6,7 @@ OBJECT poly
 name "shadow"
 data 6
 shadow
-texture "prop.rgb"
+texture "prop.png"
 texrep 1 1
 crease 30.000000
 numvert 4

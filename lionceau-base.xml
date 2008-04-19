@@ -17,7 +17,7 @@
     </flaps>
 
     <startup>
-      <splash-texture>Aircraft/Lionceau/lionceau-splash.rgb</splash-texture>
+      <splash-texture>Aircraft/Lionceau/lionceau-splash.png</splash-texture>
     </startup>
 
     <sound>
@@ -26,6 +26,9 @@
 
     <model>
       <path archive="y">Aircraft/Lionceau/Models/lionceau.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
     </model>
 
     <panel>
@@ -59,6 +62,22 @@
       <max-lb>45</max-lb>
     </weight>
 
+    <menubar>
+      <default>
+        <menu n="10">
+          <label>APM 20 Lionceau</label>
+          <enabled type="bool">true</enabled>
+          <item>
+            <label>Select Livery</label>
+            <binding>
+              <command>nasal</command>
+              <script>aircraft.livery.dialog.toggle()</script>
+          </binding>
+          </item>
+        </menu>
+      </default>
+    </menubar>
+
   </sim>
 
   <controls>
@@ -80,6 +99,8 @@
       <file>Aircraft/Lionceau/Nasal/instruments.nas</file>
       <file>Aircraft/Lionceau/Nasal/electrical.nas</file>
       <file>Aircraft/Lionceau/Nasal/action.nas</file>
+      <file>Aircraft/Lionceau/Nasal/fluids.nas</file>
+      <file>Aircraft/Lionceau/Nasal/liveries.nas</file>
     </lionceau>
   </nasal>
 

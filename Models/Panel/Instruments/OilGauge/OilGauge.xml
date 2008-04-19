@@ -21,7 +21,7 @@
   <type>rotate</type>
   <object-name>PtrL</object-name>
   <object-name>PtrTipL</object-name>
-  <property>engines/engine/oil-temperature-degf</property>
+  <property>/instrumentation/engine/oil-temp</property>
   <interpolation>
    <entry><ind>104</ind><dep> 0</dep></entry>
    <entry><ind>140</ind><dep>16</dep></entry>
@@ -44,12 +44,11 @@
   <type>rotate</type>
   <object-name>PtrR</object-name>
   <object-name>PtrTipR</object-name>
-  <property>engines/engine/oil-pressure-psi</property>
+  <property>/engines/engine/oil-pressure-psi</property>
   <interpolation>
    <entry><ind>  0</ind><dep> 0</dep></entry>
-   <entry><ind> 30</ind><dep>29</dep></entry>
-   <entry><ind> 90</ind><dep>70</dep></entry>
-   <entry><ind>120</ind><dep>84.5</dep></entry>
+   <entry><ind> 54</ind><dep>50</dep></entry>
+   <entry><ind>100</ind><dep>90</dep></entry>
   </interpolation>
   <axis> 
    <x>-1</x>
