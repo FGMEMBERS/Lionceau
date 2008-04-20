@@ -17,6 +17,7 @@
     <!-- Objets opaques -->
     <object-name>fuselage</object-name>
     <object-name>entreesair</object-name>
+    <object-name>air</object-name>
     <object-name>interieur</object-name>
     <object-name>backpanel</object-name>
     <object-name>aile</object-name>
@@ -67,9 +68,7 @@
 
     <!-- Objets transparents -->
     <object-name>verriere</object-name>
-    <object-name>verriere1</object-name>
     <object-name>verriere2</object-name>
-    <object-name>verriere3</object-name>
     <object-name>propdisc</object-name>
     <object-name>propblur</object-name>
   </animation>
@@ -77,9 +76,7 @@
   <animation>
     <type>noshadow</type>
     <object-name>verriere</object-name>
-    <object-name>verriere1</object-name>
     <object-name>verriere2</object-name>
-    <object-name>verriere3</object-name>
     <object-name>propdisc</object-name>
     <object-name>propblur</object-name>
   </animation>
@@ -88,7 +85,7 @@
     <type>material</type>
     <object-name>fuselage</object-name>
     <object-name>entreesair</object-name>
-    <object-name>interieur</object-name>
+    <object-name>air</object-name>
     <object-name>aile</object-name>
     <object-name>aile2</object-name>
     <object-name>aileronG</object-name>
@@ -393,7 +390,7 @@
     <interpolation>
       <entry>
         <ind>  0.0 </ind>
-        <dep> -0.1 </dep>
+        <dep>  0.0 </dep>
       </entry>
       <entry>
         <ind> 1.000 </ind>

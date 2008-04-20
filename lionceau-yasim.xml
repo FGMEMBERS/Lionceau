@@ -211,7 +211,8 @@
 
 <!-- Mass distribution
      panel & instrumentation 
-     CG thÃ©orique x=0.810 y=0.0 z=-0.507 -->
-<ballast x="0.428" y="0.001" z="-1.364" mass="350"/> 
+     CG théorique x=0.660 y=0.0 z=-0.497 -->
+<!-- <ballast x="0.428" y="0.001" z="-1.364" mass="350"/>  -->
+     <ballast x="0.0" y="0.001" z="-1.364" mass="350"/>
 
 </airplane>
