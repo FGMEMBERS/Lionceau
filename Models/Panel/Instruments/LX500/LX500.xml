@@ -1,0 +1,174 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+  <path>LX500.ac</path>
+  <panel>
+    <path>Aircraft/Lionceau/Models/Panel/Instruments/LX500/LX500-panel.xml</path>
+    <bottom-left>
+      <x-m>-0.002</x-m>
+      <y-m>-0.027</y-m>
+      <z-m>0.012</z-m>
+    </bottom-left>
+    <bottom-right>
+      <x-m>-0.002</x-m>
+      <y-m>0.04</y-m>
+      <z-m>0.012</z-m>
+    </bottom-right>
+    <top-left>
+      <x-m>-0.002</x-m>
+      <y-m>-0.027</y-m>
+      <z-m>0.15</z-m>
+    </top-left>
+  </panel>
+
+  <animation>
+    <type>select</type>
+    <condition>
+      <property>/sim/model/gps/redled/state</property>
+    </condition>
+    <object-name>LED.0_ON</object-name>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <condition>
+      <property>/sim/model/gps/greenled/state</property>
+    </condition>
+    <object-name>LED.1_ON</object-name>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>knob.ONOFF</object-name>
+    <visible>true</visible>
+    <action>
+      <name>switch on and off</name> 
+      <!-- this one will manage volume control soon too, 
+           but for now keep it simple -->
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+	<script>lx500.switch_ON_OFF()</script>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>knob.UPDOWN</object-name>
+    <visible>true</visible>
+    <action>
+      <name>select UP</name> 
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+	<script>lx500.nav_ud(1)</script>
+      </binding>
+    </action>
+    <action>
+      <name>select DOWN</name> 
+      <button>1</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+	<script>lx500.nav_ud(-1)</script>
+      </binding>
+    </action>
+  </animation>
+ 
+  <animation>
+    <type>pick</type>
+    <object-name>knob.RIGHTLEFT</object-name>
+    <visible>true</visible>
+    <action>
+      <name>select RIGHT</name> 
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+	<script>lx500.nav_rl(1)</script>
+      </binding>
+    </action>
+    <action>
+      <name>select LEFT</name> 
+      <button>1</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+	<script>lx500.nav_rl(-1)</script>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>knob.MODE</object-name>
+    <visible>true</visible>
+    <action>
+      <name>select next mode</name> 
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+	<script>lx500.select_mode(1)</script>
+      </binding>
+    </action>
+    <action>
+      <name>select previous mode</name> 
+      <button>1</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+	<script>lx500.select_mode(-1)</script>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>button.ENTER</object-name>
+    <visible>true</visible>
+    <action>
+      <name>manage ENTER button (top left)</name> 
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+	<script>lx500.enter_button()</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>button.ESCAPE</object-name>
+    <visible>true</visible>
+    <action>
+      <name>manage ESCAPE button (top middle)</name> 
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+	<script>lx500.escape_button()</script>
+      </binding>
+    </action>
+  </animation>
+ 
+  <animation>
+    <type>pick</type>
+    <object-name>button.START</object-name>
+    <visible>true</visible>
+    <action>
+      <name>manage START button (top right)</name> 
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+	<script>lx500.start_button()</script>
+      </binding>
+    </action>
+  </animation>
+  
+</PropertyList>

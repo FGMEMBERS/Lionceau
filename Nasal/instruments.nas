@@ -10,6 +10,7 @@ var digit3 = 0;
 var digit4 = 0;
 var digit5 = 0;
 
+var gps_display = [];
 
 var instrumenttimer = func {
     settimer(func {
@@ -51,11 +52,12 @@ var radiodisplay = func() {
 initialize = func {
 
     ### Initialise Radios ###
-    props.globals.getNode("instrumentation/uhf/commvol-norm", 1).setDoubleValue(0.0);
-    props.globals.getNode("instrumentation/kn53/navvol-norm", 1).setDoubleValue(0.0);
-    props.globals.getNode("instrumentation/kx155a/commvol-norm", 1).setDoubleValue(0.0);
-    props.globals.getNode("instrumentation/kx155a/navvol-norm", 1).setDoubleValue(0.0);
+    props.globals.getNode("/instrumentation/uhf/commvol-norm", 1).setDoubleValue(0.0);
+    props.globals.getNode("/instrumentation/kn53/navvol-norm", 1).setDoubleValue(0.0);
+    props.globals.getNode("/instrumentation/kx155a/commvol-norm", 1).setDoubleValue(0.0);
+    props.globals.getNode("/instrumentation/kx155a/navvol-norm", 1).setDoubleValue(0.0);
 
+ 
     instrumenttimer();
     # Finished Initialising
     print ("Instruments : initialised");

@@ -2,7 +2,7 @@
 
 <PropertyList>
 
-   <path>front-panel.ac</path>
+  <path>front-panel.ac</path>
 
   <!-- Altimètre -->
   <model>
@@ -11,6 +11,15 @@
       <x-m>  0.000 </x-m>
       <y-m> -0.135 </y-m>
       <z-m>  0.069 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Lionceau/Models/Panel/Instruments/LX500/LX500.xml</path>
+    <offsets>
+      <x-m>  0.002 </x-m>
+      <y-m> -0.051 </y-m>
+      <z-m> -0.022 </z-m>
     </offsets>
   </model>
 
@@ -84,7 +93,17 @@
     </offsets>
   </model>
 
-  <!-- magnetic compass -->
+  <!-- GPS LX500 -->
+<!--  <model>
+    <path>Aircraft/Lionceau/Models/Panel/Instruments/LX500/LX500.xml</path>
+    <offsets>
+      <x-m>  0.003 </x-m>
+      <y-m> -0.050 </y-m>
+      <z-m> -0.022 </z-m>
+    </offsets>
+  </model> -->
+
+<!-- magnetic compass -->
   <model>
     <path>Aircraft/Lionceau/Models/Panel/Instruments/MagneticCompass/MagneticCompass.xml</path>
     <offsets>
@@ -271,14 +290,6 @@
   <!-- end of breakers section -->
 
   <!-- fuel faucet -->
-  <model>
-    <path>Aircraft/Lionceau/Models/Panel/Instruments/fuelfaucet/fuel.xml</path>
-    <offsets>
-      <x-m>  0.000 </x-m>
-      <y-m> -0.060 </y-m>
-      <z-m> -0.050 </z-m>
-    </offsets>
-  </model>
 
 </PropertyList>
 
