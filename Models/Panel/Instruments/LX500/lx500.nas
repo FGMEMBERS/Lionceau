@@ -70,6 +70,13 @@ var screenModeAndSettings = { # screen for changing the GPS mode and settings
     mode : func {
 	if (me.settings == 0) me.mode_ = cycle_entries(4, me.mode_, arg[0]);
     },
+    dispatch: func {
+	if    (mode == 0) displayed_screen = 0; #screenPositionMain
+	elsif (mode == 1) displayed_screen = 4; #screenAirportMain
+	elsif (mode == 2) displayed_screen = 7; #screenWaypointEdit
+	else              displayed_screen = 2; #screenTaskSelect
+	me.settings = 0;
+    },
     enter : func {
 	if (!me.help) {
 	    display ([
@@ -85,16 +92,13 @@ var screenModeAndSettings = { # screen for changing the GPS mode and settings
     },
     escape : func {
 	if (me.help) me.quit_help();
+	else me.dispatch();
     },
     start : func {
 	if (me.help) me.quit_help();
 	else {
 	    mode = me.mode_;
-	    if    (mode == 0) displayed_screen = 0; #screenPositionMain
-	    elsif (mode == 1) displayed_screen = 4; #screenAirportMain
-	    elsif (mode == 2) displayed_screen = 7; #screenWaypointEdit
-	    else              displayed_screen = 2; #screenTaskSelect
-	me.settings = 0;
+	    me.dispatch();
 	}
     },
     lines : func {
@@ -136,14 +140,35 @@ var screenPositionMain = { # screens for POSITION mode
     page : 0,
     begin_time : 0,
     elapsed : 0,
+    reset_edit_page : func {
+	me.coord = [0,0,0,0,0];
+	me.map = ["-","-","-","-","-"];
+	me.step = 0;
+	me.value = 0;
+    },
     nav_rl : func {
-	me.page = 0;
 	if (mode == 3) displayed_screen = 1; #screenNavigationMain
+	elsif (me.page == 3) {
+	    me.value = cycle_entries(size(screenWaypointEdit.alphanum), me.value, arg[0]);
+	    me.map[me.step] = screenWaypointEdit.alphanum[me.value];
+	}
     },
     nav_ud : func {
-	me.page = cycle_entries(3, me.page, arg[0]);
+	if (me.page < 3) me.page = cycle_entries(3, me.page, arg[0]);
     },
     enter : func {
+	if (me.page == 0 and mode == 0) {
+	    me.reset_edit_page();
+	    me.coord[0] = props.globals.getNode("/position/latitude-string",1).getValue();
+	    me.coord[1] = props.globals.getNode("/position/longitude-string",1).getValue();
+	    me.coord[2] = gps_data.getNode("indicated-altitude-ft",1).getValue();
+	    me.coord[3] = gps_data.getNode("indicated-latitude-deg",1).getValue();
+	    me.coord[4] = gps_data.getNode("indicated-longitude-deg",1).getValue();
+	    me.page = 3;
+	}
+	elsif (me.page == 3) {
+	    me.step = cycle_entries(size(me.map), me.step, 1);
+	}
     },
     escape : func {
 	if (me.page == 1) {
@@ -151,8 +176,21 @@ var screenPositionMain = { # screens for POSITION mode
 	    me.begin_time = props.globals.getNode("/sim/time/elapsed-sec",1).getValue();
 	    gps_data.getNode("odometer",1).setDoubleValue(0.0);
 	}
+	elsif (me.page == 3) me.page = 0;
     },
     start : func {
+	if (me.page == 3) {
+	    var id = "";
+	    for (var i = 0; i < size(me.map); i += 1) 
+		if (me.map[i] != "-") id ~= me.map[i];
+	    print(id);
+	    size(id) > 0 or return;
+	    gps_wp.getNode("wp[1]/ID",1).setValue(id);
+	    gps_wp.getNode("wp[1]/altitude-ft",1).setValue(me.coord[2]);
+	    gps_wp.getNode("wp[1]/latitude-deg",1).setValue(me.coord[3]);
+	    gps_wp.getNode("wp[1]/longitude-deg",1).setValue(me.coord[4]);
+	    gps_wp.getNode("wp[1]/Add-to-route",1).setValue(1);
+	}
     },
     odotime : func {
 	me.elapsed = props.globals.getNode("/sim/time/elapsed-sec",1).getValue() - me.begin_time;
@@ -210,6 +248,19 @@ var screenPositionMain = { # screens for POSITION mode
 		"FROM: ---*",
 		"", 
 		"" 
+	    ]);
+	}
+	elsif (me.page == 3) {
+	    display([
+	    "EDIT WAYPOINT ID:",
+	    sprintf(">%s%s%s%s%s",
+		me.map[0], me.map[1], me.map[2], me.map[3], me.map[4]),
+	    sprintf("LAT: %s", 
+		me.coord[0]),
+	    sprintf("LON: %s",
+		me.coord[1]),
+	    sprintf("ALT: %d %s",
+		me.coord[2]*alt_conv[0][alt_unit],alt_unit_short_name[alt_unit])
 	    ]);
 	}
     }
@@ -356,7 +407,7 @@ var screenNavigationMain = {
     },
     lines : func {
 	me.waypoint = gps_wp.getNode("wp[1]",1);
-	crs_deviation = gps_wp.getNode("leg-course-deviation-deg").getValue();
+	crs_deviation = gps_wp.getNode("leg-course-deviation-deg",1).getValue();
 	if (crs_deviation > 5)
 	    me.graph = "[- - - - - T > > > > >]";
 	elsif (crs_deviation < -5)
@@ -367,8 +418,8 @@ var screenNavigationMain = {
 	    me.graph = substr(me.graph,0, cursor) ~ "i" ~ substr(me.graph, cursor+1, size(me.graph));
 	}
 	display ([
-	sprintf("ID: ",
-	    me.waypoint.getNode("ID").getValue() != nil ? me.waypoint.getNode("ID").getValue() : "WP NOT NAMED!"),
+	sprintf("ID: %s",
+	    me.waypoint.getNode("ID",1).getValue() != nil ? me.waypoint.getNode("ID",1).getValue() : "WP NOT NAMED!"),
 	sprintf("BRG: %d* DST: %d %s",
 	    me.waypoint.getNode("bearing-mag-deg",1).getValue(),
 	    me.waypoint.getNode("distance-nm",1).getValue() * dist_conv[0][dist_unit],
@@ -399,7 +450,7 @@ var screenTaskSelect = {
 	me.page = cycle_entries(np, me.page, arg[0]);
     },
     load : func {
-        props.globals.getNode("/instrumentation/gps/route").removeChildren("Waypoint");
+        gps_data.getNode("route",1).removeChildren("Waypoint");
 	fgcommand("loadxml", props.Node.new({
             "filename": getprop("/sim/fg-home") ~ "/Routes/" ~ routes[(me.page * 5) + me.pointer],
             "targetnode": "/instrumentation/gps/route"
@@ -640,18 +691,14 @@ var switch_ON_OFF = func() {
 
 var refresh_display = func() {
     screen[displayed_screen].lines();
-    if (isOn and displayed_screen < 2) 
-	settimer(func { refresh_display() }, freq, 1);
-    if (mode > 2)
-	settimer(func {
-	}, freq, 1);
+    if (isOn and displayed_screen < 2) settimer(func { refresh_display() }, freq, 1);
 }
 
 var seconds_to_string = func (time) {
     var hh = int(time / 3600);
     if (hh > 100) return "--:--:--";
-    var mm = int(time - (hh * 3600)) / 60;
-    var ss = int(time - (hh * 3600) - (mm * 60));
+    var mm = int((time - (hh * 3600)) / 60);
+    var ss = int(time - (hh * 3600 + mm * 60));
     return sprintf("%02d:%02d:%02d", hh, mm, ss);
 }
 
@@ -689,6 +736,7 @@ var init = func() {
     append(screen, screenAirportInfos);    #5
     append(screen, screenModeAndSettings); #6
     append(screen, screenWaypointEdit);    #7
+    #append(screen, screenSearchingSats);   #8
     aircraft.light.new("/sim/model/gps/redled", [0.1, 0.1, 0.1, 0.7], "/instrumentation/gps/waypoint-alert");
     aircraft.light.new("/sim/model/gps/greenled", [0.6, 0.3], "/instrumentation/gps/message-alert");
     startpos = geo.Coord.new(geo.aircraft_position());
