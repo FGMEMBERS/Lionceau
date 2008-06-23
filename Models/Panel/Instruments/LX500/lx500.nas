@@ -206,7 +206,7 @@ var screenPositionMain = { # screens for POSITION mode
 	    sprintf("ALT: %d %s", 
 		gps_data.getNode("indicated-altitude-ft").getValue() * alt_conv[0][alt_unit],
 		alt_unit_short_name[alt_unit]),
-	    sprintf("HDG: %d *", 
+	    sprintf("HDG: %d°", 
 		gps_data.getNode("indicated-track-true-deg").getValue()),
 	    sprintf("SPD: %d %s", 
 		gps_data.getNode("indicated-ground-speed-kt").getValue() * dist_conv[0][spd_unit],
@@ -298,8 +298,11 @@ var screenAirportMain = {
     start : func {
 	me.apt_to_waypoint();
     },
-    lines : func {
-	apt = airportinfo();
+    lines : func (searched = nil) {
+	if (searched != nil)
+	    apt = searched;
+	else
+	    apt = airportinfo();
 	glide_slope_tunnel.complement_runways(apt);
 	var rwy = glide_slope_tunnel.best_runway(apt);
 	me.pos = geo.Coord.new(geo.aircraft_position());
@@ -307,10 +310,10 @@ var screenAirportMain = {
 	var ac_to_apt = [me.pos.distance_to(me.apt_coord), me.pos.course_to(me.apt_coord)];
 	var ete = ac_to_apt[0] / getprop("instrumentation/gps/indicated-ground-speed-kt") * 3600 * 1852;
 	display([
-	sprintf("NEAREST AIRPORT: %s", apt.id),
+	sprintf("%s APT: %s", searched != nil ? "SEARCHED" : "NEAREST", apt.id),
 	sprintf("ELEV: %d %s", apt.elevation * alt_conv[1][alt_unit],alt_unit_short_name[alt_unit]),
 	sprintf("DIST: %d %s",ac_to_apt[0] * dist_conv[2][dist_unit],dist_unit_short_name[dist_unit]),
-	sprintf("BRG: %d*    RWY: %02d",ac_to_apt[1], int(rwy.heading) / 10),
+	sprintf("BRG: %d°    RWY: %02d",ac_to_apt[1], int(rwy.heading) / 10),
 	sprintf("ETE: %s",seconds_to_string(ete))
 	]);
     }
@@ -354,7 +357,7 @@ var screenAirportInfos = {
 
 var screenATCinRange = {
     nav_rl : func {
-	displayed_screen = 4;# screenAirportMain
+	displayed_screen = 8;# screenSearchAirport
     },
     nav_ud : func {
     },
@@ -367,6 +370,50 @@ var screenATCinRange = {
     lines : func {
 	fgcommand("ATC-freq-search");
 	display(NOT_YET_IMPLEMENTED);
+    }
+};
+
+var screenSearchAirport = {
+    oaci : ["-","-","-","-"],
+    pointer: 0,
+    value: 0,
+    searched: nil,
+    nav_rl : func {
+	me.escape();
+	displayed_screen = 4;# screenAirportMain
+    },
+    nav_ud : func {
+	me.value = cycle_entries(size(screenWaypointEdit.alphanum), me.value, arg[0]);
+	me.oaci[me.pointer] = screenWaypointEdit.alphanum[me.value];
+    },
+    enter : func {
+	if (me.pointer < 3) { 
+	    me.pointer += 1;
+	    me.value = 0;
+	}
+	else 
+	    me.searched = airportinfo(me.oaci[0]~me.oaci[1]~me.oaci[2]~me.oaci[3]);
+    },
+    escape : func {
+	me.oaci = ["-","-","-","-"];
+	me.pointer = 0;
+	me.searched = nil;
+    },
+    start : func {
+    },
+    lines : func {
+	if (me.searched == nil)
+	    display([
+	    "SEARCH AIRPORT:",
+	    sprintf("%s%s%s%s",me.oaci[0],me.oaci[1],me.oaci[2],me.oaci[3]),
+	    "",
+	    "",
+	    ""
+	    ]);
+	else {
+	    screenAirportMain.lines(me.searched);
+	    me.nav_rl();
+	}
     }
 };
 
@@ -409,18 +456,18 @@ var screenNavigationMain = {
 	me.waypoint = gps_wp.getNode("wp[1]",1);
 	crs_deviation = gps_wp.getNode("leg-course-deviation-deg",1).getValue();
 	if (crs_deviation > 5)
-	    me.graph = "[- - - - - T > > > > >]";
+	    me.graph = "[- - - - - ^ > > > > >]";
 	elsif (crs_deviation < -5)
-	    me.graph = "[< < < < < T - - - - -]";
+	    me.graph = "[< < < < < ^ - - - - -]";
 	else {
-	    me.graph = "[+ + + + + T + + + + +]";
+	    me.graph = "[+ + + + + ^ + + + + +]";
 	    cursor = int((crs_deviation * 2) + 11);
-	    me.graph = substr(me.graph,0, cursor) ~ "i" ~ substr(me.graph, cursor+1, size(me.graph));
+	    me.graph = substr(me.graph,0, cursor) ~ "|" ~ substr(me.graph, cursor+1, size(me.graph));
 	}
 	display ([
 	sprintf("ID: %s",
 	    me.waypoint.getNode("ID",1).getValue() != nil ? me.waypoint.getNode("ID",1).getValue() : "WP NOT NAMED!"),
-	sprintf("BRG: %d* DST: %d %s",
+	sprintf("BRG: %d°  DST: %d %s",
 	    me.waypoint.getNode("bearing-mag-deg",1).getValue(),
 	    me.waypoint.getNode("distance-nm",1).getValue() * dist_conv[0][dist_unit],
 	    dist_unit_short_name[dist_unit]),
@@ -433,6 +480,75 @@ var screenNavigationMain = {
 	me.graph
 	]);
 
+    }
+};
+
+var screenWaypointInfos = {
+    info: 0,
+    wp_list_page: 0,
+    index: 0,
+    content: 0,
+    list: ["", "", "", "", ""],
+    displayed_lines: -1,
+    nav_rl : func {
+	if (me.content == 2) {
+	    if (arg[0] > 0 and me.index < me.displayed_lines)
+		me.index += 1;
+	    elsif (arg[0] > 0 and me.index == me.displayed_line) {
+		if (gps_data.getNode("route/Waypoint["~(me.page+1)*5~"]",1) != nil) {
+		    me.page += 1;
+		    me.index = 0;
+		}
+		else {
+		    me.page = 0;
+		    me.index = 0;
+		}
+		me.displayed_lines = -1;
+	    }
+	    elsif (arg[0] < 0 and me.index > 0)
+		me.index -= 1;
+	    elsif (arg[0] < 0 and me.page > 0) {
+		me.page -= 1;
+		me.index = 4;
+	    }
+	}
+    },
+    nav_ud: func {
+	if (me.content == 3) {
+	    me.content = 0;
+	    displayed_screen = 1; #screenNavigationMain
+	}
+	else
+	    me.content = cycle_entries(3, me.content, arg[0]);
+    },
+    enter: func {
+    },
+    escape: func {
+    },
+    start: func {
+    },
+    lines: func {
+	if (me.content == 0) { #route infos
+	    display(NOT_YET_IMPLEMENTED);
+	}
+	elsif (me.content == 1) { #leg infos
+	    display(NOT_YET_IMPLEMENTED);
+	}
+	elsif (me.content == 2) { #waypoint list
+	    for (var i = me.page * 5; i < (me.page+1)*5; i += 1) {
+		var id = gps_data.getNode("route/Waypoint["~i~"]/ID",1);
+		if (id != nil) {
+		    me.list[i-(me.page*5)] = (i-(me.page*5) == me.index ? ">" : " ") ~ id.getValue();
+		    me.displayed_lines += 1;
+		}
+		else
+		    me.list[i-(me.page*5)] = "";
+	    }
+	    display(me.list);
+	}
+	elsif (me.content == 3) { #waypoint infos
+	    display(NOT_YET_IMPLEMENTED);
+	}
     }
 };
 
@@ -736,7 +852,7 @@ var init = func() {
     append(screen, screenAirportInfos);    #5
     append(screen, screenModeAndSettings); #6
     append(screen, screenWaypointEdit);    #7
-    #append(screen, screenSearchingSats);   #8
+    append(screen, screenSearchAirport);   #8
     aircraft.light.new("/sim/model/gps/redled", [0.1, 0.1, 0.1, 0.7], "/instrumentation/gps/waypoint-alert");
     aircraft.light.new("/sim/model/gps/greenled", [0.6, 0.3], "/instrumentation/gps/message-alert");
     startpos = geo.Coord.new(geo.aircraft_position());

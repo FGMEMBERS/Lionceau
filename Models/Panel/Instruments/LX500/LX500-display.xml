@@ -16,8 +16,8 @@
         </equals>
       </condition>
       <type>text</type>
-      <font>courier-bold</font>
-      <point-size>12</point-size>
+      <font>lcd</font>
+      <point-size>6</point-size>
       <color>
         <red>0</red>
         <green>0</green>
@@ -42,8 +42,8 @@
         </equals>
       </condition>
       <type>text</type>
-      <font>courier-bold</font>
-      <point-size>12</point-size>
+      <font>lcd</font>
+      <point-size>6</point-size>
       <color>
         <red>0</red>
         <green>0</green>
@@ -74,8 +74,8 @@
         </equals>
       </condition>
       <type>text</type>
-      <font>courier-bold</font>
-      <point-size>12</point-size>
+      <font>lcd</font>
+      <point-size>6</point-size>
       <color>
         <red>0</red>
         <green>0</green>
@@ -106,8 +106,8 @@
         </equals>
       </condition>
       <type>text</type>
-      <font>courier-bold</font>
-      <point-size>12</point-size>
+      <font>lcd</font>
+      <point-size>6</point-size>
       <color>
         <red>0</red>
         <green>0</green>
@@ -138,8 +138,8 @@
         </equals>
       </condition>
       <type>text</type>
-      <font>courier-bold</font>
-      <point-size>12</point-size>
+      <font>lcd</font>
+      <point-size>6</point-size>
       <color>
         <red>0</red>
         <green>0</green>
@@ -170,8 +170,8 @@
         </equals>
       </condition>
       <type>text</type>
-      <font>courier-bold</font>
-      <point-size>12</point-size>
+      <font>lcd</font>
+      <point-size>6</point-size>
       <color>
         <red>0</red>
         <green>0</green>
@@ -206,7 +206,7 @@
         </equals>
       </condition>
       <type>text</type>
-      <font>courier-bold</font>
+      <font>lcd</font>
       <point-size>6</point-size>
       <color>
         <red>0</red>
