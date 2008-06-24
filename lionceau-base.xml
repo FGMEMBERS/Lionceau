@@ -10,9 +10,9 @@
 
     <fuel-fraction>0.75</fuel-fraction>
 
-<!--       <setting>0.50</setting> -->
     <flaps>
       <setting>0.00</setting>
+      <setting>0.50</setting>
       <setting>1.00</setting>
     </flaps>
 

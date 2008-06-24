@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>Flaps.ac</path>
+
+  <animation>
+    <type>material</type>
+    <object-name>Face</object-name>
+    <object-name>PtrL</object-name>   
+    <emission>
+      <red>1.0</red>
+      <green>0.2</green>
+      <blue>0.0</blue>
+      <factor-prop>/controls/lighting/instruments-norm</factor-prop>
+    </emission>
+  </animation>
+
+  <animation> 
+    <type>rotate</type>
+    <object-name>PtrL</object-name>
+    <property>/surface-positions/flap-pos-norm</property>
+    <interpolation>
+     <entry><ind>0</ind><dep> 0</dep></entry>
+     <entry><ind>1</ind><dep>90</dep></entry>
+    </interpolation>
+    <axis> 
+      <x>-1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+    <center>
+      <x-m> -0.007 </x-m>
+      <y-m> -0.009 </y-m>
+      <z-m>  0.008 </z-m>
+    </center>
+  </animation>
+
+</PropertyList>

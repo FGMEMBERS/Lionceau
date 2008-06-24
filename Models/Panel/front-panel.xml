@@ -133,6 +133,16 @@
     </offsets>
   </model>
 
+  <!-- Flaps position -->
+  <model>
+    <path>Aircraft/Lionceau/Models/Panel/Instruments/Flaps/Flaps.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.089 </y-m>
+      <z-m> 0.075 </z-m>
+    </offsets>
+  </model>
+
   <!-- fuel pressure and quantity -->
   <model>
     <path>Aircraft/Lionceau/Models/Panel/Instruments/FuelGauge/FuelGauge.xml</path>
