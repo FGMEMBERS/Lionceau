@@ -71,6 +71,12 @@
     <object-name>verriere2</object-name>
     <object-name>propdisc</object-name>
     <object-name>propblur</object-name>
+
+    <!-- Immatriculations -->
+    <object-name>ImatWingL-Bottom</object-name>
+    <object-name>ImatWingR-Up</object-name>
+    <object-name>ImatFuselageL</object-name>
+    <object-name>ImatFuselageR</object-name>
   </animation>
 
   <animation>
@@ -114,6 +120,7 @@
     <object-name>machoireD</object-name>
     <object-name>cacheH</object-name>
     <object-name>cacheB</object-name>
+
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
     <texture>texture.png</texture>
