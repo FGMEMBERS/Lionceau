@@ -71,12 +71,6 @@
     <object-name>verriere2</object-name>
     <object-name>propdisc</object-name>
     <object-name>propblur</object-name>
-
-    <!-- Immatriculations -->
-    <object-name>ImatWingL-Bottom</object-name>
-    <object-name>ImatWingR-Up</object-name>
-    <object-name>ImatFuselageL</object-name>
-    <object-name>ImatFuselageR</object-name>
   </animation>
 
   <animation>
@@ -125,6 +119,16 @@
     <texture-prop>texture</texture-prop>
     <texture>texture.png</texture>
   </animation>
+
+  <!-- Immatriculation -->
+  <model>
+    <path>Aircraft/Lionceau/Models/imat.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.000 </z-m>
+    </offsets>
+  </model>
 
   <!-- Pilote -->
   <model>
