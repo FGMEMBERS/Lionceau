@@ -1,4 +1,4 @@
-English/FranÃ§ais
+English/Français
 
 [English]
 ----------
@@ -29,7 +29,7 @@ d : canopy
 Thanks
 ======
 
-SÃ©bastien MARQUE for the FDM and the panel
+Sébastien MARQUE for the FDM and the panel
 Pierre GEOFFROY for the new FDM
 Laurent HAYVEL for the new livrery
 
@@ -42,7 +42,7 @@ http://helijah.free.fr/flightgear/hangar.htm
 embaranger@free.fr
 
 
-[FranÃ§ais]
+[Français]
 ----------
 
 Un peu d'histoire
@@ -53,13 +53,13 @@ Lionceau APM 20
 
 Constructeur                  : Issoire Aviation
 Type                          : avion Ã©cole
-AnnÃ©e                         : 1999
+Année                         : 1999
 Moteur                        : Rotax 912 A2 (80ch)
 Envergure                     : 8.60 m
 Longueur                      : 6.60 m
 Hauteur                       : 2.40 m
-Poids max au dÃ©collage        : 634 kg
-Vitesse estimÃ©e de croisiÃ¨re  : 210 km/h
+Poids max au décollage        : 634 kg
+Vitesse estimée de croisière  : 210 km/h
 Autonomie estimÃ©e             : 4 h
 Equipage                      : 2
 
@@ -72,14 +72,14 @@ d : cockpit
 Remerciements
 =============
 
-SÃ©bastien MARQUE pour le FDM et le tableau de bord
-Pierre GEOFFROY pour le nouveau modÃ¨le de vol
-Laurent HAYVEL pour la nouvelle livrÃ©e
+Sébastien MARQUE pour le FDM et le tableau de bord
+Pierre GEOFFROY pour le nouveau modèle de vol
+Laurent HAYVEL pour la nouvelle livrée
 
 ===============
 BARANGER Emmanuel
-04 AoÃ»t 2007.
-16 DÃ©cembre 2007.
+04 Août 2007.
+16 Décembre 2007.
 
 http://helijah.free.fr/flightgear/hangar.htm
 embaranger@free.fr

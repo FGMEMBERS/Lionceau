@@ -122,7 +122,7 @@
 
   <!-- Immatriculation -->
   <model>
-    <path>Aircraft/Lionceau/Models/imat.xml</path>
+    <path>Aircraft/Lionceau/Models/Immat/immat.xml</path>
     <offsets>
       <x-m> 0.000 </x-m>
       <y-m> 0.000 </y-m>

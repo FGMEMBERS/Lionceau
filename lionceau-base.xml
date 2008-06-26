@@ -37,6 +37,14 @@
 
     <multiplay>
       <chat_display>1</chat_display>
+      <generic>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+      </generic>
     </multiplay>
 
     <help>
@@ -62,21 +70,7 @@
       <max-lb>45</max-lb>
     </weight>
 
-    <menubar>
-      <default>
-        <menu n="10">
-          <label>APM 20 Lionceau</label>
-          <enabled type="bool">true</enabled>
-          <item>
-            <label>Select Livery</label>
-            <binding>
-              <command>nasal</command>
-              <script>aircraft.livery.dialog.toggle()</script>
-          </binding>
-          </item>
-        </menu>
-      </default>
-    </menubar>
+    <menubar include="Dialogs/lionceau-menu.xml"/>
 
   </sim>
 
@@ -101,6 +95,7 @@
       <file>Aircraft/Lionceau/Nasal/action.nas</file>
       <file>Aircraft/Lionceau/Nasal/fluids.nas</file>
       <file>Aircraft/Lionceau/Nasal/liveries.nas</file>
+      <file>Aircraft/Lionceau/Nasal/immat.nas</file>
     </lionceau>
     <lx500>
       <file>Aircraft/Lionceau/Models/Panel/Instruments/LX500/lx500.nas</file>
