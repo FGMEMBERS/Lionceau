@@ -144,7 +144,7 @@
   <animation> 
     <type>textranslate</type> 
     <object-name>ImatFuselageR1</object-name> 
-    <property>sim/multiplay/generic/int[5]</property>
+    <property>sim/multiplay/generic/int[0]</property>
     <factor> 0.0244140625 </factor>
     <axis> 
       <x> 1 </x> 
@@ -156,42 +156,6 @@
   <animation> 
     <type>textranslate</type> 
     <object-name>ImatFuselageR2</object-name> 
-    <property>sim/multiplay/generic/int[4]</property>
-    <factor> 0.0244140625 </factor>
-    <axis> 
-      <x> 1 </x> 
-      <y> 0 </y> 
-      <z> 0 </z> 
-    </axis> 
-  </animation>
-
-  <animation> 
-    <type>textranslate</type> 
-    <object-name>ImatFuselageR3</object-name> 
-    <property>sim/multiplay/generic/int[3]</property>
-    <factor> 0.0244140625 </factor>
-    <axis> 
-      <x> 1 </x> 
-      <y> 0 </y> 
-      <z> 0 </z> 
-    </axis> 
-  </animation>
-
-  <animation> 
-    <type>textranslate</type> 
-    <object-name>ImatFuselageR4</object-name> 
-    <property>sim/multiplay/generic/int[2]</property>
-    <factor> 0.0244140625 </factor>
-    <axis> 
-      <x> 1 </x> 
-      <y> 0 </y> 
-      <z> 0 </z> 
-    </axis> 
-  </animation>
-
-  <animation> 
-    <type>textranslate</type> 
-    <object-name>ImatFuselageR5</object-name> 
     <property>sim/multiplay/generic/int[1]</property>
     <factor> 0.0244140625 </factor>
     <axis> 
@@ -203,8 +167,44 @@
 
   <animation> 
     <type>textranslate</type> 
+    <object-name>ImatFuselageR3</object-name> 
+    <property>sim/multiplay/generic/int[2]</property>
+    <factor> 0.0244140625 </factor>
+    <axis> 
+      <x> 1 </x> 
+      <y> 0 </y> 
+      <z> 0 </z> 
+    </axis> 
+  </animation>
+
+  <animation> 
+    <type>textranslate</type> 
+    <object-name>ImatFuselageR4</object-name> 
+    <property>sim/multiplay/generic/int[3]</property>
+    <factor> 0.0244140625 </factor>
+    <axis> 
+      <x> 1 </x> 
+      <y> 0 </y> 
+      <z> 0 </z> 
+    </axis> 
+  </animation>
+
+  <animation> 
+    <type>textranslate</type> 
+    <object-name>ImatFuselageR5</object-name> 
+    <property>sim/multiplay/generic/int[4]</property>
+    <factor> 0.0244140625 </factor>
+    <axis> 
+      <x> 1 </x> 
+      <y> 0 </y> 
+      <z> 0 </z> 
+    </axis> 
+  </animation>
+
+  <animation> 
+    <type>textranslate</type> 
     <object-name>ImatFuselageR6</object-name> 
-    <property>sim/multiplay/generic/int[0]</property>
+    <property>sim/multiplay/generic/int[5]</property>
     <factor> 0.0244140625 </factor>
     <axis> 
       <x> 1 </x> 
