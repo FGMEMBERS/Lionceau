@@ -65,6 +65,7 @@
     <object-name>cacheB</object-name>
     <object-name>cableH</object-name>
     <object-name>cableB</object-name>
+    <object-name>plaque</object-name>
 
     <!-- Objets transparents -->
     <object-name>verriere</object-name>
