@@ -70,7 +70,7 @@
       <max-lb>45</max-lb>
     </weight>
 
-    <menubar include="Dialogs/lionceau-menu.xml"/>
+    <menubar include="Gui/lionceau-menu.xml"/>
 
   </sim>
 
