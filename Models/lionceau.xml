@@ -66,12 +66,15 @@
     <object-name>cableH</object-name>
     <object-name>cableB</object-name>
     <object-name>plaque</object-name>
+    <object-name>lampes</object-name>
 
     <!-- Objets transparents -->
     <object-name>verriere</object-name>
     <object-name>verriere2</object-name>
     <object-name>propdisc</object-name>
     <object-name>propblur</object-name>
+    <object-name>lampeG</object-name>
+    <object-name>lampeD</object-name>
   </animation>
 
   <animation>
@@ -552,6 +555,28 @@
       <z> 0.034530 </z>
     </axis>
   </animation>
+
+  <!-- Lumière rouge -->
+  <model>
+    <name>LeftLight</name>
+    <path>Aircraft/Lionceau/Models/lights/RedLight.xml</path>
+    <offsets>
+      <x-m> -0.857 </x-m>
+      <y-m> -4.311 </y-m>
+      <z-m> -0.311 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Lumière verte -->
+  <model>
+    <name>RightLight</name>
+    <path>Aircraft/Lionceau/Models/lights/GreenLight.xml</path>
+    <offsets>
+      <x-m> -0.857 </x-m>
+      <y-m>  4.311 </y-m>
+      <z-m> -0.311 </z-m>
+    </offsets>
+  </model>
 
 </PropertyList>
 

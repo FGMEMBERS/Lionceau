@@ -20,7 +20,7 @@ var refresh_immat = func {
 }
 
 var immat_dialog = gui.Dialog.new("/sim/gui/dialogs/lionceau/status/dialog",
-				  "Aircraft/Lionceau/Dialogs/immat.xml");
+				  "Aircraft/Lionceau/Gui/immat.xml");
 
 if (props.globals.getNode("/sim/model/immat") == nil)
     props.globals.getNode("/sim/model/immat",1).setValue("f-lhbl");

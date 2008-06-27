@@ -56,48 +56,48 @@
 
   <animation>
     <type>pick</type>
-    <object-name>knob.UPDOWN</object-name>
+    <object-name>knob.LEFT</object-name>
     <visible>true</visible>
     <action>
-      <name>select UP</name> 
+      <name>next menu</name> 
       <button>0</button>
       <repeatable>false</repeatable>
       <binding>
         <command>nasal</command>
-	<script>lx500.nav_ud(1)</script>
+	<script>lx500.left_knob(1)</script>
       </binding>
     </action>
     <action>
-      <name>select DOWN</name> 
-      <button>1</button>
+      <name>previous menu</name> 
+      <button>2</button>
       <repeatable>false</repeatable>
       <binding>
         <command>nasal</command>
-	<script>lx500.nav_ud(-1)</script>
+	<script>lx500.left_knob(-1)</script>
       </binding>
     </action>
   </animation>
  
   <animation>
     <type>pick</type>
-    <object-name>knob.RIGHTLEFT</object-name>
+    <object-name>knob.RIGHT</object-name>
     <visible>true</visible>
     <action>
-      <name>select RIGHT</name> 
+      <name>next item</name> 
       <button>0</button>
       <repeatable>false</repeatable>
       <binding>
         <command>nasal</command>
-	<script>lx500.nav_rl(1)</script>
+	<script>lx500.right_knob(1)</script>
       </binding>
     </action>
     <action>
-      <name>select LEFT</name> 
-      <button>1</button>
+      <name>previous item</name> 
+      <button>2</button>
       <repeatable>false</repeatable>
       <binding>
         <command>nasal</command>
-	<script>lx500.nav_rl(-1)</script>
+	<script>lx500.right_knob(-1)</script>
       </binding>
     </action>
   </animation>
@@ -117,7 +117,7 @@
     </action>
     <action>
       <name>select previous mode</name> 
-      <button>1</button>
+      <button>2</button>
       <repeatable>false</repeatable>
       <binding>
         <command>nasal</command>
