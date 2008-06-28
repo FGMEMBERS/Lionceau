@@ -16,7 +16,7 @@
 
   <!-- GPS -->
   <model>
-    <path>Aircraft/Lionceau/Models/Panel/Instruments/LX500/LX500.xml</path>
+    <path>Aircraft/Instruments-3d/zkv500/ZKV500.xml</path>
     <offsets>
       <x-m>  0.002 </x-m>
       <y-m> -0.051 </y-m>

@@ -97,13 +97,13 @@
       <file>Aircraft/Lionceau/Nasal/liveries.nas</file>
       <file>Aircraft/Lionceau/Nasal/immat.nas</file>
     </lionceau>
-    <lx500>
-      <file>Aircraft/Lionceau/Models/Panel/Instruments/LX500/lx500.nas</file>
-      <file>Aircraft/Lionceau/Models/Panel/Instruments/LX500/MainScreens.nas</file>
-      <file>Aircraft/Lionceau/Models/Panel/Instruments/LX500/TurnpointScreens.nas</file>
-      <file>Aircraft/Lionceau/Models/Panel/Instruments/LX500/TaskScreens.nas</file>
-      <file>Aircraft/Lionceau/Models/Panel/Instruments/LX500/AirportScreens.nas</file>
-    </lx500>
+    <zkv500>
+      <file>Aircraft/Instruments-3d/zkv500/ZKV500.nas</file>
+      <file>Aircraft/Instruments-3d/zkv500/MainScreens.nas</file>
+      <file>Aircraft/Instruments-3d/zkv500/TurnpointScreens.nas</file>
+      <file>Aircraft/Instruments-3d/zkv500/TaskScreens.nas</file>
+      <file>Aircraft/Instruments-3d/zkv500/AirportScreens.nas</file>
+    </zkv500>
   </nasal>
 
 </PropertyList>
