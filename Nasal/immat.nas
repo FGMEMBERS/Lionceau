@@ -22,12 +22,14 @@ var refresh_immat = func {
 var immat_dialog = gui.Dialog.new("/sim/gui/dialogs/lionceau/status/dialog",
 				  "Aircraft/Lionceau/Gui/immat.xml");
 
-if (props.globals.getNode("/sim/model/immat") == nil) {
-  var immat = props.globals.getNode("/sim/model/immat",1);
-  var callsign = props.globals.getNode("/sim/multiplay/callsign").getValue();
-  if (callsign != "callsign") immat.setValue(callsign.getValue());
+setlistener("/sim/signals/fdm-initialized", func {
+  if (props.globals.getNode("/sim/model/immat") == nil) {
+    var immat = props.globals.getNode("/sim/model/immat",1);
+    var callsign = props.globals.getNode("/sim/multiplay/callsign");
+    if (callsign != "callsign") immat.setValue(callsign.getValue());
   else immat.setValue("F-LHBL");
-}
+  }
+  refresh_immat();
+  setlistener("sim/model/immat", refresh_immat, 0);
+},0);
 
-refresh_immat();
-setlistener("sim/model/immat", refresh_immat, 0);
