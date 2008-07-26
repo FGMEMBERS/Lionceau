@@ -70,7 +70,7 @@
       <max-lb>45</max-lb>
     </weight>
 
-    <menubar include="Gui/lionceau-menu.xml"/>
+    <menubar include="Dialogs/lionceau-menu.xml"/>
 
   </sim>
 
@@ -99,10 +99,6 @@
     </lionceau>
     <zkv500>
       <file>Aircraft/Instruments-3d/zkv500/ZKV500.nas</file>
-      <file>Aircraft/Instruments-3d/zkv500/MainScreens.nas</file>
-      <file>Aircraft/Instruments-3d/zkv500/TurnpointScreens.nas</file>
-      <file>Aircraft/Instruments-3d/zkv500/TaskScreens.nas</file>
-      <file>Aircraft/Instruments-3d/zkv500/AirportScreens.nas</file>
     </zkv500>
   </nasal>
 

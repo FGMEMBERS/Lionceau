@@ -14,8 +14,8 @@ numsurf 0
 kids 0
 OBJECT poly
 name "ImatFuselageL1"
-data 18
-ImatFuselageL1.002
+data 14
+ImatFuselageL1
 texture "immat.png"
 texrep 1 1
 crease 30.000000
@@ -53,8 +53,8 @@ refs 4
 kids 0
 OBJECT poly
 name "ImatFuselageL2"
-data 18
-ImatFuselageL2.002
+data 14
+ImatFuselageL2
 texture "immat.png"
 texrep 1 1
 crease 30.000000
@@ -92,8 +92,8 @@ refs 4
 kids 0
 OBJECT poly
 name "ImatFuselageL3"
-data 18
-ImatFuselageL3.002
+data 14
+ImatFuselageL3
 texture "immat.png"
 texrep 1 1
 crease 30.000000
@@ -131,8 +131,8 @@ refs 4
 kids 0
 OBJECT poly
 name "ImatFuselageL4"
-data 18
-ImatFuselageL4.002
+data 14
+ImatFuselageL4
 texture "immat.png"
 texrep 1 1
 crease 30.000000
@@ -170,8 +170,8 @@ refs 4
 kids 0
 OBJECT poly
 name "ImatFuselageL5"
-data 18
-ImatFuselageL5.002
+data 14
+ImatFuselageL5
 texture "immat.png"
 texrep 1 1
 crease 30.000000
@@ -209,8 +209,8 @@ refs 4
 kids 0
 OBJECT poly
 name "ImatFuselageL6"
-data 18
-ImatFuselageL6.002
+data 14
+ImatFuselageL6
 texture "immat.png"
 texrep 1 1
 crease 30.000000
@@ -248,8 +248,8 @@ refs 4
 kids 0
 OBJECT poly
 name "ImatFuselageR1"
-data 18
-ImatFuselageR1.002
+data 14
+ImatFuselageR1
 texture "immat.png"
 texrep 1 1
 crease 30.000000
@@ -287,8 +287,8 @@ refs 4
 kids 0
 OBJECT poly
 name "ImatFuselageR2"
-data 18
-ImatFuselageR2.002
+data 14
+ImatFuselageR2
 texture "immat.png"
 texrep 1 1
 crease 30.000000
@@ -326,8 +326,8 @@ refs 4
 kids 0
 OBJECT poly
 name "ImatFuselageR3"
-data 18
-ImatFuselageR3.002
+data 14
+ImatFuselageR3
 texture "immat.png"
 texrep 1 1
 crease 30.000000
@@ -365,8 +365,8 @@ refs 4
 kids 0
 OBJECT poly
 name "ImatFuselageR4"
-data 18
-ImatFuselageR4.002
+data 14
+ImatFuselageR4
 texture "immat.png"
 texrep 1 1
 crease 30.000000
@@ -404,8 +404,8 @@ refs 4
 kids 0
 OBJECT poly
 name "ImatFuselageR5"
-data 18
-ImatFuselageR5.002
+data 14
+ImatFuselageR5
 texture "immat.png"
 texrep 1 1
 crease 30.000000
@@ -443,8 +443,8 @@ refs 4
 kids 0
 OBJECT poly
 name "ImatFuselageR6"
-data 18
-ImatFuselageR6.002
+data 14
+ImatFuselageR6
 texture "immat.png"
 texrep 1 1
 crease 30.000000
@@ -608,8 +608,8 @@ refs 4
 kids 0
 OBJECT poly
 name "ImatWingL-Bottom1"
-data 21
-ImatWingL-Bottom1.002
+data 17
+ImatWingL-Bottom1
 texture "immat.png"
 texrep 1 1
 crease 30.000000
@@ -647,8 +647,8 @@ refs 4
 kids 0
 OBJECT poly
 name "ImatWingL-Bottom2"
-data 21
-ImatWingL-Bottom2.002
+data 17
+ImatWingL-Bottom2
 texture "immat.png"
 texrep 1 1
 crease 30.000000
@@ -686,8 +686,8 @@ refs 4
 kids 0
 OBJECT poly
 name "ImatWingL-Bottom3"
-data 21
-ImatWingL-Bottom3.002
+data 17
+ImatWingL-Bottom3
 texture "immat.png"
 texrep 1 1
 crease 30.000000
@@ -725,8 +725,8 @@ refs 4
 kids 0
 OBJECT poly
 name "ImatWingL-Bottom4"
-data 21
-ImatWingL-Bottom4.002
+data 17
+ImatWingL-Bottom4
 texture "immat.png"
 texrep 1 1
 crease 30.000000
@@ -764,8 +764,8 @@ refs 4
 kids 0
 OBJECT poly
 name "ImatWingL-Bottom5"
-data 21
-ImatWingL-Bottom5.002
+data 17
+ImatWingL-Bottom5
 texture "immat.png"
 texrep 1 1
 crease 30.000000
@@ -803,8 +803,8 @@ refs 4
 kids 0
 OBJECT poly
 name "ImatWingL-Bottom6"
-data 21
-ImatWingL-Bottom6.002
+data 17
+ImatWingL-Bottom6
 texture "immat.png"
 texrep 1 1
 crease 30.000000
@@ -842,8 +842,8 @@ refs 4
 kids 0
 OBJECT poly
 name "ImatWingR-Up1"
-data 17
-ImatWingR-Up1.002
+data 13
+ImatWingR-Up1
 texture "immat.png"
 texrep 1 1
 crease 30.000000
@@ -897,8 +897,8 @@ refs 4
 kids 0
 OBJECT poly
 name "ImatWingR-Up2"
-data 17
-ImatWingR-Up2.002
+data 13
+ImatWingR-Up2
 texture "immat.png"
 texrep 1 1
 crease 30.000000
@@ -954,8 +954,8 @@ refs 4
 kids 0
 OBJECT poly
 name "ImatWingR-Up3"
-data 17
-ImatWingR-Up3.002
+data 13
+ImatWingR-Up3
 texture "immat.png"
 texrep 1 1
 crease 30.000000
@@ -1011,8 +1011,8 @@ refs 4
 kids 0
 OBJECT poly
 name "ImatWingR-Up4"
-data 17
-ImatWingR-Up4.002
+data 13
+ImatWingR-Up4
 texture "immat.png"
 texrep 1 1
 crease 30.000000
@@ -1068,8 +1068,8 @@ refs 4
 kids 0
 OBJECT poly
 name "ImatWingR-Up5"
-data 17
-ImatWingR-Up5.002
+data 13
+ImatWingR-Up5
 texture "immat.png"
 texrep 1 1
 crease 30.000000
@@ -1125,8 +1125,8 @@ refs 4
 kids 0
 OBJECT poly
 name "ImatWingR-Up6"
-data 17
-ImatWingR-Up6.002
+data 13
+ImatWingR-Up6
 texture "immat.png"
 texrep 1 1
 crease 30.000000

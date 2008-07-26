@@ -38,84 +38,45 @@
 <cockpit x="1.099" y="0.256" z="0.369"/>
 
 <!-- Fuselage -->
-<fuselage 
-   ax="3.236" ay="0" az="-0.125" 
-   bx="-3.107" by="0" bz="-0.132"
-   width="1.065" 
-   taper="0.2" 
-   midpoint="1"
-   cx="0.805" cz="1.409"
-   idrag="1"/>
+<fuselage  ax="3.236" ay="0" az="-0.125" bx="-3.107" by="0" bz="-0.132" width="1.065"/>
 
-<!-- Nose wheel
-     tube dimensions : ab(0.214 x 0.236) -->
-<fuselage 
-   ax="2.487" ay="0" az="-1"
-   bx="1.833" by="0" bz="-1"
-   width="0.225" 
-   taper="1" 
-   midpoint="1"
-   idrag="1"/>
+<wing x="0.660" y="0.536" z="-0.497" 
+      taper="0.743" 
+      length="3.50" 
+      chord="1.346" 
+      dihedral="2.58" 
+      camber="0.1"
+      sweep="0" 
+      twist="0"
+      incidence="0">
+      <stall aoa="20" width="1" peak="1.5"/>
+      <flap0 start="0" end="0.557" lift="1.4" drag="1.5"/>
+      <flap1 start="0.558" end="0.95" lift="1.2" drag="1.1"/>
 
-<!-- Left wheel
-     tube dimensions : ab(0.214 x 0.236) -->
-<fuselage
-   ax=".852" ay="1.013" az="-1"
-   bx=".227" by="1.013" bz="-1"
-   width=".225" 
-   taper="1" 
-   midpoint="1"
-   idrag="1"/>
+      <control-input axis="/controls/flight/flaps" control="FLAP0"/>
+      <control-input axis="/controls/flight/aileron" control="FLAP1" split="true"/>
+      <control-input axis="/controls/flight/aileron-trim" control="FLAP1" split="true"/>
+ 
+      <control-output control="FLAP0" prop="/surface-positions/flap-pos-norm"/>
+      <control-output control="FLAP1" side="left" prop="/surface-positions/left-aileron-pos-norm"/>
+      <control-output control="FLAP1" side="right" prop="/surface-positions/right-aileron-pos-norm"/>
 
-<!-- Right wheel
-     tube dimensions : ab(0.214 x 0.236) -->
-<fuselage
-   ax=".852" ay="-1.013" az="-1"
-   bx=".227" by="-1.013" bz="-1"
-   width=".225" 
-   taper="1" 
-   midpoint="1"
-   idrag="1"/>
-
-<wing 
-   x="0.660" y="0.536" z="-0.497" 
-   taper="0.743" 
-   incidence="0"
-   twist="0"
-   length="3.50" 
-   chord="1.346" 
-   sweep="0" 
-   dihedral="2.58" 
-   camber="0.1">
-  <stall aoa="20" width="1" peak="1.5"/>
-  <flap0 start="0" end="0.557" lift="1.4" drag="1.5"/>
-  <flap1 start="0.558" end="0.95" lift="1.2" drag="1.1"/>
-
-  <control-input axis="/controls/flight/flaps" control="FLAP0"/>
-  <control-input axis="/controls/flight/aileron" control="FLAP1" split="true"/>
-  <control-input axis="/controls/flight/aileron-trim" control="FLAP1" split="true"/>
-
-  <control-output control="FLAP0" prop="/surface-positions/flap-pos-norm"/>
-  <control-output control="FLAP1" side="left" prop="/surface-positions/left-aileron-pos-norm"/>
-  <control-output control="FLAP1" side="right" prop="/surface-positions/right-aileron-pos-norm"/>
-
-  <control-speed control="FLAP0" transition-time="5"/>
+      <control-speed control="FLAP0" transition-time="5"/>
 </wing>
 
-<hstab 
-   x="-2.905" y="-.067" z=".018" 
-   taper="1" 
-   incidence="0" 
-   length="1.245" 
-   chord=".681" 
-   sweep="0">
-  <stall aoa="20" width="4" peak="1.5"/>
-  <flap0 start="0" end="1" lift="2.0" drag="1.1" effectiveness="2"/>
+<hstab x="-2.905" y="-.067" z=".018" 
+       taper="1" 
+       incidence="0" 
+       length="1.245" 
+       chord=".681" 
+       sweep="0">
+       <stall aoa="20" width="4" peak="1.5"/>
+       <flap0 start="0" end="1" lift="2.0" drag="1.1"/>
 
-  <control-input axis="/controls/flight/elevator" control="FLAP0"/>
-  <control-input axis="/controls/flight/elevator-trim" control="FLAP0"/>
+       <control-input axis="/controls/flight/elevator" control="FLAP0"/>
+       <control-input axis="/controls/flight/elevator-trim" control="FLAP0"/>
 
-  <control-output control="FLAP0" prop="/surface-positions/elevator-pos-norm"/>
+       <control-output control="FLAP0" prop="/surface-positions/elevator-pos-norm"/>
 </hstab>
 
 <vstab 
@@ -124,13 +85,13 @@
    length="1.101" 
    chord="1.129" 
    sweep="39.8">
-  <stall aoa="14" width="3" peak="1.5"/>
-  <flap0 start="0" end="1" lift="1.5" drag="1.2"/>
+   <stall aoa="14" width="3" peak="1.5"/>
+   <flap0 start="0" end="1" lift="1.5" drag="1.2"/>
 
-  <control-input axis="/controls/flight/rudder" control="FLAP0" invert="true"/>
-  <control-input axis="/controls/flight/rudder-trim" control="FLAP0" invert="true"/>
+   <control-input axis="/controls/flight/rudder" control="FLAP0" invert="true"/>
+   <control-input axis="/controls/flight/rudder-trim" control="FLAP0" invert="true"/>
 
-  <control-output control="FLAP0" prop="/surface-positions/rudder-pos-norm" min="1" max="-1"/>
+   <control-output control="FLAP0" prop="/surface-positions/rudder-pos-norm" min="1" max="-1"/>
 </vstab>
 
   <!-- engine:    ROTAX 912 A2
@@ -143,62 +104,54 @@
   MTOM: 620 kg
   noise (dB): 66,0 (ICAO chapter 10, annex 16), 76,4 (ICAO chapter 10, annex 10.4a)
   ref: http://www.rotax-aircraft-engines.com/a_engine_912.htm  -->
-  <propeller 
-        radius="0.82"
-	cruise-speed="94" 
-	cruise-rpm="2112"
-	cruise-alt="6000" 
-	cruise-power="50.6"
-	takeoff-power="81" 
-	takeoff-rpm="2552"
-	x="2.374" y="0.0" z="-.225" 
-	mass="175" 
-	moment="2.69"  
-	gear-ratio="0.440" >
-    <piston-engine 
-        eng-rpm="5800" 
-        eng-power="81"
-        displacement="73.91" 
-        compression="9.0"/>
-    <actionpt 
-        x="3.048" 
-	y="0.0" 
-	z="-.112" />
-    <control-input control="THROTTLE" axis="/controls/engines/engine[0]/throttle" />
-    <control-input control="STARTER" axis="/controls/engines/engine[0]/starter" />
-    <control-input control="MAGNETOS" axis="/controls/engines/engine[0]/magnetos" />
-    <control-input control="MIXTURE" axis="/controls/engines/engine[0]/mixture" /> <!-- Ground adjustment only -->
+  <propeller x="2.374" y="0.0" z="-.225" 
+             radius="0.82"
+	     cruise-speed="94" 
+	     cruise-rpm="2112"
+	     cruise-alt="6000" 
+	     cruise-power="50.6"
+	     takeoff-power="81" 
+	     takeoff-rpm="2552"
+	     mass="175" 
+	     moment="2.69"  
+	     gear-ratio="0.440" >
+             <piston-engine  eng-rpm="5800"  
+                             eng-power="81"
+                             displacement="73.91" 
+                             compression="9.0"/>
+             <actionpt x="3.048" y="0.0" z="-.112" />
+             <control-input control="THROTTLE" axis="/controls/engines/engine[0]/throttle" />
+             <control-input control="STARTER" axis="/controls/engines/engine[0]/starter" />
+             <control-input control="MAGNETOS" axis="/controls/engines/engine[0]/magnetos" />
+            <control-input control="MIXTURE" axis="/controls/engines/engine[0]/mixture" /> <!-- Ground adjustment only -->
   </propeller>
   
 <!-- Nose wheel -->
-<gear 
-   x="2.210" y="0" z="-1.192" 
-   compression=".15" 
-   spring=".8"
-   on-solid="1"
-   sfric="1"
-   dfric="1">
-  <control-input axis="/controls/flight/rudder" control="STEER" src0="-1.0" src1="1.0" dst0="-.5" dst1=".5"/>
+<gear x="2.210" y="0" z="-1.192" 
+      compression=".15" 
+      spring=".8"
+      on-solid="1"
+      sfric="1"
+      dfric="1">
+      <control-input axis="/controls/flight/rudder" control="STEER" src0="-1.0" src1="1.0" dst0="-.5" dst1=".5"/>
 </gear>
 
 <!-- Left wheel -->
-<gear 
-   x="0.562" y="1.015" z="-1.192" 
-   compression=".1" 
-   spring=".8" 
-   on-solid="1" >
-  <control-input axis="/controls/gear/brake-left" control="BRAKE" split="true"/>
-  <control-input axis="/controls/gear/brake-parking" control="BRAKE" split="true"/>
+<gear x="0.562" y="1.015" z="-1.192" 
+      compression=".1" 
+      spring=".8" 
+      on-solid="1" >
+      <control-input axis="/controls/gear/brake-left" control="BRAKE" split="true"/>
+      <control-input axis="/controls/gear/brake-parking" control="BRAKE" split="true"/>
 </gear>
 
 <!-- Right wheel -->
-<gear 
-   x="0.562" y="-1.015" z="-1.192" 
-   compression=".1" 
-   spring=".8"
-   on-solid="1" >
-  <control-input axis="/controls/gear/brake-right" control="BRAKE" split="true"/>
-  <control-input axis="/controls/gear/brake-parking" control="BRAKE" split="true"/>
+<gear x="0.562" y="-1.015" z="-1.192" 
+      compression=".1" 
+      spring=".8"
+      on-solid="1" >
+      <control-input axis="/controls/gear/brake-right" control="BRAKE" split="true"/>
+      <control-input axis="/controls/gear/brake-parking" control="BRAKE" split="true"/>
 </gear>
 
 <!-- Fuel
