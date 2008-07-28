@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <path>switch.ac</path>
+
+ <animation>
+  <type>pick</type>
+  <visible>true</visible>
+  <object-name>Switch</object-name>
+  <action>
+   <button>0</button>
+   <repeatable>false</repeatable>
+   <binding>
+    <command>property-toggle</command>
+    <property>/controls/switches/radio</property>
+   </binding>
+   <binding>
+    <command>nasal</command>
+    <script>lionceau.radio_switch()</script>
+   </binding>
+  </action>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>Switch</object-name>
+  <property>/controls/switches/radio</property>
+  <factor>22.5</factor>
+  <axis>
+   <x>0</x>
+   <y>-1</y>
+   <z>0</z>
+  </axis>
+  <center>
+   <x-m>0</x-m>
+   <y-m>0</y-m>
+   <z-m>0</z-m>
+  </center>
+ </animation>
+
+</PropertyList>
