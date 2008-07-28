@@ -29,6 +29,10 @@
     <command>property-toggle</command>
     <property>controls/switches/master</property>
    </binding>
+   <binding>
+    <command>nasal</command>
+    <script>lionceau.master_switch()</script>
+   </binding>
   </action>
  </animation>
 

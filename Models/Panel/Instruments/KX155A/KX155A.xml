@@ -255,7 +255,18 @@
     <step type="double">-0.05</step>
    </binding>          
   </action>
- </animation>                        
+ </animation>
+
+ <animation>
+  <type>select</type>
+  <object-name>CommADec</object-name>
+  <object-name>CommSDec</object-name>
+  <object-name>NavADec</object-name>
+  <object-name>NavSDec</object-name>
+  <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
+  </condition>
+ </animation>
 
 <!-- 7 segment decoder - active comm frequency first digit -->
 
@@ -263,6 +274,7 @@
   <type>select</type>
   <object-name>CommA1.1</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -282,6 +294,7 @@
   <type>select</type>
   <object-name>CommA1.2</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -301,6 +314,7 @@
   <type>select</type>
   <object-name>CommA1.3</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <not-equals>
     <property>instrumentation/comm[0]/selected/digit1</property>
     <value>2</value>
@@ -312,6 +326,7 @@
   <type>select</type>
   <object-name>CommA1.4</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -335,6 +350,7 @@
   <type>select</type>
   <object-name>CommA1.5</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <or>
     <equals>
     <property>instrumentation/comm[0]/selected/digit1</property>
@@ -360,6 +376,7 @@
   <type>select</type>
   <object-name>CommA1.6</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -387,6 +404,7 @@
   <type>select</type>
   <object-name>CommA1.7</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -412,6 +430,7 @@
   <type>select</type>
   <object-name>CommA2.1</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -431,6 +450,7 @@
   <type>select</type>
   <object-name>CommA2.2</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -450,6 +470,7 @@
   <type>select</type>
   <object-name>CommA2.3</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <not-equals>
     <property>instrumentation/comm[0]/selected/digit2</property>
     <value>2</value>
@@ -461,6 +482,7 @@
   <type>select</type>
   <object-name>CommA2.4</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -484,6 +506,7 @@
   <type>select</type>
   <object-name>CommA2.5</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <or>
     <equals>
     <property>instrumentation/comm[0]/selected/digit2</property>
@@ -509,6 +532,7 @@
   <type>select</type>
   <object-name>CommA2.6</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -536,6 +560,7 @@
   <type>select</type>
   <object-name>CommA2.7</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -561,6 +586,7 @@
   <type>select</type>
   <object-name>CommA3.1</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -580,6 +606,7 @@
   <type>select</type>
   <object-name>CommA3.2</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -599,6 +626,7 @@
   <type>select</type>
   <object-name>CommA3.3</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <not-equals>
     <property>instrumentation/comm[0]/selected/digit3</property>
     <value>2</value>
@@ -610,6 +638,7 @@
   <type>select</type>
   <object-name>CommA3.4</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -633,6 +662,7 @@
   <type>select</type>
   <object-name>CommA3.5</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <or>
     <equals>
     <property>instrumentation/comm[0]/selected/digit3</property>
@@ -658,6 +688,7 @@
   <type>select</type>
   <object-name>CommA3.6</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -685,6 +716,7 @@
   <type>select</type>
   <object-name>CommA3.7</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -710,6 +742,7 @@
   <type>select</type>
   <object-name>CommA4.1</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -729,6 +762,7 @@
   <type>select</type>
   <object-name>CommA4.2</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -748,6 +782,7 @@
   <type>select</type>
   <object-name>CommA4.3</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <not-equals>
     <property>instrumentation/comm[0]/selected/digit4</property>
     <value>2</value>
@@ -759,6 +794,7 @@
   <type>select</type>
   <object-name>CommA4.4</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -782,6 +818,7 @@
   <type>select</type>
   <object-name>CommA4.5</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <or>
     <equals>
     <property>instrumentation/comm[0]/selected/digit4</property>
@@ -807,6 +844,7 @@
   <type>select</type>
   <object-name>CommA4.6</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -834,6 +872,7 @@
   <type>select</type>
   <object-name>CommA4.7</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -859,6 +898,7 @@
   <type>select</type>
   <object-name>CommA5.1</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -878,6 +918,7 @@
   <type>select</type>
   <object-name>CommA5.2</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -897,6 +938,7 @@
   <type>select</type>
   <object-name>CommA5.3</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <not-equals>
     <property>instrumentation/comm[0]/selected/digit5</property>
     <value>2</value>
@@ -908,6 +950,7 @@
   <type>select</type>
   <object-name>CommA5.4</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -931,6 +974,7 @@
   <type>select</type>
   <object-name>CommA5.5</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <or>
     <equals>
     <property>instrumentation/comm[0]/selected/digit5</property>
@@ -956,6 +1000,7 @@
   <type>select</type>
   <object-name>CommA5.6</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -983,6 +1028,7 @@
   <type>select</type>
   <object-name>CommA5.7</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -1008,6 +1054,7 @@
   <type>select</type>
   <object-name>CommS1.1</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -1027,6 +1074,7 @@
   <type>select</type>
   <object-name>CommS1.2</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -1046,6 +1094,7 @@
   <type>select</type>
   <object-name>CommS1.3</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <not-equals>
     <property>instrumentation/comm[0]/standby/digit1</property>
     <value>2</value>
@@ -1057,6 +1106,7 @@
   <type>select</type>
   <object-name>CommS1.4</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -1080,6 +1130,7 @@
   <type>select</type>
   <object-name>CommS1.5</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <or>
     <equals>
     <property>instrumentation/comm[0]/standby/digit1</property>
@@ -1105,6 +1156,7 @@
   <type>select</type>
   <object-name>CommS1.6</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -1132,6 +1184,7 @@
   <type>select</type>
   <object-name>CommS1.7</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -1157,6 +1210,7 @@
   <type>select</type>
   <object-name>CommS2.1</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -1176,6 +1230,7 @@
   <type>select</type>
   <object-name>CommS2.2</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -1195,6 +1250,7 @@
   <type>select</type>
   <object-name>CommS2.3</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <not-equals>
     <property>instrumentation/comm[0]/standby/digit2</property>
     <value>2</value>
@@ -1206,6 +1262,7 @@
   <type>select</type>
   <object-name>CommS2.4</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -1229,6 +1286,7 @@
   <type>select</type>
   <object-name>CommS2.5</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <or>
     <equals>
     <property>instrumentation/comm[0]/standby/digit2</property>
@@ -1254,6 +1312,7 @@
   <type>select</type>
   <object-name>CommS2.6</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -1281,6 +1340,7 @@
   <type>select</type>
   <object-name>CommS2.7</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -1306,6 +1366,7 @@
   <type>select</type>
   <object-name>CommS3.1</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -1325,6 +1386,7 @@
   <type>select</type>
   <object-name>CommS3.2</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -1344,6 +1406,7 @@
   <type>select</type>
   <object-name>CommS3.3</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <not-equals>
     <property>instrumentation/comm[0]/standby/digit3</property>
     <value>2</value>
@@ -1355,6 +1418,7 @@
   <type>select</type>
   <object-name>CommS3.4</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -1378,6 +1442,7 @@
   <type>select</type>
   <object-name>CommS3.5</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <or>
     <equals>
     <property>instrumentation/comm[0]/standby/digit3</property>
@@ -1403,6 +1468,7 @@
   <type>select</type>
   <object-name>CommS3.6</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -1430,6 +1496,7 @@
   <type>select</type>
   <object-name>CommS3.7</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -1455,6 +1522,7 @@
   <type>select</type>
   <object-name>CommS4.1</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -1474,6 +1542,7 @@
   <type>select</type>
   <object-name>CommS4.2</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -1493,6 +1562,7 @@
   <type>select</type>
   <object-name>CommS4.3</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <not-equals>
     <property>instrumentation/comm[0]/standby/digit4</property>
     <value>2</value>
@@ -1504,6 +1574,7 @@
   <type>select</type>
   <object-name>CommS4.4</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -1527,6 +1598,7 @@
   <type>select</type>
   <object-name>CommS4.5</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <or>
     <equals>
     <property>instrumentation/comm[0]/standby/digit4</property>
@@ -1552,6 +1624,7 @@
   <type>select</type>
   <object-name>CommS4.6</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -1579,6 +1652,7 @@
   <type>select</type>
   <object-name>CommS4.7</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -1604,6 +1678,7 @@
   <type>select</type>
   <object-name>CommS5.1</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -1623,6 +1698,7 @@
   <type>select</type>
   <object-name>CommS5.2</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -1642,6 +1718,7 @@
   <type>select</type>
   <object-name>CommS5.3</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <not-equals>
     <property>instrumentation/comm[0]/standby/digit5</property>
     <value>2</value>
@@ -1653,6 +1730,7 @@
   <type>select</type>
   <object-name>CommS5.4</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -1676,6 +1754,7 @@
   <type>select</type>
   <object-name>CommS5.5</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <or>
     <equals>
     <property>instrumentation/comm[0]/standby/digit5</property>
@@ -1701,6 +1780,7 @@
   <type>select</type>
   <object-name>CommS5.6</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -1728,6 +1808,7 @@
   <type>select</type>
   <object-name>CommS5.7</object-name>
   <condition>
+   <property>/instrumentation/comm[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -1753,6 +1834,7 @@
   <type>select</type>
   <object-name>NavA1.1</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -1772,6 +1854,7 @@
   <type>select</type>
   <object-name>NavA1.2</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -1791,6 +1874,7 @@
   <type>select</type>
   <object-name>NavA1.3</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <not-equals>
     <property>instrumentation/nav[0]/selected/digit1</property>
     <value>2</value>
@@ -1802,6 +1886,7 @@
   <type>select</type>
   <object-name>NavA1.4</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -1825,6 +1910,7 @@
   <type>select</type>
   <object-name>NavA1.5</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <or>
     <equals>
     <property>instrumentation/nav[0]/selected/digit1</property>
@@ -1850,6 +1936,7 @@
   <type>select</type>
   <object-name>NavA1.6</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -1877,6 +1964,7 @@
   <type>select</type>
   <object-name>NavA1.7</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -1902,6 +1990,7 @@
   <type>select</type>
   <object-name>NavA2.1</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -1921,6 +2010,7 @@
   <type>select</type>
   <object-name>NavA2.2</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -1940,6 +2030,7 @@
   <type>select</type>
   <object-name>NavA2.3</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <not-equals>
     <property>instrumentation/nav[0]/selected/digit2</property>
     <value>2</value>
@@ -1951,6 +2042,7 @@
   <type>select</type>
   <object-name>NavA2.4</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -1974,6 +2066,7 @@
   <type>select</type>
   <object-name>NavA2.5</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <or>
     <equals>
     <property>instrumentation/nav[0]/selected/digit2</property>
@@ -1999,6 +2092,7 @@
   <type>select</type>
   <object-name>NavA2.6</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -2026,6 +2120,7 @@
   <type>select</type>
   <object-name>NavA2.7</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -2051,6 +2146,7 @@
   <type>select</type>
   <object-name>NavA3.1</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -2070,6 +2166,7 @@
   <type>select</type>
   <object-name>NavA3.2</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -2089,6 +2186,7 @@
   <type>select</type>
   <object-name>NavA3.3</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <not-equals>
     <property>instrumentation/nav[0]/selected/digit3</property>
     <value>2</value>
@@ -2100,6 +2198,7 @@
   <type>select</type>
   <object-name>NavA3.4</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -2123,6 +2222,7 @@
   <type>select</type>
   <object-name>NavA3.5</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <or>
     <equals>
     <property>instrumentation/nav[0]/selected/digit3</property>
@@ -2148,6 +2248,7 @@
   <type>select</type>
   <object-name>NavA3.6</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -2175,6 +2276,7 @@
   <type>select</type>
   <object-name>NavA3.7</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -2200,6 +2302,7 @@
   <type>select</type>
   <object-name>NavA4.1</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -2219,6 +2322,7 @@
   <type>select</type>
   <object-name>NavA4.2</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -2238,6 +2342,7 @@
   <type>select</type>
   <object-name>NavA4.3</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <not-equals>
     <property>instrumentation/nav[0]/selected/digit4</property>
     <value>2</value>
@@ -2249,6 +2354,7 @@
   <type>select</type>
   <object-name>NavA4.4</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -2272,6 +2378,7 @@
   <type>select</type>
   <object-name>NavA4.5</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <or>
     <equals>
     <property>instrumentation/nav[0]/selected/digit4</property>
@@ -2297,6 +2404,7 @@
   <type>select</type>
   <object-name>NavA4.6</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -2324,6 +2432,7 @@
   <type>select</type>
   <object-name>NavA4.7</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -2349,6 +2458,7 @@
   <type>select</type>
   <object-name>NavA5.1</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -2368,6 +2478,7 @@
   <type>select</type>
   <object-name>NavA5.2</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -2387,6 +2498,7 @@
   <type>select</type>
   <object-name>NavA5.3</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <not-equals>
     <property>instrumentation/nav[0]/selected/digit5</property>
     <value>2</value>
@@ -2398,6 +2510,7 @@
   <type>select</type>
   <object-name>NavA5.4</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -2421,6 +2534,7 @@
   <type>select</type>
   <object-name>NavA5.5</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <or>
     <equals>
     <property>instrumentation/nav[0]/selected/digit5</property>
@@ -2446,6 +2560,7 @@
   <type>select</type>
   <object-name>NavA5.6</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -2473,6 +2588,7 @@
   <type>select</type>
   <object-name>NavA5.7</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -2498,6 +2614,7 @@
   <type>select</type>
   <object-name>NavS1.1</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -2517,6 +2634,7 @@
   <type>select</type>
   <object-name>NavS1.2</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -2536,6 +2654,7 @@
   <type>select</type>
   <object-name>NavS1.3</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <not-equals>
     <property>instrumentation/nav[0]/standby/digit1</property>
     <value>2</value>
@@ -2547,6 +2666,7 @@
   <type>select</type>
   <object-name>NavS1.4</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -2570,6 +2690,7 @@
   <type>select</type>
   <object-name>NavS1.5</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <or>
     <equals>
     <property>instrumentation/nav[0]/standby/digit1</property>
@@ -2595,6 +2716,7 @@
   <type>select</type>
   <object-name>NavS1.6</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -2622,6 +2744,7 @@
   <type>select</type>
   <object-name>NavS1.7</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -2647,6 +2770,7 @@
   <type>select</type>
   <object-name>NavS2.1</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -2666,6 +2790,7 @@
   <type>select</type>
   <object-name>NavS2.2</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -2685,6 +2810,7 @@
   <type>select</type>
   <object-name>NavS2.3</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <not-equals>
     <property>instrumentation/nav[0]/standby/digit2</property>
     <value>2</value>
@@ -2696,6 +2822,7 @@
   <type>select</type>
   <object-name>NavS2.4</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -2719,6 +2846,7 @@
   <type>select</type>
   <object-name>NavS2.5</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <or>
     <equals>
     <property>instrumentation/nav[0]/standby/digit2</property>
@@ -2744,6 +2872,7 @@
   <type>select</type>
   <object-name>NavS2.6</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -2771,6 +2900,7 @@
   <type>select</type>
   <object-name>NavS2.7</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -2796,6 +2926,7 @@
   <type>select</type>
   <object-name>NavS3.1</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -2815,6 +2946,7 @@
   <type>select</type>
   <object-name>NavS3.2</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -2834,6 +2966,7 @@
   <type>select</type>
   <object-name>NavS3.3</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <not-equals>
     <property>instrumentation/nav[0]/standby/digit3</property>
     <value>2</value>
@@ -2845,6 +2978,7 @@
   <type>select</type>
   <object-name>NavS3.4</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -2868,6 +3002,7 @@
   <type>select</type>
   <object-name>NavS3.5</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <or>
     <equals>
     <property>instrumentation/nav[0]/standby/digit3</property>
@@ -2893,6 +3028,7 @@
   <type>select</type>
   <object-name>NavS3.6</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -2920,6 +3056,7 @@
   <type>select</type>
   <object-name>NavS3.7</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -2945,6 +3082,7 @@
   <type>select</type>
   <object-name>NavS4.1</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -2964,6 +3102,7 @@
   <type>select</type>
   <object-name>NavS4.2</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -2983,6 +3122,7 @@
   <type>select</type>
   <object-name>NavS4.3</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <not-equals>
     <property>instrumentation/nav[0]/standby/digit4</property>
     <value>2</value>
@@ -2994,6 +3134,7 @@
   <type>select</type>
   <object-name>NavS4.4</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -3017,6 +3158,7 @@
   <type>select</type>
   <object-name>NavS4.5</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <or>
     <equals>
     <property>instrumentation/nav[0]/standby/digit4</property>
@@ -3042,6 +3184,7 @@
   <type>select</type>
   <object-name>NavS4.6</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -3069,6 +3212,7 @@
   <type>select</type>
   <object-name>NavS4.7</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -3094,6 +3238,7 @@
   <type>select</type>
   <object-name>NavS5.1</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -3113,6 +3258,7 @@
   <type>select</type>
   <object-name>NavS5.2</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -3132,6 +3278,7 @@
   <type>select</type>
   <object-name>NavS5.3</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <not-equals>
     <property>instrumentation/nav[0]/standby/digit5</property>
     <value>2</value>
@@ -3143,6 +3290,7 @@
   <type>select</type>
   <object-name>NavS5.4</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -3166,6 +3314,7 @@
   <type>select</type>
   <object-name>NavS5.5</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <or>
     <equals>
     <property>instrumentation/nav[0]/standby/digit5</property>
@@ -3191,6 +3340,7 @@
   <type>select</type>
   <object-name>NavS5.6</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -3218,6 +3368,7 @@
   <type>select</type>
   <object-name>NavS5.7</object-name>
   <condition>
+   <property>/instrumentation/nav[0]/serviceable</property>
    <not>
     <or>
      <equals>
@@ -3311,6 +3462,18 @@
   <object-name>CommS5.6</object-name>
   <object-name>CommS5.7</object-name>
   <object-name>CommSDec</object-name>
+  <emission>
+   <red>1.0</red>
+   <green>0.0</green>
+   <blue>0.0</blue>
+  </emission>
+  <condition>
+   <property>/instrumentation/comm/serviceable</property>
+  </condition>
+ </animation>
+
+ <animation>
+  <type>material</type>
   <object-name>NavA1.1</object-name>
   <object-name>NavA1.2</object-name>
   <object-name>NavA1.3</object-name>
@@ -3387,8 +3550,10 @@
    <red>1.0</red>
    <green>0.0</green>
    <blue>0.0</blue>
-   <factor-prop>controls/lighting/instruments-norm</factor-prop>
   </emission>
+  <condition>
+   <property>/instrumentation/nav/serviceable</property>
+  </condition>
  </animation>
                 
 </PropertyList>
