@@ -5,7 +5,7 @@
 
   <sim>
     <description>Lionceau APM20</description>
-    <author>Emmanuel BARANGER (3D), Sebastien MARQUE (FDM/panel), Pierre GEOFFROY (FDM), Laurent HAYVEL (Texture)</author>
+    <author>Emmanuel BARANGER (3D/FDM), Sebastien MARQUE (Instruments), Pierre GEOFFROY (Engines), Laurent HAYVEL (Texture)</author>
   </sim>
 
 </PropertyList>

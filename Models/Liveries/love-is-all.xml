@@ -6,7 +6,6 @@
     <model>
       <livery>
         <name type="string">Love is all</name>
-        <index type="int">2</index>
         <texture>Love-is-all.png</texture>
       </livery>
     </model>
