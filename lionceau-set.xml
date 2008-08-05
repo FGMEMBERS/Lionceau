@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 
-<!-- <PropertyList include="lionceau-jsbsim-set.xml"> -->
-<PropertyList include="lionceau-yasim-set.xml">
+<!-- <PropertyList include="lionceau-jsbsim-cnf.xml"> -->
+<PropertyList include="lionceau-yasim-cnf.xml">
 
   <sim>
     <description>Lionceau APM20</description>
