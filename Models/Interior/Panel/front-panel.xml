@@ -6,7 +6,7 @@
 
   <!-- Altimètre -->
   <model>
-    <path>Aircraft/Lionceau/Models/Panel/Instruments/Altimeter/Altimeter.xml</path>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/Altimeter/Altimeter.xml</path>
     <offsets>
       <x-m>  0.000 </x-m>
       <y-m> -0.135 </y-m>
@@ -26,7 +26,7 @@
 
   <!-- Horizon artificiel -->
   <model>
-    <path>Aircraft/Lionceau/Models/Panel/Instruments/AI/AI.xml</path>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/AI/AI.xml</path>
     <offsets>
       <x-m>  0.000 </x-m>
       <y-m> -0.218 </y-m>
@@ -36,7 +36,7 @@
 
   <!-- Anémomètre -->
   <model>
-    <path>Aircraft/Lionceau/Models/Panel/Instruments/ASI/ASI.xml</path>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/ASI/ASI.xml</path>
     <offsets>
       <x-m>  0.000 </x-m>
       <y-m> -0.299 </y-m>
@@ -46,7 +46,7 @@
 
   <!-- Variomètre -->
   <model>
-    <path>Aircraft/Lionceau/Models/Panel/Instruments/VSI/VSI.xml</path>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/VSI/VSI.xml</path>
     <offsets>
       <x-m>  0.000 </x-m>
       <y-m> -0.135 </y-m>
@@ -56,7 +56,7 @@
 
   <!-- Indicateur de virage -->
   <model>
-    <path>Aircraft/Lionceau/Models/Panel/Instruments/Turn/Turn.xml</path>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/Turn/Turn.xml</path>
     <offsets>
       <x-m>  0.000 </x-m>
       <y-m> -0.299 </y-m>
@@ -66,7 +66,7 @@
 
   <!-- Horloge -->
   <model>
-    <path>Aircraft/Lionceau/Models/Panel/Instruments/Clock/Clock.xml</path>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/Clock/Clock.xml</path>
     <offsets>
       <x-m>  0.000 </x-m>
       <y-m> -0.364 </y-m>
@@ -76,7 +76,7 @@
 
   <!-- VOR indicator -->
   <model>
-    <path>Aircraft/Lionceau/Models/Panel/Instruments/KI204/KI204.xml</path>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/KI204/KI204.xml</path>
     <offsets>
       <x-m>  0.000 </x-m>
       <y-m> -0.380 </y-m>
@@ -85,7 +85,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Lionceau/Models/Panel/Instruments/Gyro/gyro.xml</path>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/Gyro/gyro.xml</path>
     <offsets>
       <x-m>  0.000 </x-m>
       <y-m> -0.218 </y-m>
@@ -95,7 +95,7 @@
 
   <!-- radios nav et com -->
   <model>
-    <path>Aircraft/Lionceau/Models/Panel/Instruments/KX155A/KX155A.xml</path>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/KX155A/KX155A.xml</path>
     <offsets>
       <x-m>  0.000</x-m>
       <y-m> -0.220 </y-m>
@@ -105,7 +105,7 @@
 
 <!-- magnetic compass -->
   <model>
-    <path>Aircraft/Lionceau/Models/Panel/Instruments/MagneticCompass/MagneticCompass.xml</path>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/MagneticCompass/MagneticCompass.xml</path>
     <offsets>
       <x-m> 0.000 </x-m>
       <y-m> 0.000 </y-m>
@@ -115,7 +115,7 @@
 
   <!-- compte tours -->
   <model>
-    <path>Aircraft/Lionceau/Models/Panel/Instruments/RPM/RPM.xml</path>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/RPM/RPM.xml</path>
     <offsets>
       <x-m>  0.000 </x-m>
       <y-m> -0.050 </y-m>
@@ -125,7 +125,7 @@
 
   <!-- EGT - OAT -->
   <model>
-    <path>Aircraft/Lionceau/Models/Panel/Instruments/EGT-OAT/EGT-OAT.xml</path>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/EGT-OAT/EGT-OAT.xml</path>
     <offsets>
       <x-m> 0.000 </x-m>
       <y-m> 0.026 </y-m>
@@ -135,7 +135,7 @@
 
   <!-- Flaps position -->
   <model>
-    <path>Aircraft/Lionceau/Models/Panel/Instruments/Flaps/Flaps.xml</path>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/Flaps/Flaps.xml</path>
     <offsets>
       <x-m> 0.000 </x-m>
       <y-m> 0.089 </y-m>
@@ -145,7 +145,7 @@
 
   <!-- fuel pressure and quantity -->
   <model>
-    <path>Aircraft/Lionceau/Models/Panel/Instruments/FuelGauge/FuelGauge.xml</path>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/FuelGauge/FuelGauge.xml</path>
     <offsets>
       <x-m> 0.000 </x-m>
       <y-m> 0.026 </y-m>
@@ -155,7 +155,7 @@
 
   <!-- oil pressure and temperature -->
   <model>
-    <path>Aircraft/Lionceau/Models/Panel/Instruments/OilGauge/OilGauge.xml</path>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/OilGauge/OilGauge.xml</path>
     <offsets>
       <x-m>  0.000 </x-m>
       <y-m>  0.026 </y-m>
@@ -166,7 +166,7 @@
   <!-- switches -->
   <!-- battery/generator -->
   <model>
-    <path>Aircraft/Lionceau/Models/Panel/Instruments/switches/generator.xml</path>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/switches/generator.xml</path>
     <offsets>
       <x-m>  0.005 </x-m>
       <y-m> -0.335 </y-m>
@@ -176,7 +176,7 @@
 
   <!--master-->
   <model>
-    <path>Aircraft/Lionceau/Models/Panel/Instruments/switches/master.xml</path>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/switches/master.xml</path>
     <offsets>
       <x-m>  0.005 </x-m>
       <y-m> -0.320 </y-m>
@@ -186,7 +186,7 @@
 
   <!--VOR-->
   <model>
-    <path>Aircraft/Lionceau/Models/Panel/Instruments/switches/radio.xml</path>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/switches/radio.xml</path>
     <offsets>
       <x-m>  0.005 </x-m>
       <y-m> -0.130 </y-m>
@@ -196,7 +196,7 @@
 
   <!--gyros-->
   <model>
-    <path>Aircraft/Lionceau/Models/Panel/Instruments/switches/instruments.xml</path>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/switches/instruments.xml</path>
     <offsets>
       <x-m>  0.005 </x-m>
       <y-m> -0.115 </y-m>
@@ -206,7 +206,7 @@
 
   <!--nav lights-->
   <model>
-    <path>Aircraft/Lionceau/Models/Panel/Instruments/switches/lights.xml</path>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/switches/lights.xml</path>
     <offsets>
       <x-m>  0.005 </x-m>
       <y-m> -0.100 </y-m>
@@ -216,7 +216,7 @@
 
   <!-- pump -->
   <model>
-    <path>Aircraft/Lionceau/Models/Panel/Instruments/switches/pump.xml</path>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/switches/pump.xml</path>
     <offsets>
       <x-m>  0.005 </x-m>
       <y-m> -0.085 </y-m>
@@ -226,7 +226,7 @@
 
   <!--magnetos-->
   <model>
-    <path>Aircraft/Lionceau/Models/Panel/Instruments/switches/magnetos.xml</path>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/switches/magnetos.xml</path>
     <offsets>
       <x-m>  0.005 </x-m>
       <y-m> -0.050 </y-m>
@@ -236,7 +236,7 @@
 
   <!-- starter -->
   <model>
-    <path>Aircraft/Lionceau/Models/Panel/Instruments/switches/starter.xml</path>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/switches/starter.xml</path>
     <offsets>
       <x-m>  0.005 </x-m>
       <y-m> -0.010 </y-m>
@@ -249,7 +249,7 @@
   <!-- circuit breakers -->
   <!-- master -->
   <model>
-    <path>Aircraft/Lionceau/Models/Panel/Instruments/breakers/master.xml</path>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/breakers/master.xml</path>
     <offsets>
       <x-m>  0.000 </x-m>
       <y-m>  0.055 </y-m>
@@ -259,7 +259,7 @@
 
   <!-- load -->
   <model>
-    <path>Aircraft/Lionceau/Models/Panel/Instruments/breakers/load.xml</path>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/breakers/load.xml</path>
     <offsets>
       <x-m>  0.000 </x-m>
       <y-m>  0.070 </y-m>
@@ -269,7 +269,7 @@
 
  <!-- instruments -->
   <model>
-    <path>Aircraft/Lionceau/Models/Panel/Instruments/breakers/instruments.xml</path>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/breakers/instruments.xml</path>
     <offsets>
       <x-m>  0.000 </x-m>
       <y-m>  0.085 </y-m>
@@ -279,7 +279,7 @@
 
   <!-- flaps -->
   <model>
-    <path>Aircraft/Lionceau/Models/Panel/Instruments/breakers/flaps.xml</path>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/breakers/flaps.xml</path>
     <offsets>
       <x-m>  0.000 </x-m>
       <y-m>  0.100 </y-m>
@@ -289,7 +289,7 @@
 
   <!-- starter -->
   <model>
-    <path>Aircraft/Lionceau/Models/Panel/Instruments/breakers/starter.xml</path>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/breakers/starter.xml</path>
     <offsets>
       <x-m>  0.000 </x-m>
       <y-m>  0.125 </y-m>
@@ -299,7 +299,7 @@
 
   <!-- pump -->
   <model>
-    <path>Aircraft/Lionceau/Models/Panel/Instruments/breakers/pump.xml</path>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/breakers/pump.xml</path>
     <offsets>
       <x-m>  0.000 </x-m>
       <y-m>  0.140 </y-m>

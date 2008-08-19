@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>interior.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>interieur</object-name>
+    <object-name>siege</object-name>
+    <object-name>pocheG</object-name>
+    <object-name>pocheD</object-name>
+    <object-name>couv</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <!-- Pilote -->
+  <model>
+    <path>Aircraft/Lionceau/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -1.377 </x-m>
+      <y-m> -0.243 </y-m>
+      <z-m> -0.274 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Planche de bord -->
+  <!-- Principal -->
+  <model>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/front-panel.xml</path>
+    <offsets>
+      <x-m> -1.543 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.028 </z-m>
+      <pitch-deg> -15.488 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- Secondaire -->
+  <model>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/between-seats-panel.xml</path>
+    <offsets>
+      <x-m> -1.271 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.355 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>
+
