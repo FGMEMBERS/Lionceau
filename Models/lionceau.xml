@@ -78,6 +78,14 @@
   </animation>
 
   <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>glass_shader.png</texture>
+    <object-name>verriere</object-name>
+    <object-name>verriere2</object-name>
+  </animation>
+
+  <animation>
     <type>noshadow</type>
     <object-name>verriere</object-name>
     <object-name>verriere2</object-name>

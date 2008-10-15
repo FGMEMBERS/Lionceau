@@ -65375,8 +65375,6 @@ OBJECT poly
 name "verriere"
 data 8
 verriere
-texture "prop.png"
-texrep 1 1
 crease 30.000000
 numvert 133
 -1.264201 0.439673 -0.000168
@@ -66274,8 +66272,6 @@ OBJECT poly
 name "verriere2"
 data 9
 verriere2
-texture "prop.png"
-texrep 1 1
 crease 30.000000
 numvert 128
 -0.209731 0.105283 -0.517549
