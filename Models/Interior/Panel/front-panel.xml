@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?> 
 
 <PropertyList>
 
@@ -22,7 +22,7 @@
       <y-m> -0.051 </y-m>
       <z-m> -0.022 </z-m>
     </offsets>
-  </model>-->
+  </model>
 
   <!-- Horizon artificiel -->
   <model>
