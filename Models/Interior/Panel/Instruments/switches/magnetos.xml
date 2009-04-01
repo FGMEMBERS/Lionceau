@@ -1,51 +1,51 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
- <path>magnetos.ac</path>
+  <path>magnetos.ac</path>
 
- <animation>
-  <type>pick</type>
-  <visible>true</visible>
-  <object-name>Switch-Magneto</object-name>
-  <action>
-   <button>0</button>
-   <repeatable>false</repeatable>
-   <binding>
-    <command>nasal</command>
-    <script>controls.stepMagnetos(1)</script>
-   </binding>
-  </action>
-  <action>
-   <button>2</button>
-   <repeatable>false</repeatable>
-   <binding>
-    <command>nasal</command>
-    <script>controls.stepMagnetos(-1)</script>
-   </binding>
-  </action>
- </animation>
+  <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>Switch-Magneto</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>controls.stepMagnetos(1)</script>
+      </binding>
+    </action>
+    <action>
+      <button>2</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>controls.stepMagnetos(-1)</script>
+      </binding>
+    </action>
+  </animation>
 
- <animation>
-  <type>rotate</type>
-  <object-name>Switch-Magneto</object-name>
-  <property>/controls/engines/engine/magnetos</property>
-  <interpolation>
-   <entry><ind> 0</ind><dep> 0</dep></entry>
-   <entry><ind> 1</ind><dep> 40</dep></entry>
-   <entry><ind> 2</ind><dep> 80</dep></entry>
-   <entry><ind> 3</ind><dep> 120</dep></entry>
-  </interpolation>
-  <axis>
-   <x>-1</x>
-   <y>0</y>
-   <z>0</z>
-  </axis>
-  <center>
-   <x-m>0</x-m>
-   <y-m>0</y-m>
-   <z-m>0</z-m>  
-  </center>
- </animation>
+  <animation>
+    <type>rotate</type>
+    <object-name>Switch-Magneto</object-name>
+    <property>/controls/engines/engine/magnetos</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>   0 </dep></entry>
+      <entry><ind> 1 </ind><dep>  40 </dep></entry>
+      <entry><ind> 2 </ind><dep>  80 </dep></entry>
+      <entry><ind> 3 </ind><dep> 120 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+    <center>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>  
+    </center>
+  </animation>
 
 </PropertyList>

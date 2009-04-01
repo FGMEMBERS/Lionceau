@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
@@ -13,6 +13,22 @@
     <object-name>couv</object-name>
 
     <!-- Objets transparents -->
+    <object-name>intverriere</object-name>
+    <object-name>intverriere2</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>shader.png</texture>
+    <object-name>intverriere</object-name>
+    <object-name>intverriere2</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>intverriere</object-name>
+    <object-name>intverriere2</object-name>
   </animation>
 
   <!-- Pilote -->
@@ -46,6 +62,19 @@
       <z-m> -0.355 </z-m>
     </offsets>
   </model>
+
+  <!-- Canopy -->
+  <animation>
+    <type>translate</type>
+    <object-name>intverriere2</object-name>
+    <property>/instrumentation/doors/crew/position-norm</property>
+    <factor>1.1</factor>
+    <axis>
+      <x> 0.332287 </x>
+      <y> 0.000000 </y>
+      <z> 0.034530 </z>
+    </axis>
+  </animation>
 
 </PropertyList>
 

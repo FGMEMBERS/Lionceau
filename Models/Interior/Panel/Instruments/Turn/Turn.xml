@@ -1,53 +1,76 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
- <path>Turn.ac</path>
+  <path>Turn.ac</path>
 
- <animation>
-  <type>material</type>
-  <object-name>Face</object-name>
-  <object-name>PtrTip</object-name>   
-  <object-name>BallEnclosure</object-name>
-  <emission>
-   <red>1.0</red>
-   <green>0.2</green>
-   <blue>0.0</blue>
-   <factor-prop>/controls/lighting/instruments-norm</factor-prop>
-  </emission>
- </animation>
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>face</object-name>
+    <object-name>enclosure</object-name>
+    <object-name>ball</object-name>
+    <object-name>needle</object-name>
 
- <animation>
-  <type>rotate</type>
-  <object-name>PtrCtr</object-name>
-  <object-name>PtrTip</object-name>
-  <property>/instrumentation/turn-indicator/indicated-turn-rate</property>
-  <factor>20.0</factor>
-  <axis>
-   <x>-1</x>
-   <y>0</y>
-   <z>0</z>
-  </axis>
- </animation>
+    <object-name>vitre</object-name>
+  </animation>
 
- <animation>
-  <type>rotate</type>
-  <object-name>Ball</object-name>
-  <property>/instrumentation/slip-skid-ball/indicated-slip-skid</property>
-  <factor>21</factor>
-  <min-deg>-19</min-deg>
-  <max-deg>19</max-deg>
-  <center>
-   <x-m>0</x-m>
-   <y-m>0</y-m>
-   <z-m>0.05</z-m>
-  </center>
-  <axis>
-   <x>-1</x>
-   <y>0</y>
-   <z>0</z>
-  </axis>
- </animation>
+  <animation>
+    <type>noshadow</type>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>glass.png</texture>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>face</object-name>
+    <object-name>enclosure</object-name>
+    <object-name>ball</object-name>
+    <object-name>needle</object-name>
+    <emission>
+      <red>   0.9 </red>
+      <green> 0.5 </green>
+      <blue>  0.2 </blue>
+<!--  <factor-prop>/controls/lighting/instruments-norm</factor-prop> -->
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>needle</object-name>
+    <property>/instrumentation/turn-indicator/indicated-turn-rate</property>
+    <factor>20.0</factor>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>ball</object-name>
+    <property>/instrumentation/slip-skid-ball/indicated-slip-skid</property>
+    <factor>21</factor>
+    <min-deg>-19</min-deg>
+    <max-deg>19</max-deg>
+    <center>
+      <x-m> 0.00 </x-m>
+      <y-m> 0.00 </y-m>
+      <z-m> 0.05 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
 
 </PropertyList>
 

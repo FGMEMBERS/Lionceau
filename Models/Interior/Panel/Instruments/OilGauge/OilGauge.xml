@@ -1,65 +1,85 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
- <path>OilGauge.ac</path>
+  <path>OilGauge.ac</path>
 
- <animation>
-  <type>material</type>
-  <object-name>Face</object-name>
-  <object-name>PtrTipL</object-name>   
-  <object-name>PtrTipR</object-name>
-  <emission>
-   <red>1.0</red>
-   <green>0.2</green>
-   <blue>0.0</blue>
-   <factor-prop>/controls/lighting/instruments-norm</factor-prop>
-  </emission>
- </animation>
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>face</object-name>
+    <object-name>ptrL</object-name>   
+    <object-name>ptrR</object-name>
 
- <animation> 
-  <type>rotate</type>
-  <object-name>PtrL</object-name>
-  <object-name>PtrTipL</object-name>
-  <property>/instrumentation/engine/oil-temp</property>
-  <interpolation>
-   <entry><ind>104</ind><dep> 0</dep></entry>
-   <entry><ind>140</ind><dep>16</dep></entry>
-   <entry><ind>212</ind><dep>58</dep></entry>
-   <entry><ind>266</ind><dep>89</dep></entry>
-  </interpolation>
-  <axis> 
-   <x>1</x>
-   <y>0</y>
-   <z>0</z>
-  </axis>
-  <center>
-   <x-m>0</x-m>
-   <y-m>-0.02</y-m>
-   <z-m>0</z-m>  
-  </center>
- </animation>         
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>glass.png</texture>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>face</object-name>
+    <object-name>ptrL</object-name>   
+    <object-name>ptrR</object-name>
+    <emission>
+      <red>   0.9 </red>
+      <green> 0.5 </green>
+      <blue>  0.2 </blue>
+<!--  <factor-prop>/controls/lighting/instruments-norm</factor-prop> -->
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+    </emission>
+  </animation>
+
+  <animation> 
+    <type>rotate</type>
+    <object-name>ptrL</object-name>
+    <property>/instrumentation/engine/oil-temp</property>
+    <interpolation>
+      <entry><ind> 104 </ind><dep>  0 </dep></entry>
+      <entry><ind> 140 </ind><dep> 16 </dep></entry>
+      <entry><ind> 212 </ind><dep> 58 </dep></entry>
+      <entry><ind> 266 </ind><dep> 89 </dep></entry>
+    </interpolation>
+    <axis> 
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <center>
+      <x-m>  0.00 </x-m>
+      <y-m> -0.02 </y-m>
+      <z-m>  0.00 </z-m>  
+    </center>
+  </animation>         
  
- <animation> 
-  <type>rotate</type>
-  <object-name>PtrR</object-name>
-  <object-name>PtrTipR</object-name>
-  <property>/engines/engine/oil-pressure-psi</property>
-  <interpolation>
-   <entry><ind>  0</ind><dep> 0</dep></entry>
-   <entry><ind> 54</ind><dep>50</dep></entry>
-   <entry><ind>100</ind><dep>90</dep></entry>
-  </interpolation>
-  <axis> 
-   <x>-1</x>
-   <y>0</y>
-   <z>0</z>
-  </axis>
-  <center>
-   <x-m>0</x-m>
-   <y-m>0.02</y-m>
-   <z-m>0</z-m>  
-  </center>
- </animation>         
+  <animation> 
+    <type>rotate</type>
+    <object-name>ptrR</object-name>
+    <property>/engines/engine/oil-pressure-psi</property>
+    <interpolation>
+      <entry><ind>   0 </ind><dep>  0 </dep></entry>
+      <entry><ind>  54 </ind><dep> 50 </dep></entry>
+      <entry><ind> 100 </ind><dep> 90 </dep></entry>
+    </interpolation>
+    <axis> 
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+    <center>
+      <x-m> 0.00 </x-m>
+      <y-m> 0.02 </y-m>
+      <z-m> 0.00 </z-m>  
+    </center>
+  </animation>         
  
 </PropertyList>

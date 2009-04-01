@@ -1,8 +1,8 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
-  <chase-distance-m type="double" archive="y">-30.0</chase-distance-m>
+  <chase-distance-m type="double" archive="y">-25.0</chase-distance-m>
 
   <view n="100">
     <name>Passanger Seat View</name>
