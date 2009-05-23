@@ -169,7 +169,7 @@
     <object-name>shadowOSG</object-name>
     <condition>
       <equals>
-        <property>sim[0]/rendering/shadows-ai</property>
+        <property>sim[0]/rendering/shadows-ac</property>
         <value>true</value>
       </equals>
     </condition>
