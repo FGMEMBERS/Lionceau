@@ -1,6 +1,6 @@
 AC3Db
 MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
-MATERIAL "DefaultWhite.002" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 0.5 0.5 0.5 shi 64 trans 0
+MATERIAL "DefaultWhite" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 0.5 0.5 0.5 shi 64 trans 0
 OBJECT world
 kids 1
 OBJECT poly
@@ -11,10 +11,10 @@ texture "prop.png"
 texrep 1 1
 crease 30.000000
 numvert 4
-3.30865 -1.14 -4.298752
-3.30865 -1.14 4.298754
--3.30865 -1.14 4.298753
--3.308649 -1.14 -4.298754
+3.30865 -1.1 -4.298752
+3.30865 -1.1 4.298754
+-3.30865 -1.1 4.298753
+-3.308649 -1.1 -4.298754
 numsurf 1
 SURF 0x00
 mat 1
