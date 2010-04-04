@@ -96,6 +96,7 @@
       <file>Aircraft/Lionceau/Nasal/fluids.nas</file>
       <file>Aircraft/Lionceau/Nasal/liveries.nas</file>
       <file>Aircraft/Lionceau/Nasal/immat.nas</file>
+      <file>Aircraft/Lionceau/Nasal/light.nas</file>
     </lionceau>
     <zkv500>
       <file>Aircraft/Instruments-3d/zkv500/ZKV500.nas</file>

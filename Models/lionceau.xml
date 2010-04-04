@@ -70,6 +70,7 @@
     <object-name>cableB</object-name>
     <object-name>plaque</object-name>
     <object-name>lampes</object-name>
+    <object-name>trous</object-name>
 
     <!-- Objets transparents -->
     <object-name>verriere</object-name>
@@ -83,7 +84,7 @@
   <animation>
     <type>shader</type>
     <shader>chrome</shader>
-    <texture>glass_shader.png</texture>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
     <object-name>verriere</object-name>
     <object-name>verriere2</object-name>
   </animation>
@@ -132,6 +133,7 @@
     <object-name>machoireD</object-name>
     <object-name>cacheH</object-name>
     <object-name>cacheB</object-name>
+    <object-name>trous</object-name>
 
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
@@ -249,7 +251,7 @@
   <animation>
     <type>rotate</type>
     <object-name>ProfondeurTrim</object-name>
-    <property>/controls/flight/elevator</property>
+    <property>surface-positions/elevator-pos-norm</property>
     <factor>11</factor>
     <center>
       <x-m> 3.108 </x-m>
@@ -289,7 +291,7 @@
   <animation>
     <type>rotate</type>
     <object-name>direction</object-name>
-    <property>/controls/flight/rudder</property>
+    <property>surface-positions/rudder-pos-norm</property>
     <factor>20</factor>
     <axis>
       <x1-m>  2.774 </x1-m>
@@ -565,9 +567,19 @@
     </axis>
   </animation>
 
-  <!-- Lumière rouge -->
+  <!-- Ajout des effets lumineux -->
   <model>
-    <name>LeftLight</name>
+    <name>Beacon</name>
+    <path>Aircraft/Lionceau/Models/lights/beacon.xml</path>
+    <offsets>
+      <x-m>  2.657 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  1.180 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>Red</name>
     <path>Aircraft/Lionceau/Models/lights/RedLight.xml</path>
     <offsets>
       <x-m> -0.857 </x-m>
@@ -576,9 +588,8 @@
     </offsets>
   </model>
 
-  <!-- Lumière verte -->
   <model>
-    <name>RightLight</name>
+    <name>Green</name>
     <path>Aircraft/Lionceau/Models/lights/GreenLight.xml</path>
     <offsets>
       <x-m> -0.857 </x-m>
@@ -586,6 +597,41 @@
       <z-m> -0.311 </z-m>
     </offsets>
   </model>
+
+  <model>
+    <name>LeftWhite</name>
+    <path>Aircraft/Lionceau/Models/lights/StrobeWhite.xml</path>
+    <offsets>
+      <x-m> -0.837 </x-m>
+      <y-m> -4.311 </y-m>
+      <z-m> -0.311 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>RightWhite</name>
+    <path>Aircraft/Lionceau/Models/lights/StrobeWhite.xml</path>
+    <offsets>
+      <x-m> -0.837 </x-m>
+      <y-m>  4.311 </y-m>
+      <z-m> -0.311 </z-m>
+    </offsets>
+  </model>
+
+  <animation>
+    <type>select</type>
+    <object-name>Beacon</object-name>
+    <object-name>Red</object-name>
+    <object-name>Green</object-name>
+    <object-name>LeftWhite</object-name>
+    <object-name>RightWhite</object-name>
+    <condition>
+      <equals>
+        <property>controls/switches/lights</property>
+        <value>true</value>
+      </equals>
+    </condition>
+  </animation>
 
 </PropertyList>
 

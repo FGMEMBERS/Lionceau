@@ -2,7 +2,7 @@
 
 <PropertyList>
 
-  <path>GreenLight.ac</path>
+  <path>WhiteLight.ac</path>
 
   <animation>
     <type>noshadow</type>
@@ -18,6 +18,14 @@
     <type>billboard</type>
     <object-name>Light</object-name>
     <spherical type="bool">true</spherical>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>Light</object-name>
+    <condition>
+      <property>/sim/model/lights/sbc1/state</property>
+    </condition>
   </animation>
 
   <animation>

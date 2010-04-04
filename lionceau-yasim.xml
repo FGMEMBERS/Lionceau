@@ -1,10 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- APM 20 Lionceau
+<!-- APM 20 Lionceau - 2010 Emmanuel BARANGER
      3D model by Emmanuel BARANGER
      FDM by Sebastien MARQUE, Pierre GEOFFROY
      Updated by BARANGER Emmanuel            
-     24-12-2009 Updated by BARANGER Emmanuel using Melchior script -->
+     24-12-2009 Updated by BARANGER Emmanuel using Melchior script
+     updated 04-04-2010
+
+     sources          : http://en.wikipedia.org/wiki/APM_20_Lionceau
+                      : http://www.apm.aero/Perfomances_a27.html
+
+     wingspan         : 8.66 m      (  ft in)
+     length           : 6.60 m      (  ft in)
+     height           : 2.40 m      (  ft in)
+     empty weight     : 380 kg      (  lbs  )
+     engine           : Rotax 912A2 (  80 hp)
+     Cruise speed     : km/h        ( 113 kt)
+     Airfoil          : NACA 63418
+     Fuel capacity    : 65 l 
+-->
 
 <airplane mass="903">
 
@@ -31,7 +45,7 @@
   <cockpit x="1.099" y="0.256" z="0.369"/>
 
   <!-- Fuselage -->
-  <fuselage  ax="3.236" ay="0" az="-0.125" bx="-3.107" by="0" bz="-0.132" width="1.065" taper="0.15" midpoint="0.35"/>
+  <fuselage  ax="2.948" ay="0" az="-0.125" bx="-3.107" by="0" bz="-0.132" width="1.065" taper="0.2" midpoint="0.35"/>
 
   <wing x="0.660" y="0.536" z="-0.497" 
         chord="1.346" 
@@ -86,27 +100,30 @@
          <control-output control="FLAP0" prop="/surface-positions/rudder-pos-norm" min="1" max="-1"/>
   </vstab>
 
-  <!-- engine:    ROTAX 912 A2
-       propeller: EVRA PE 164/152/116 
-  =================================================================================
-  TO-/MC- engine power(kW): 59,6/58
-                      RPM : 5800/5500
-  propeller max RPM: 2552
-  diameter: 1,64 m
-  MTOM: 620 kg
-  noise (dB): 66,0 (ICAO chapter 10, annex 16), 76,4 (ICAO chapter 10, annex 10.4a)
-  ref: http://www.rotax-aircraft-engines.com/a_engine_912.htm
+  <!-- Engines   source            : http://www.rotax-aircraft-engines.com/a_engine_912.htm
+
+                 name              : ROTAX 912 A2 (80 hp)
+                 type              : 4-cylinder air-cooled horizontally opposed engine
+                 propeller         : EVRA PE 164/152/116 
+                 power cruise      : 59,6/58 hp
+                 RPM               : 5800/5500
+                 propeller max RPM : 2552
+                 weight            : 55.4 kg (122.1 lb)
+                 displacement      : 319.8 in 3
+                 compression       : 7:1
+                 diameter          : 1,64 m
+       noise (dB): 66,0 (ICAO chapter 10, annex 16), 76,4 (ICAO chapter 10, annex 10.4a)
   -->
   <propeller x="2.374" y="0" z="-0.225" 
+	     mass="122.1" 
+	     moment="2.69"  
              radius="0.82"
 	     cruise-speed="94" 
 	     cruise-rpm="2112"
 	     cruise-alt="6000" 
-	     cruise-power="50.6"
+	     cruise-power="58"
 	     takeoff-power="81" 
 	     takeoff-rpm="2552"
-	     mass="175" 
-	     moment="2.69"  
 	     gear-ratio="0.440" >
              <piston-engine  eng-rpm="5800"  
                              eng-power="81"
@@ -163,6 +180,6 @@
   <!-- Mass distribution
        panel & instrumentation 
        CG theorique x=0.660 y=0.0 z=-0.497 -->
-  <ballast x="0" y="0.001" z="-1.364" mass="350"/>
+  <ballast x="0.5" y="0" z="-1.364" mass="350"/>
 
 </airplane>
