@@ -82,22 +82,6 @@
   </animation>
 
   <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
-    <object-name>verriere</object-name>
-    <object-name>verriere2</object-name>
-  </animation>
-
-  <animation>
-    <type>noshadow</type>
-    <object-name>verriere</object-name>
-    <object-name>verriere2</object-name>
-    <object-name>propdisc</object-name>
-    <object-name>propblur</object-name>
-  </animation>
-
-  <animation>
     <type>material</type>
     <object-name>fuselage</object-name>
     <object-name>entreesair</object-name>
@@ -138,6 +122,80 @@
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
     <texture>texture.png</texture>
+<!--
+    <diffuse>
+      <red-prop>diffuse/red</red-prop>
+      <green-prop>diffuse/green</green-prop>
+      <blue-prop>diffuse/blue</blue-prop>
+    </diffuse>
+
+    <ambient>
+      <red-prop>ambient/red</red-prop>
+      <green-prop>ambient/green</green-prop>
+      <blue-prop>ambient/blue</blue-prop>
+    </ambient>
+-->
+    <specular>
+      <red-prop>specular/red</red-prop>
+      <green-prop>specular/green</green-prop>
+      <blue-prop>specular/blue</blue-prop>
+    </specular>
+
+    <emission>
+      <red-prop>emission/red</red-prop>
+      <green-prop>emission/green</green-prop>
+      <blue-prop>emission/blue</blue-prop>
+    </emission>
+<!--
+    <shininess>
+      <shininess-prop>shininess</shininess-prop>
+    </shininess>
+-->
+  </animation>
+
+  <effect>
+    <inherits-from>Aircraft/Lionceau/Models/Effects/Lionceaureflect</inherits-from>
+    <object-name>fuselage</object-name>
+    <object-name>entreesair</object-name>
+    <object-name>air</object-name>
+    <object-name>aile</object-name>
+    <object-name>aile2</object-name>
+    <object-name>aileronG</object-name>
+    <object-name>aileronD</object-name>
+    <object-name>voletG</object-name>
+    <object-name>voletD</object-name>
+    <object-name>trimprof</object-name>
+    <object-name>profondeur</object-name>
+    <object-name>direction</object-name>
+    <object-name>bol</object-name>
+    <object-name>barreverriere</object-name>
+    <object-name>dosverriere</object-name>
+    <object-name>cacheA</object-name>
+    <object-name>cacheG</object-name>
+    <object-name>cacheD</object-name>
+    <object-name>cacheAint</object-name>
+    <object-name>cacheGint</object-name>
+    <object-name>cacheDint</object-name>
+    <object-name>pito</object-name>
+    <object-name>antenne</object-name>
+    <object-name>cacheH</object-name>
+    <object-name>cacheB</object-name>
+  </effect>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>verriere</object-name>
+    <object-name>verriere2</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>verriere</object-name>
+    <object-name>verriere2</object-name>
+    <object-name>propdisc</object-name>
+    <object-name>propblur</object-name>
   </animation>
 
   <!-- Immatriculation -->
@@ -176,6 +234,37 @@
       </equals>
     </condition>
   </animation>
+
+  <!-- Effets sur le sol -->
+  <!-- Roue avant -->
+  <model>
+    <path>Aircraft/Lionceau/Models/Effects/ground/ground0.xml</path>
+    <offsets>
+      <x-m> -2.210 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -1.192 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Roue gauche -->
+  <model>
+    <path>Aircraft/Lionceau/Models/Effects/ground/ground1.xml</path>
+    <offsets>
+      <x-m> -0.562 </x-m>
+      <y-m> -1.015 </y-m>
+      <z-m> -1.192 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Roue droite -->
+  <model>
+    <path>Aircraft/Lionceau/Models/Effects/ground/ground2.xml</path>
+    <offsets>
+      <x-m> -0.562 </x-m>
+      <y-m>  1.015 </y-m>
+      <z-m> -1.192 </z-m>
+    </offsets>
+  </model>
 
   <animation>
     <name>HeliceComplete</name>
