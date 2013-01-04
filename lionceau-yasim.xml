@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <!-- APM 20 Lionceau - 2010 Emmanuel BARANGER
      3D model by Emmanuel BARANGER
@@ -7,27 +7,29 @@
      24-12-2009 Updated by BARANGER Emmanuel using Melchior script
      updated 04-04-2010 by BARANGER Emmanuel
      updated 10-10-2010 by BARANGER Emmanuel
+     updated 04-01-2013 by BARANGER Emmanuel
+     
+     sources            : http://en.wikipedia.org/wiki/APM_20_Lionceau
+                        : http://www.apm.aero/apm20_3.php
 
-     sources          : http://en.wikipedia.org/wiki/APM_20_Lionceau
-                      : http://www.apm.aero/Perfomances_a27.html
-
-     wingspan         : 8.66 m      (  ft in)
-     length           : 6.60 m      (  ft in)
-     height           : 2.40 m      (  ft in)
-     empty weight     : 380 kg      (  lbs  )
-     engine           : Rotax 912A2 (  80 hp)
-     Cruise speed     : km/h        ( 113 kt)
-     Airfoil          : NACA 63418
-     Fuel capacity    : 65 l 
+     wingspan           : 8.66 m      (  28 ft  5     in )
+     length             : 6.60 m      (  21 ft  7 3/4 in )
+     height             : 2.40 m      (   7 ft 10 1/2 in )
+     empty weight       : 380 kg      ( 838 lb  )
+     engine             : 1 x Rotax 912 A2 flat-4 engine ( 79.9 hp )
+     Cruise speed       : 230 km/h    ( 124 kts ) at 1680 m ( 5500 ft )
+     Never exceed speed : 250 km/h    ( 135 kts )
+     Airfoil            : NACA 63418
+     Fuel capacity      : 65 l 
 -->
 
-<airplane mass="903">
+<airplane mass="838">
 
   <!-- Approach configuration -->
-  <approach speed="44" aoa="14" fuel="0.2">
+  <approach speed="44" aoa="8" fuel="0.2">
     <control-setting axis="/controls/engines/engine[0]/throttle" value="0.2"/>
     <control-setting axis="/controls/engines/engine[0]/mixture"  value="0.65"/> <!-- Ground adjustment only -->
-    <control-setting axis="/controls/flight/flaps" value="1.0"/>
+    <control-setting axis="/controls/flight/flaps" value="1"/>
     <solve-weight idx="0" weight="170"/>
     <solve-weight idx="1" weight="170"/>
     <solve-weight idx="2" weight="40"/>
@@ -37,7 +39,7 @@
   <cruise speed="113" alt="6000" fuel="0.5">
     <control-setting axis="/controls/engines/engine[0]/throttle" value="1.0"/>
     <control-setting axis="/controls/engines/engine[0]/mixture" value="0.65"/> <!-- Ground adjustment only -->
-    <control-setting axis="/controls/flight/flaps" value="0.0"/>
+    <control-setting axis="/controls/flight/flaps" value="0"/>
     <solve-weight idx="0" weight="170"/>
     <solve-weight idx="1" weight="170"/>
     <solve-weight idx="2" weight="40"/>
@@ -53,12 +55,12 @@
         length="3.80" 
         taper="0.743" 
         dihedral="2.58" 
-        camber="0.1"
+        camber="0.06"
         sweep="-1.8" 
         twist="0"
         incidence="0">
         <stall aoa="20" width="1" peak="1.5"/>
-        <flap0 start="0" end="0.62" lift="1.4" drag="1.5"/>
+        <flap0 start="0" end="0.62" lift="1.2" drag="1.1"/>
         <flap1 start="0.62" end="0.92" lift="1.2" drag="1.1"/>
 
         <control-input axis="/controls/flight/flaps" control="FLAP0"/>
@@ -78,8 +80,8 @@
          taper="1" 
          incidence="0" 
          sweep="0">
-         <stall aoa="26" width="4" peak="1.5"/>
-         <flap0 start="0" end="1" lift="2.0" drag="1.1"/>
+         <stall aoa="18" width="1" peak="1.5"/>
+         <flap0 start="0" end="1" lift="1.4" drag="1.1"/>
 
          <control-input axis="/controls/flight/elevator" control="FLAP0"/>
          <control-input axis="/controls/flight/elevator-trim" control="FLAP0"/>
@@ -93,7 +95,7 @@
          taper="0.506" 
          sweep="18">
          <stall aoa="24" width="3" peak="1.5"/>
-         <flap0 start="0" end="1" lift="1.5" drag="1.2"/>
+         <flap0 start="0" end="1" lift="1.2" drag="1.1"/>
 
          <control-input axis="/controls/flight/rudder" control="FLAP0" invert="true"/>
          <control-input axis="/controls/flight/rudder-trim" control="FLAP0" invert="true"/>
@@ -109,32 +111,32 @@
                  power cruise      : 59,6/58 hp
                  RPM               : 5800/5500
                  propeller max RPM : 2552
-                 weight            : 55.4 kg (122.1 lb)
-                 displacement      : 319.8 in 3
+                 weight            : 60 kg (132.3 lb)
+                 displacement      : 1211.2 cm 3 ( 73.91 in3 )
                  compression       : 7:1
                  diameter          : 1,64 m
        noise (dB): 66,0 (ICAO chapter 10, annex 16), 76,4 (ICAO chapter 10, annex 10.4a)
   -->
   <propeller x="2.374" y="0" z="-0.225" 
-	     mass="122.1" 
-	     moment="2.69"  
+             mass="132.3" 
+             moment="2.69"  
              radius="0.82"
-	     cruise-speed="94" 
-	     cruise-rpm="2112"
-	     cruise-alt="6000" 
-	     cruise-power="58"
-	     takeoff-power="81" 
-	     takeoff-rpm="2552"
-	     gear-ratio="0.440" >
+             cruise-speed="94" 
+             cruise-rpm="2112"
+             cruise-alt="6000" 
+             cruise-power="58"
+             takeoff-power="81" 
+             takeoff-rpm="2552"
+             gear-ratio="0.440" >
+             <actionpt x="3.048" y="0.0" z="-0.112" />
              <piston-engine  eng-rpm="5800"  
                              eng-power="81"
                              displacement="73.91" 
-                             compression="9.0"/>
-             <actionpt x="3.048" y="0.0" z="-0.112" />
-             <control-input control="THROTTLE" axis="/controls/engines/engine[0]/throttle" />
-             <control-input control="STARTER" axis="/controls/engines/engine[0]/starter" />
-             <control-input control="MAGNETOS" axis="/controls/engines/engine[0]/magnetos" />
-            <control-input control="MIXTURE" axis="/controls/engines/engine[0]/mixture" /> <!-- Ground adjustment only -->
+                             compression="7"/>
+             <control-input control="THROTTLE" axis="/controls/engines/engine[0]/throttle"/>
+             <control-input control="STARTER" axis="/controls/engines/engine[0]/starter"/>
+             <control-input control="MAGNETOS" axis="/controls/engines/engine[0]/magnetos"/>
+             <control-input control="MIXTURE" axis="/controls/engines/engine[0]/mixture"/> <!-- Ground adjustment only -->
   </propeller>
   
   <!-- Nose wheel -->
@@ -179,8 +181,8 @@
   <tank x="0.456" y="0" z="-0.310" capacity="107.7" />
 
   <!-- Mass distribution
-       panel & instrumentation 
-       CG theorique x=0.660 y=0.0 z=-0.497 -->
+       panel & instrumentation
   <ballast x="0.5" y="0" z="-1.364" mass="350"/>
+  -->
 
 </airplane>

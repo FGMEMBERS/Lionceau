@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
@@ -9,12 +9,6 @@
     <status>Alpha</status>
 
     <fuel-fraction>0.75</fuel-fraction>
-
-    <flaps>
-      <setting>0.00</setting>
-      <setting>0.50</setting>
-      <setting>1.00</setting>
-    </flaps>
 
     <startup>
       <splash-texture>Aircraft/Lionceau/lionceau-splash.png</splash-texture>
@@ -37,15 +31,31 @@
 
     <multiplay>
       <chat_display>1</chat_display>
-      <generic>
-        <int type="int">0</int>
-        <int type="int">0</int>
-        <int type="int">0</int>
-        <int type="int">0</int>
-        <int type="int">0</int>
-        <int type="int">0</int>
+      <generic> 
+        <int type="int" n="0">  0 </int>                                           <!--  0 immat -->
+        <int type="int" n="1">  0 </int>                                           <!--  1 immat -->
+        <int type="int" n="2">  0 </int>                                           <!--  2 immat -->
+        <int type="int" n="3">  0 </int>                                           <!--  3 immat -->
+        <int type="int" n="4">  0 </int>                                           <!--  4 immat -->
+        <int type="int" n="5">  0 </int>                                           <!--  5 immat -->
+        <int type="bool" n="6" alias="/smoke/active"> 0 </int>                     <!--  6 start smoke -->
+        <int type="int" n="7" alias="smoke/particlepersec"> 50 </int>              <!--  7 particlepersec -->
+        <int type="int" n="10" alias="controls/armament/trigger">0</int>           <!-- 10 reserved for bombable mode -->
+        <float n="0" alias="/instrumentation/doors/crew/position-norm"/>
+        <float n="1" alias="/instrumentation/doors/passenger/position-norm"/>
+        <float n="2" alias="/position/gear-agl-m"> 0 </float>                      <!-- altitude for MP shadow -->
+        <float n="3" alias="/smoke/colors/knob-red">1</float>                      <!-- 3 smoke mixer red setting -->
+        <float n="4" alias="/smoke/colors/knob-green">1</float>                    <!-- 4 smoke mixer green setting -->
+        <float n="5" alias="/smoke/colors/knob-blue">1</float>                     <!-- 5 smoke mixer blue setting -->
+        <string n="9" type="string" />                                             <!-- string[9] reserved for bombable mode -->
       </generic>
     </multiplay>
+
+    <flaps>
+      <setting> 0.00 </setting>
+      <setting> 0.50 </setting>
+      <setting> 1.00 </setting>
+    </flaps>
 
     <help>
       <title>APM 20 Lionceau</title>
@@ -87,8 +97,10 @@
   </input>
 
   <nasal>
-    <lionceau>
+    <doors>
       <file>Aircraft/Lionceau/Nasal/doors.nas</file>
+    </doors>
+    <lionceau>
       <file>Aircraft/Lionceau/Nasal/lionceau.nas</file>
       <file>Aircraft/Lionceau/Nasal/instruments.nas</file>
       <file>Aircraft/Lionceau/Nasal/electrical.nas</file>

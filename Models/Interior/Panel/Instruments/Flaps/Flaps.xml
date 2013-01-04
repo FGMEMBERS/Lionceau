@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
@@ -45,16 +45,16 @@
      <entry><ind> 0 </ind><dep>  0 </dep></entry>
      <entry><ind> 1 </ind><dep> 90 </dep></entry>
     </interpolation>
-    <axis> 
-      <x> -1 </x>
-      <y>  0 </y>
-      <z>  0 </z>
-    </axis>
     <center>
       <x-m> -0.007 </x-m>
       <y-m> -0.009 </y-m>
       <z-m>  0.008 </z-m>
     </center>
+    <axis> 
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
   </animation>
 
 </PropertyList>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
@@ -49,16 +49,16 @@
       <entry><ind> 63.493 </ind><dep> 59.5 </dep></entry>
       <entry><ind> 95.240 </ind><dep> 90.0 </dep></entry>
     </interpolation>
-    <axis>
-      <x> 1 </x>
-      <y> 0 </y>
-      <z> 0 </z>
-    </axis>
     <center>
       <x-m>  0.00 </x-m>
       <y-m> -0.02 </y-m>
       <z-m>  0.00 </z-m>
     </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
   </animation>
 
   <animation>
@@ -70,16 +70,16 @@
       <entry><ind> 2.18 </ind><dep> 25 </dep></entry>
       <entry><ind> 8.00 </ind><dep> 80 </dep></entry>
     </interpolation>
-    <axis>
-      <x> -1 </x>
-      <y>  0 </y>
-      <z>  0 </z>
-    </axis>
     <center>
       <x-m> 0.00 </x-m>
       <y-m> 0.02 </y-m>
       <z-m> 0.00 </z-m>
     </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
   </animation>
 
 </PropertyList>

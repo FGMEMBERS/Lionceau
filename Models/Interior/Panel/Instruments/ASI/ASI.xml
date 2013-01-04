@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
-  <path>ASI.ac</path>
+  <path>asi.ac</path>
 
   <animation>
     <object-name>fond</object-name>
@@ -54,11 +54,6 @@
       <y>  0 </y>
       <z>  0 </z>
     </axis>
-    <center>
-      <x-m> 0 </x-m>
-      <y-m> 0 </y-m>
-      <z-m> 0 </z-m>
-    </center>
   </animation>
 
 </PropertyList>

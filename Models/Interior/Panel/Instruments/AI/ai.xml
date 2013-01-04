@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
-  <path>AI.ac</path>
+  <path>ai.ac</path>
 
   <animation>
     <object-name>fond</object-name>
@@ -143,7 +143,7 @@
     <type>translate</type>
     <object-name>cageknob</object-name>
     <property>/instrumentation/attitude-indicator/caged</property>
-    <factor>0.005</factor>
+    <factor> 0.005 </factor>
     <axis>
       <x> 1 </x>
       <y> 0 </y>

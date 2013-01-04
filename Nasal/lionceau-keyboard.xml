@@ -1,15 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
-   <key n="100">
+  <key n="100">
     <name>d</name>
     <desc>Canopy</desc>
     <binding>
-     <command>nasal</command>
-     <script>lionceau.doorsystem.crewexport();</script>
+      <command>nasal</command>
+      <script>doors.doorsystem.crewexport();</script>
     </binding>
-   </key>
+  </key>
 
 </PropertyList>
 

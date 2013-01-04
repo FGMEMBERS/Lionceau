@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
@@ -45,7 +45,7 @@
   <!-- Planche de bord -->
   <!-- Principal -->
   <model>
-    <path>Aircraft/Lionceau/Models/Interior/Panel/front-panel.xml</path>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/panel.xml</path>
     <offsets>
       <x-m> -1.543 </x-m>
       <y-m>  0.000 </y-m>
@@ -56,7 +56,7 @@
 
   <!-- Secondaire -->
   <model>
-    <path>Aircraft/Lionceau/Models/Interior/Panel/between-seats-panel.xml</path>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/Pedestal/pedestal.xml</path>
     <offsets>
       <x-m> -1.271 </x-m>
       <y-m>  0.000 </y-m>
