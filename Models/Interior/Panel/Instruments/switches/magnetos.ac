@@ -7,7 +7,7 @@ name "Switch-Magneto"
 loc 0 0 -0
 data 14
 Switch-Magneto
-texture "colors.png"
+texture "switch.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 137
@@ -1061,7 +1061,7 @@ name "base"
 loc 0 0 -0
 data 4
 base
-texture "colors.png"
+texture "switch.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 96

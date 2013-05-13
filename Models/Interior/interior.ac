@@ -8,7 +8,7 @@ name "couv"
 loc 0 0 -0
 data 4
 couv
-texture "colors.png"
+texture "interior.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 4
@@ -30,7 +30,7 @@ name "interieur"
 loc 0 0 -0
 data 9
 interieur
-texture "colors.png"
+texture "interior.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 233
@@ -1727,7 +1727,7 @@ name "inttour"
 loc 0 0 -0
 data 7
 inttour
-texture "colors.png"
+texture "interior.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 118
@@ -4049,7 +4049,7 @@ name "pocheD"
 loc 0 0 -0
 data 6
 pocheD
-texture "colors.png"
+texture "interior.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 88
@@ -4540,7 +4540,7 @@ name "pocheG"
 loc 0 0 -0
 data 6
 pocheG
-texture "colors.png"
+texture "interior.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 88
@@ -5031,7 +5031,7 @@ name "siege"
 loc 0 0 -0
 data 5
 siege
-texture "colors.png"
+texture "interior.png"
 texrep 1.000000 1.000000
 crease 30.000001
 numvert 320

@@ -9,15 +9,14 @@
     <object-name>Light</object-name>
   </animation>
 
-  <!-- Transparency for Rembrandt -->
   <effect>
     <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>Light</object-name>
     <condition>
       <property>sim/rendering/rembrandt/enabled</property>
     </condition>
-    <object-name>Light</object-name>
   </effect>
-  
+
   <animation>
     <type>alpha-test</type>
     <alpha-factor>0.01</alpha-factor>
@@ -41,9 +40,10 @@
     <type>material</type>
     <object-name>Light</object-name>
     <emission>
-      <red>   2 </red>
-      <green> 0 </green>
-      <blue>  0 </blue>
+      <red>   1 </red>
+      <green> 1 </green>
+      <blue>  1 </blue>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
     </emission>
   </animation>
 
@@ -61,7 +61,7 @@
     <type>select</type>
     <object-name>Light</object-name>
     <condition>
-      <property>controls/switches/lights</property>
+      <property>controls/lighting/nav-lights</property>
     </condition>
   </animation>
 

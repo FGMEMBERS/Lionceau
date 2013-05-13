@@ -32,6 +32,16 @@
     <object-name>intverriere2</object-name>
   </animation>
 
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
+    <object-name>intverriere</object-name>
+    <object-name>intverriere2</object-name>
+  </effect>
+
   <!-- Pilote -->
   <model>
     <path>Aircraft/Lionceau/Models/Pilot/pilot.xml</path>

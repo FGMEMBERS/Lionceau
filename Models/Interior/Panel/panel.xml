@@ -168,7 +168,7 @@
   <model>
     <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/switches/generator.xml</path>
     <offsets>
-      <x-m>  0.005 </x-m>
+      <x-m>  0.002 </x-m>
       <y-m> -0.335 </y-m>
       <z-m> -0.105 </z-m>
     </offsets>
@@ -178,7 +178,7 @@
   <model>
     <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/switches/master.xml</path>
     <offsets>
-      <x-m>  0.005 </x-m>
+      <x-m>  0.002 </x-m>
       <y-m> -0.320 </y-m>
       <z-m> -0.105 </z-m>
     </offsets>
@@ -188,7 +188,7 @@
   <model>
     <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/switches/radio.xml</path>
     <offsets>
-      <x-m>  0.005 </x-m>
+      <x-m>  0.002 </x-m>
       <y-m> -0.130 </y-m>
       <z-m> -0.105 </z-m>
     </offsets>
@@ -198,7 +198,7 @@
   <model>
     <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/switches/instruments.xml</path>
     <offsets>
-      <x-m>  0.005 </x-m>
+      <x-m>  0.002 </x-m>
       <y-m> -0.115 </y-m>
       <z-m> -0.105 </z-m>
     </offsets>
@@ -208,7 +208,7 @@
   <model>
     <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/switches/lights.xml</path>
     <offsets>
-      <x-m>  0.005 </x-m>
+      <x-m>  0.002 </x-m>
       <y-m> -0.100 </y-m>
       <z-m> -0.105 </z-m>
     </offsets>
@@ -218,7 +218,7 @@
   <model>
     <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/switches/pump.xml</path>
     <offsets>
-      <x-m>  0.005 </x-m>
+      <x-m>  0.002 </x-m>
       <y-m> -0.085 </y-m>
       <z-m> -0.105 </z-m>
     </offsets>
@@ -228,7 +228,7 @@
   <model>
     <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/switches/magnetos.xml</path>
     <offsets>
-      <x-m>  0.005 </x-m>
+      <x-m>  0.001 </x-m>
       <y-m> -0.050 </y-m>
       <z-m> -0.115 </z-m>
     </offsets>
@@ -238,7 +238,7 @@
   <model>
     <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/switches/starter.xml</path>
     <offsets>
-      <x-m>  0.005 </x-m>
+      <x-m>  0.002 </x-m>
       <y-m> -0.010 </y-m>
       <z-m> -0.110 </z-m>
     </offsets>
