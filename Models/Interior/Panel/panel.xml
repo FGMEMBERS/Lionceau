@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>panel.ac</path>
+
+  <!-- Altimètre -->
+  <model>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/Altimeter/Altimeter.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.135 </y-m>
+      <z-m>  0.069 </z-m>
+    </offsets>
+  </model>
+
+  <!-- GPS -->
+  <model>
+    <path>Aircraft/Instruments-3d/zkv500/ZKV500.xml</path>
+    <offsets>
+      <x-m>  0.002 </x-m>
+      <y-m> -0.051 </y-m>
+      <z-m> -0.022 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Horizon artificiel -->
+  <model>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/AI/ai.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.218 </y-m>
+      <z-m>  0.069 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Anémomètre -->
+  <model>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/ASI/ASI.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.299 </y-m>
+      <z-m>  0.060 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Variomètre -->
+  <model>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/VSI/VSI.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.135 </y-m>
+      <z-m> -0.022 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Indicateur de virage -->
+  <model>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/Turn/Turn.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.299 </y-m>
+      <z-m> -0.022 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Horloge -->
+  <model>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/Clock/Clock.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.364 </y-m>
+      <z-m>  0.042 </z-m>
+    </offsets>
+  </model>
+
+  <!-- VOR indicator -->
+  <model>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/KI204/KI204.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.380 </y-m>
+      <z-m> -0.022 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/Gyro/gyro.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.218 </y-m>
+      <z-m> -0.022 </z-m>
+    </offsets>
+  </model>
+
+  <!-- radios nav et com -->
+  <model>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/KX155A/KX155A.xml</path>
+    <offsets>
+      <x-m>  0.000</x-m>
+      <y-m> -0.220 </y-m>
+      <z-m> -0.120 </z-m>
+    </offsets>
+  </model>
+
+<!-- magnetic compass -->
+  <model>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/MagneticCompass/MagneticCompass.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.120 </z-m>
+    </offsets>
+  </model>
+
+  <!-- compte tours -->
+  <model>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/RPM/RPM.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.050 </y-m>
+      <z-m>  0.069 </z-m>
+    </offsets>
+  </model>
+
+  <!-- EGT - OAT -->
+  <model>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/EGT-OAT/EGT-OAT.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.026 </y-m>
+      <z-m> 0.075 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Flaps position -->
+  <model>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/Flaps/Flaps.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.089 </y-m>
+      <z-m> 0.075 </z-m>
+    </offsets>
+  </model>
+
+  <!-- fuel pressure and quantity -->
+  <model>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/FuelGauge/FuelGauge.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.026 </y-m>
+      <z-m> 0.015 </z-m>
+    </offsets>
+  </model>
+
+  <!-- oil pressure and temperature -->
+  <model>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/OilGauge/OilGauge.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.026 </y-m>
+      <z-m> -0.045 </z-m>
+    </offsets>
+  </model>
+
+  <!-- switches -->
+  <!-- battery/generator -->
+  <model>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/switches/generator.xml</path>
+    <offsets>
+      <x-m>  0.002 </x-m>
+      <y-m> -0.335 </y-m>
+      <z-m> -0.105 </z-m>
+    </offsets>
+  </model>
+
+  <!--master-->
+  <model>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/switches/master.xml</path>
+    <offsets>
+      <x-m>  0.002 </x-m>
+      <y-m> -0.320 </y-m>
+      <z-m> -0.105 </z-m>
+    </offsets>
+  </model>
+
+  <!--VOR-->
+  <model>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/switches/radio.xml</path>
+    <offsets>
+      <x-m>  0.002 </x-m>
+      <y-m> -0.130 </y-m>
+      <z-m> -0.105 </z-m>
+    </offsets>
+  </model>
+
+  <!--gyros-->
+  <model>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/switches/instruments.xml</path>
+    <offsets>
+      <x-m>  0.002 </x-m>
+      <y-m> -0.115 </y-m>
+      <z-m> -0.105 </z-m>
+    </offsets>
+  </model>
+
+  <!--nav lights-->
+  <model>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/switches/lights.xml</path>
+    <offsets>
+      <x-m>  0.002 </x-m>
+      <y-m> -0.100 </y-m>
+      <z-m> -0.105 </z-m>
+    </offsets>
+  </model>
+
+  <!-- pump -->
+  <model>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/switches/pump.xml</path>
+    <offsets>
+      <x-m>  0.002 </x-m>
+      <y-m> -0.085 </y-m>
+      <z-m> -0.105 </z-m>
+    </offsets>
+  </model>
+
+  <!--magnetos-->
+  <model>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/switches/magnetos.xml</path>
+    <offsets>
+      <x-m>  0.001 </x-m>
+      <y-m> -0.050 </y-m>
+      <z-m> -0.115 </z-m>
+    </offsets>
+  </model>
+
+  <!-- starter -->
+  <model>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/switches/starter.xml</path>
+    <offsets>
+      <x-m>  0.002 </x-m>
+      <y-m> -0.010 </y-m>
+      <z-m> -0.110 </z-m>
+    </offsets>
+  </model>
+
+  <!-- end of switches section -->
+
+  <!-- circuit breakers -->
+  <!-- master -->
+  <model>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/breakers/master.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.055 </y-m>
+      <z-m> -0.105 </z-m>
+    </offsets>
+  </model>
+
+  <!-- load -->
+  <model>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/breakers/load.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.070 </y-m>
+      <z-m> -0.105 </z-m>
+    </offsets>
+  </model>
+
+ <!-- instruments -->
+  <model>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/breakers/instruments.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.085 </y-m>
+      <z-m> -0.105 </z-m>
+    </offsets>
+  </model>
+
+  <!-- flaps -->
+  <model>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/breakers/flaps.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.100 </y-m>
+      <z-m> -0.105 </z-m>
+    </offsets>
+  </model>
+
+  <!-- starter -->
+  <model>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/breakers/starter.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.125 </y-m>
+      <z-m> -0.105 </z-m>
+    </offsets>
+  </model>
+
+  <!-- pump -->
+  <model>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/breakers/pump.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.140 </y-m>
+      <z-m> -0.105 </z-m>
+    </offsets>
+  </model>
+
+  <!-- end of breakers section -->
+
+  <!-- fuel faucet -->
+
+</PropertyList>
+

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+
+<PropertyList>
+
+  <path>pedestal.ac</path>
+
+  <animation>
+    <object-name>panel</object-name>
+    <object-name>gaz</object-name>
+    <object-name>trim</object-name>
+    <object-name>flaps</object-name>
+    <object-name>starter</object-name>
+  </animation>
+
+  <!-- Manette des gazs -->
+  <animation>
+    <type>translate</type>
+    <object-name>gaz</object-name>
+    <property>controls/engines/engine[0]/throttle</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>  0.119 </dep></entry>
+      <entry><ind> 1 </ind><dep>  0.000 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <!-- Starter (mixture ?) -->
+  <animation>
+    <type>translate</type>
+    <object-name>starter</object-name>
+    <property>controls/engines/engine[0]/mixture</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep>  0.000 </dep></entry>
+      <entry><ind> 1 </ind><dep>  0.045 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <!-- Manette des volets -->
+  <animation>
+    <type>rotate</type>
+    <object-name>flaps</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <interpolation>
+      <entry><ind>  0.000 </ind><dep>  0.000 </dep></entry>
+      <entry><ind>  0.333 </ind><dep> 22.470 </dep></entry>
+      <entry><ind>  0.666 </ind><dep> 49.150 </dep></entry>
+      <entry><ind>  1.000 </ind><dep> 59.40 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> -0.120 </x-m>
+      <y-m> -0.031 </y-m>
+      <z-m>  0.039 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <!-- Manette de trim -->
+  <animation>
+    <type>rotate</type>
+    <object-name>trim</object-name>
+    <property>controls/flight/elevator-trim</property>
+    <interpolation>
+      <entry><ind> -1 </ind><dep> -49 </dep></entry>
+      <entry><ind>  0 </ind><dep>   0 </dep></entry>
+      <entry><ind>  1 </ind><dep>  49 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> -0.120 </x-m>
+      <y-m> -0.031 </y-m>
+      <z-m>  0.039 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>

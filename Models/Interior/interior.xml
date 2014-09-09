@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>interior.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>interieur</object-name>
+    <object-name>siege</object-name>
+    <object-name>pocheG</object-name>
+    <object-name>pocheD</object-name>
+    <object-name>inttour</object-name>
+    <object-name>couv</object-name>
+
+    <!-- Objets transparents -->
+    <object-name>intverriere</object-name>
+    <object-name>intverriere2</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>intverriere</object-name>
+    <object-name>intverriere2</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>intverriere</object-name>
+    <object-name>intverriere2</object-name>
+  </animation>
+
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
+    <object-name>intverriere</object-name>
+    <object-name>intverriere2</object-name>
+  </effect>
+
+  <!-- Pilote -->
+  <model>
+    <path>Aircraft/Lionceau/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -1.377 </x-m>
+      <y-m> -0.243 </y-m>
+      <z-m> -0.274 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Planche de bord -->
+  <!-- Principal -->
+  <model>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/panel.xml</path>
+    <offsets>
+      <x-m> -1.543 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.028 </z-m>
+      <pitch-deg> -15.488 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- Secondaire -->
+  <model>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/Pedestal/pedestal.xml</path>
+    <offsets>
+      <x-m> -1.271 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.355 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Canopy -->
+  <animation>
+    <type>translate</type>
+    <object-name>intverriere2</object-name>
+    <property>/instrumentation/doors/crew/position-norm</property>
+    <factor>1.1</factor>
+    <axis>
+      <x> 0.332287 </x>
+      <y> 0.000000 </y>
+      <z> 0.034530 </z>
+    </axis>
+  </animation>
+
+</PropertyList>
+
