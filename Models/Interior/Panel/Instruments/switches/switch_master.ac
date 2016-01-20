@@ -9,7 +9,7 @@ data 6
 Switch
 texture "switch.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 642
 -0.000512 -0.000037 -0.002341
 0.000412 -0.000285 -0.002341
@@ -4918,7 +4918,7 @@ data 4
 base
 texture "switch.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 285
 -0.00026 0.002562 -0.003803
 -0.00026 0.000908 -0.004489

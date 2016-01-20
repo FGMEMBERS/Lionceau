@@ -9,7 +9,7 @@ data 14
 Switch-Starter
 texture "switch.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 65
 0.001356 0.004017 -0.003344
 0.001356 0.003158 -0.004049
@@ -501,7 +501,7 @@ data 4
 base
 texture "switch.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 146
 -0.000644 0.007271 -0.006541
 -0.000644 -0.002574 -0.009179

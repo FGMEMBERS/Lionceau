@@ -7,6 +7,70 @@
       <label>APM 20 Lionceau</label>
       <enabled type="bool">true</enabled>
       <item>
+        <label>Autostart</label>
+        <binding>
+          <command>property-toggle</command>
+          <property>/controls/electric/engine/generator</property>
+        </binding>
+        <binding>
+          <command>property-toggle</command>
+          <property>/controls/electric/battery-switch</property>
+        </binding>
+        <binding>
+          <command>property-toggle</command>
+          <property>/controls/switches/radio</property>
+        </binding>
+        <binding>
+          <command>property-toggle</command>
+          <property>/controls/lighting/instrument-lights</property>
+        </binding>
+        <binding>
+          <command>property-toggle</command>
+          <property>/controls/lighting/nav-lights</property>
+        </binding>
+        <binding>
+          <command>property-toggle</command>
+          <property>controls/lighting/strobe-lights</property>
+        </binding>
+        <binding>
+          <command>property-toggle</command>
+          <property>/controls/engines/engine/fuel-pump</property>
+        </binding>
+        <binding>
+          <command>property-toggle</command>
+          <property>/controls/engines/engine/on</property>
+        </binding>
+        <binding>
+          <condition>
+            <property>/controls/engines/engine/on</property>
+          </condition>
+          <command>property-assign</command>
+          <property>/controls/engines/engine[0]/magnetos</property>
+          <value>3</value>
+        </binding>
+        <binding>
+          <condition>
+            <not>
+              <property>/controls/engines/engine/on</property>
+            </not>
+          </condition>
+          <command>property-assign</command>
+          <property>/controls/engines/engine[0]/magnetos</property>
+          <value>0</value>
+        </binding>
+        <binding>
+          <command>nasal</command>
+          <script>controls.startEngine(0,0)</script>
+        </binding>
+        <binding>
+          <condition>
+            <property>/controls/engines/engine/on</property>
+          </condition>
+          <command>nasal</command>
+          <script>gui.popupTip("Press 's' to start")</script>
+        </binding>
+      </item>
+      <item>
         <label>Select Livery</label>
         <binding>
           <command>nasal</command>
@@ -24,4 +88,3 @@
   </default>
 
 </PropertyList>
-

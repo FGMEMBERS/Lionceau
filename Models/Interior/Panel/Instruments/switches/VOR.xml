@@ -12,12 +12,15 @@
   <animation>
     <type>material</type>
     <object-name>Switch</object-name>
+    <condition>
+      <property>/controls/lighting/instrument-lights</property>
+      <property>/controls/electric/battery-switch</property>
+    </condition>
     <emission>
-      <red>   0.9 </red>
-      <green> 0.5 </green>
-      <blue>  0.2 </blue>
-<!--  <factor-prop>/controls/lighting/instruments-norm</factor-prop> -->
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <factor-prop>/controls/lighting/luminosite-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
     </emission>
   </animation>
 
@@ -30,7 +33,7 @@
        <repeatable>false</repeatable>
        <binding>
          <command>property-toggle</command>
-         <property>controls/switches/radios</property>
+         <property>/controls/switches/radios</property>
        </binding>
     </action>
   </animation>
@@ -38,7 +41,7 @@
   <animation>
     <type>rotate</type>
     <object-name>Switch</object-name>
-    <property>controls/switches/radios</property>
+    <property>/controls/switches/radios</property>
     <factor>22.5</factor>
     <axis>
       <x>  0 </x>

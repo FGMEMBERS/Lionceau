@@ -1,6 +1,6 @@
 AC3Db
 MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
-MATERIAL "transparent" rgb 0.547091 0.565624 0.595981 amb 0 0 0 emis 0 0 0 spec 1 1 1 shi 64 trans 0.85
+MATERIAL "transparent" rgb 1 1 1 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 64 trans 0.85
 OBJECT world
 kids 6
 OBJECT poly
@@ -10,7 +10,7 @@ data 4
 face
 texture "clock.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 65
 0.0032 0.016209 -0.01083
 0.0032 0.01801 -0.00746
@@ -502,7 +502,7 @@ data 4
 fond
 texture "clock.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 160
 0 0.016122 -0.016122
 0 0.012667 -0.018958
@@ -1569,7 +1569,7 @@ data 6
 heures
 texture "clock.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 60
 0.002257 0.000905 -0.000905
 0.002257 0.000711 -0.001064
@@ -1958,7 +1958,7 @@ data 7
 minutes
 texture "clock.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 60
 0.002875 0.000905 -0.000905
 0.002875 0.000711 -0.001064
@@ -2342,7 +2342,7 @@ data 8
 secondes
 texture "clock.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 12
 0.003261 0.016 -0
 0.003398 -0.004 -0.0008
@@ -2417,7 +2417,7 @@ name "vitre"
 loc 0 0 -0
 data 5
 vitre
-crease 30.000001
+crease 180.000005
 numvert 34
 0.002994 0 -0
 0.003706 0.01663 -0.011112

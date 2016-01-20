@@ -2,17 +2,15 @@
 
 <PropertyList>
 
-  <path>magnetos.ac</path>
+  <path>luminosite.ac</path>
 
   <animation>
-    <object-name>base</object-name>
-    <object-name>Switch-Magneto</object-name>
+    <object-name>luminosite</object-name>
   </animation>
 
   <animation>
     <type>material</type>
-    <object-name>base</object-name>
-    <object-name>Switch-Magneto</object-name>
+    <object-name>luminosite</object-name>
     <condition>
       <property>/controls/lighting/instrument-lights</property>
       <property>/controls/electric/battery-switch</property>
@@ -27,41 +25,44 @@
 
   <animation>
     <type>pick</type>
+    <object-name>luminosite</object-name>
     <visible>true</visible>
-    <object-name>Switch-Magneto</object-name>
     <action>
-      <button>0</button>
+      <button>3</button>
       <repeatable>false</repeatable>
       <binding>
-        <command>nasal</command>
-        <script>controls.stepMagnetos(1)</script>
+        <command>property-adjust</command>
+        <property>/controls/lighting/floods-lights</property>
+        <step> 0.1 </step>
+        <min> 0 </min>
+        <max> 1 </max>
+        <wrap>false</wrap>
       </binding>
     </action>
     <action>
-      <button>2</button>
+      <button>4</button>
       <repeatable>false</repeatable>
       <binding>
-        <command>nasal</command>
-        <script>controls.stepMagnetos(-1)</script>
+        <command>property-adjust</command>
+        <property>/controls/lighting/floods-lights</property>
+        <step> -0.1 </step>
+        <min> 0 </min>
+        <max> 1 </max>
+        <wrap>false</wrap>
       </binding>
     </action>
   </animation>
-
-  <animation>
+  
+  <animation> 
     <type>rotate</type>
-    <object-name>Switch-Magneto</object-name>
-    <property>/controls/engines/engine/magnetos</property>
-    <interpolation>
-      <entry><ind> 0 </ind><dep>   0 </dep></entry>
-      <entry><ind> 1 </ind><dep>  40 </dep></entry>
-      <entry><ind> 2 </ind><dep>  80 </dep></entry>
-      <entry><ind> 3 </ind><dep> 120 </dep></entry>
-    </interpolation>
-    <axis>
+    <object-name>luminosite</object-name>
+    <property>controls/lighting/floods-lights</property>
+    <factor> 270 </factor>
+    <axis> 
       <x> -1 </x>
       <y>  0 </y>
       <z>  0 </z>
     </axis>
-  </animation>
-
+  </animation>                                                              
+  
 </PropertyList>

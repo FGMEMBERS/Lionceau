@@ -7,9 +7,9 @@ name "fuelcock"
 loc 0 0 -0
 data 8
 fuelcock
-texture "color.png"
+texture "fuel.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 137
 0.014977 0.014713 0.005556
 0.014977 0.015453 0.003827

@@ -9,7 +9,7 @@ data 14
 Switch-Magneto
 texture "switch.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 137
 0 0.003102 -0.011587
 0 0.000781 -0.011971
@@ -1063,7 +1063,7 @@ data 4
 base
 texture "switch.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 96
 0.00186 0.01527 -0.015906
 0.00186 0.011997 -0.018704

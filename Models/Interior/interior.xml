@@ -18,30 +18,36 @@
     <object-name>intverriere2</object-name>
   </animation>
 
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
-    <object-name>intverriere</object-name>
-    <object-name>intverriere2</object-name>
-  </animation>
-
-  <animation>
-    <type>noshadow</type>
-    <object-name>intverriere</object-name>
-    <object-name>intverriere2</object-name>
-  </animation>
-
   <!-- working for Rembrandt -->
   <effect>
-    <inherits-from>Effects/model-transparent</inherits-from>
-    <condition>
-      <property>sim/rendering/rembrandt/enabled</property>
-    </condition>
+    <inherits-from>Aircraft/Lionceau/Models/Effects/Glass/glass</inherits-from>
     <object-name>intverriere</object-name>
     <object-name>intverriere2</object-name>
   </effect>
-
+  
+  <animation>
+    <type>select</type>
+    <object-name>intverriere</object-name>
+    <object-name>intverriere2</object-name>
+    <condition>
+      <less-than>
+        <property>environment/rain-norm</property>
+        <value>0.1</value>
+      </less-than>
+    </condition>
+  </animation>
+  
+  <!-- Raind Drops Effect -->
+  <model>
+    <path>Aircraft/Lionceau/Models/Effects/RainDrops/rainglass.xml</path>
+    <condition>
+      <greater-than>
+        <property>environment/rain-norm</property>
+        <value>0.1</value>
+      </greater-than>
+    </condition>
+  </model>
+  
   <!-- Pilote -->
   <model>
     <path>Aircraft/Lionceau/Models/Pilot/pilot.xml</path>
@@ -76,9 +82,23 @@
 
   <!-- Canopy -->
   <animation>
+    <type>pick</type>
+    <object-name>intverriere2</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.crew.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
     <type>translate</type>
     <object-name>intverriere2</object-name>
-    <property>/instrumentation/doors/crew/position-norm</property>
+    <property>sim/model/door-positions/crew/position-norm</property>
     <factor>1.1</factor>
     <axis>
       <x> 0.332287 </x>
@@ -88,4 +108,3 @@
   </animation>
 
 </PropertyList>
-

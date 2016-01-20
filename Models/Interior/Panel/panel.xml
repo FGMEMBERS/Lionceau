@@ -164,6 +164,16 @@
   </model>
 
   <!-- switches -->
+  <!-- Texte -->
+  <model>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/switches/text.xml</path>
+    <offsets>
+      <x-m>  0.00191 </x-m>
+      <y-m> -0.18317 </y-m>
+      <z-m> -0.11436 </z-m>
+    </offsets>
+  </model>
+  
   <!-- battery/generator -->
   <model>
     <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/switches/generator.xml</path>
@@ -214,6 +224,16 @@
     </offsets>
   </model>
 
+  <!--Luminosite -->
+  <model>
+    <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/switches/luminosite.xml</path>
+    <offsets>
+      <x-m>  0.00089 </x-m>
+      <y-m> -0.11504 </y-m>
+      <z-m> -0.12649 </z-m>
+    </offsets>
+  </model>
+  
   <!-- pump -->
   <model>
     <path>Aircraft/Lionceau/Models/Interior/Panel/Instruments/switches/pump.xml</path>
@@ -312,4 +332,3 @@
   <!-- fuel faucet -->
 
 </PropertyList>
-
