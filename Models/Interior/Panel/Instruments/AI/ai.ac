@@ -1,6 +1,6 @@
 AC3Db
 MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
-MATERIAL "transparent" rgb 0.547091 0.565624 0.595981 amb 0 0 0 emis 0 0 0 spec 1 1 1 shi 64 trans 0.85
+MATERIAL "transparent" rgb 1 1 1 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 64 trans 0.85
 OBJECT world
 kids 12
 OBJECT poly
@@ -8,7 +8,7 @@ name "AdjustCCW"
 loc 0 0 -0
 data 9
 AdjustCCW
-crease 30.000001
+crease 180.000005
 numvert 4
 0.006 -0.024357 -0.000098
 0.006 -0.044357 -0.000098
@@ -28,7 +28,7 @@ name "AdjustCW"
 loc 0 0 -0
 data 8
 AdjustCW
-crease 30.000001
+crease 180.000005
 numvert 4
 0.006 -0.024357 -0.010098
 0.006 -0.044357 -0.010098
@@ -50,7 +50,7 @@ data 8
 aircraft
 texture "ai.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 120
 -0.005463 0.000953 -0.020015
 -0.005463 -0.000998 -0.020006
@@ -870,7 +870,7 @@ data 10
 ajusteknob
 texture "ai.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 65
 0.001 -0.031114 -0.00434
 0.001 -0.032024 -0.005087
@@ -1362,7 +1362,7 @@ data 5
 cache
 texture "ai.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 8
 -0.0035 -0.01481 -0.006208
 -0.0037 -0.03981 -0.013208
@@ -1409,7 +1409,7 @@ data 14
 cagedindicator
 texture "ai.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 16
 -0.005488 0.015268 -0.019
 -0.005488 0.015068 -0.017482
@@ -1516,7 +1516,7 @@ data 8
 cageknob
 texture "ai.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 65
 -0.005 -0.028364 -0.028406
 -0.005 -0.02742 -0.029648
@@ -2024,7 +2024,7 @@ data 4
 fond
 texture "ai.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 103
 0 0.024972 0.024892
 0 0.029367 0.019536
@@ -2666,7 +2666,7 @@ data 5
 pitch
 texture "ai.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 128
 -0.006842 0.014142 -0.021214
 -0.006842 0.011112 -0.024944
@@ -3477,7 +3477,7 @@ data 4
 roll
 texture "ai.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 97
 -0.007658 0.018755 0.018675
 -0.007658 0.022056 0.014652
@@ -4001,7 +4001,7 @@ data 13
 rollreference
 texture "ai.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 8
 -0.005484 0.027 -0.001
 -0.005484 0.02 -0.001
@@ -4053,7 +4053,7 @@ name "vitre"
 loc 0 0 -0
 data 5
 vitre
-crease 30.000001
+crease 180.000005
 numvert 33
 0.000024 -0.000002 0.000001
 0.000024 0.02936 -0.019618

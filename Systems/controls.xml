@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <lighting>
+    <instrument-lights type="bool">false</instrument-lights>
+    <nav-lights type="bool">false</nav-lights>
+    <taxi-lights type="bool">false</taxi-lights>
+    <strobe-lights type="bool">false</strobe-lights>
+    <landing-lights type="bool">false</landing-lights>
+    <luminosite-lights type="float">2</luminosite-lights>
+    <floods-lights type="float">1.5</floods-lights>
+  </lighting>
+  
+  <electric>
+    <battery-switch>0</battery-switch>
+    <generator>0</generator>
+    <engines>
+      <engine n="0">
+        <fuel-pump>0</fuel-pump>
+      </engine>
+    </engines>
+  </electric>
+  
+  <fuel>
+    <tank n="0">
+      <lock type="bool">false</lock>
+      <position type="double">0</position>
+    </tank>
+  </fuel>
+  
+  <engines>
+    <engine>
+      <on type="bool">false</on>
+      <mixture archive="y"> 0.65 </mixture>
+    </engine>
+  </engines>
+  
+  <gear>
+    <brake-parking>1</brake-parking>
+    <tailwheel-lock type="bool">false</tailwheel-lock>
+  </gear>
+  
+</PropertyList>

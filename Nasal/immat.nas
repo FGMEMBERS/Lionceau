@@ -32,4 +32,3 @@ setlistener("/sim/signals/fdm-initialized", func {
   refresh_immat();
   setlistener("sim/model/immat", refresh_immat, 0);
 },0);
-

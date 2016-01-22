@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>luminosite.ac</path>
+
+  <animation>
+    <object-name>luminosite</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>luminosite</object-name>
+    <condition>
+      <property>/controls/lighting/instrument-lights</property>
+      <property>/controls/electric/battery-switch</property>
+    </condition>
+    <emission>
+      <factor-prop>/controls/lighting/luminosite-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>luminosite</object-name>
+    <visible>true</visible>
+    <action>
+      <button>3</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/lighting/floods-lights</property>
+        <step> 0.1 </step>
+        <min> 0 </min>
+        <max> 1 </max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+    <action>
+      <button>4</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/lighting/floods-lights</property>
+        <step> -0.1 </step>
+        <min> 0 </min>
+        <max> 1 </max>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation> 
+    <type>rotate</type>
+    <object-name>luminosite</object-name>
+    <property>controls/lighting/floods-lights</property>
+    <factor> 270 </factor>
+    <axis> 
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>                                                              
+  
+</PropertyList>

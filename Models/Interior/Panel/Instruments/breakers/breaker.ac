@@ -9,7 +9,7 @@ data 5
 bague
 texture "BreakerLabels.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 64
 0.005009 0.003305 -0.003288
 0.005009 0.001748 -0.004329
@@ -420,7 +420,7 @@ data 5
 ecrou
 texture "BreakerLabels.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 13
 -0.000031 0.004889 -0.004872
 -0.000031 -0.001911 -0.006694
@@ -522,7 +522,7 @@ data 7
 fusible
 texture "BreakerLabels.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 65
 0.016569 0.003517 -0.003288
 0.016569 0.00196 -0.004329

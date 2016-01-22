@@ -1,6 +1,6 @@
 AC3Db
 MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
-MATERIAL "transparent" rgb 0.547091 0.565624 0.595981 amb 0 0 0 emis 0 0 0 spec 1 1 1 shi 64 trans 0.85
+MATERIAL "transparent" rgb 1 1 1 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 64 trans 0.85
 OBJECT world
 kids 9
 OBJECT poly
@@ -8,7 +8,7 @@ name "AdjDn"
 loc 0 0 -0
 data 5
 AdjDn
-crease 30.000001
+crease 180.000005
 numvert 4
 0.01 -0.02692 0.02692
 0.01 -0.03508 0.03508
@@ -18,17 +18,17 @@ numsurf 1
 SURF 0x00
 mat 0
 refs 4
-0 0 0
-3 0 0
-2 0 0
-1 0 0
+0 1 0.486380159855
+3 0.486320674419 1
+2 0 0.51367944479
+1 0.513619661331 0
 kids 0
 OBJECT poly
 name "AdjUp"
 loc 0 0 -0
 data 5
 AdjUp
-crease 30.000001
+crease 180.000005
 numvert 4
 0.01 -0.035538 0.018303
 0.01 -0.043697 0.026462
@@ -38,10 +38,10 @@ numsurf 1
 SURF 0x00
 mat 0
 refs 4
-0 0 0
-3 0 0
-2 0 0
-1 0 0
+0 1 0.486320465803
+3 0.486380189657 1
+2 0 0.51361978054
+1 0.513679504395 0
 kids 0
 OBJECT poly
 name "face"
@@ -50,7 +50,7 @@ data 4
 face
 texture "Altimeter.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 33
 -0.009 0 -0
 -0.009 0.031596 -0.021112
@@ -286,7 +286,7 @@ data 4
 fond
 texture "Altimeter.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 103
 -0.002 0.02687 -0.02687
 -0.002 0.021112 -0.031596
@@ -896,7 +896,7 @@ data 11
 pressureset
 texture "Altimeter.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 33
 0.001 -0.028172 0.028171
 0.001 -0.029469 0.027304
@@ -1148,7 +1148,7 @@ data 9
 ptr10000t
 texture "Altimeter.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 116
 -0.007 0.005618 0.001101
 -0.007 0.005618 -0.0011
@@ -1887,7 +1887,7 @@ data 8
 ptr1000t
 texture "Altimeter.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 116
 -0.006 0.005618 0.001101
 -0.006 0.005618 -0.0011
@@ -2626,7 +2626,7 @@ data 7
 ptr100t
 texture "Altimeter.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 116
 -0.005 0.005618 0.001101
 -0.005 0.005618 -0.0011
@@ -3363,7 +3363,7 @@ name "vitre"
 loc 0 0 -0
 data 5
 vitre
-crease 30.000001
+crease 180.000005
 numvert 33
 -0.00196 0.031646 -0.021145
 -0.00196 0.035164 -0.014565

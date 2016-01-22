@@ -4,6 +4,11 @@
 
   <path>lionceau.ac</path>
 
+  <!-- MP sound call -->
+  <sound>
+    <path>Aircraft/Lionceau/Sounds/mp-sound.xml</path>
+  </sound>
+  
   <nasal>
     <load>
       var livery_update = aircraft.livery_update.new("Aircraft/Lionceau/Models/Liveries", 10);
@@ -13,9 +18,9 @@
       var float_0 = self.getNode("sim/multiplay/generic/float[0]", 1);
       var float_1 = self.getNode("sim/multiplay/generic/float[1]", 1);
      
-      var crew_door = self.getNode("instrumentation/doors/crew/position-norm", 1);
-      var passenger_door = self.getNode("instrumentation/doors/passenger/position-norm", 1);
-     
+      var crew_door = self.getNode("sim/model/door-positions/crew/position-norm", 1);
+      var passenger_door = self.getNode("sim/model/door-positions/passenger/position-norm", 1);
+      
       crew_door.alias(float_0);
       passenger_door.alias(float_1);
     </load>
@@ -156,18 +161,10 @@
       <green-prop>specular/green</green-prop>
       <blue-prop>specular/blue</blue-prop>
     </specular>
-    <emission>
-      <red-prop>emission/red</red-prop>
-      <green-prop>emission/green</green-prop>
-      <blue-prop>emission/blue</blue-prop>
-    </emission>
   </animation>
 
   <effect>
     <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
-    <condition>
-      <not><property>sim/rendering/rembrandt/enabled</property></not>
-    </condition>
     <object-name>fuselage</object-name>
     <object-name>air</object-name>
     <object-name>aile</object-name>
@@ -197,70 +194,22 @@
     <object-name>cacheH</object-name>
     <object-name>cacheB</object-name>
   </effect>
-
-  <effect>
-    <inherits-from>Effects/model-combined-deferred</inherits-from>
-    <condition>
-      <property>sim/rendering/rembrandt/enabled</property>
-    </condition>
-    <object-name>fuselage</object-name>
-    <object-name>air</object-name>
-    <object-name>aile</object-name>
-    <object-name>aileronG</object-name>
-    <object-name>aileronD</object-name>
-    <object-name>voletG</object-name>
-    <object-name>voletD</object-name>
-    <object-name>aile2</object-name>
-    <object-name>direction</object-name>
-    <object-name>profondeur</object-name>
-    <object-name>trimprof</object-name>
-    <object-name>bol</object-name>
-    <object-name>barreverriere</object-name>
-    <object-name>dosverriere</object-name>
-    <object-name>cacheA</object-name>
-    <object-name>cacheG</object-name>
-    <object-name>cacheD</object-name>
-    <object-name>pito</object-name>
-    <object-name>antenne</object-name>
-    <object-name>axeA</object-name>
-    <object-name>axeG</object-name>
-    <object-name>axeD</object-name>
-    <object-name>axeA2</object-name>
-    <object-name>axeG2</object-name>
-    <object-name>axeD2</object-name>
-    <object-name>lampes</object-name>
-    <object-name>cacheH</object-name>
-    <object-name>cacheB</object-name>
-  </effect>
-
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
-    <object-name>verriere</object-name>
-    <object-name>verriere2</object-name>
-  </animation>
-
-  <animation>
-    <type>noshadow</type>
-    <object-name>verriere</object-name>
-    <object-name>verriere2</object-name>
-    <object-name>propdisc</object-name>
-    <object-name>propblur</object-name>
-  </animation>
 
   <!-- working for Rembrandt -->
   <effect>
+    <inherits-from>Aircraft/Lionceau/Models/Effects/Glass/glass</inherits-from>
+    <object-name>verriere</object-name>
+    <object-name>verriere2</object-name>
+  </effect>
+  
+  <effect>
     <inherits-from>Effects/model-transparent</inherits-from>
-    <condition>
-      <property>sim/rendering/rembrandt/enabled</property>
-    </condition>
     <object-name>verriere</object-name>
     <object-name>verriere2</object-name>
     <object-name>propdisc</object-name>
     <object-name>propblur</object-name>
   </effect>
-
+  
   <!-- Une ombre pour OSG -->
   <model>
     <path>Aircraft/Lionceau/Models/shadow.xml</path>
@@ -278,15 +227,8 @@
 
   <!-- Interieur -->
   <model>
-    <name>Interieur</name>
     <path>Aircraft/Lionceau/Models/Interior/interior.xml</path>
   </model>
-
-  <!-- For Rembrandt -->
-  <animation>
-    <type>noshadow</type>
-    <object-name>Interieur</object-name>
-  </animation>
 
   <!-- Cranking effects -->
   <model>
@@ -714,9 +656,23 @@
   </animation>
 
   <animation>
+    <type>pick</type>
+    <object-name>CanopyComplete</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.crew.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
     <type>translate</type>
     <object-name>CanopyComplete</object-name>
-    <property>/instrumentation/doors/crew/position-norm</property>
+    <property>sim/model/door-positions/crew/position-norm</property>
     <factor>1.1</factor>
     <axis>
       <x> 0.332287 </x>
@@ -727,7 +683,6 @@
 
   <!-- Ajout des effets lumineux -->
   <model>
-    <name>Beacon</name>
     <path>Aircraft/Lionceau/Models/lights/beacon.xml</path>
     <offsets>
       <x-m>  2.657 </x-m>
@@ -737,7 +692,6 @@
   </model>
 
   <model>
-    <name>Red</name>
     <path>Aircraft/Lionceau/Models/lights/RedLight.xml</path>
     <offsets>
       <x-m> -0.857 </x-m>
@@ -747,7 +701,6 @@
   </model>
 
   <model>
-    <name>Green</name>
     <path>Aircraft/Lionceau/Models/lights/GreenLight.xml</path>
     <offsets>
       <x-m> -0.857 </x-m>
@@ -757,7 +710,6 @@
   </model>
 
   <model>
-    <name>LeftWhite</name>
     <path>Aircraft/Lionceau/Models/lights/StrobeLight.xml</path>
     <offsets>
       <x-m> -0.837 </x-m>
@@ -767,7 +719,6 @@
   </model>
 
   <model>
-    <name>RightWhite</name>
     <path>Aircraft/Lionceau/Models/lights/StrobeLight.xml</path>
     <offsets>
       <x-m> -0.837 </x-m>
@@ -775,20 +726,5 @@
       <z-m> -0.311 </z-m>
     </offsets>
   </model>
-
-  <animation>
-    <type>select</type>
-    <object-name>Beacon</object-name>
-    <object-name>Red</object-name>
-    <object-name>Green</object-name>
-    <object-name>LeftWhite</object-name>
-    <object-name>RightWhite</object-name>
-    <condition>
-      <equals>
-        <property>controls/switches/lights</property>
-        <value>true</value>
-      </equals>
-    </condition>
-  </animation>
 
 </PropertyList>

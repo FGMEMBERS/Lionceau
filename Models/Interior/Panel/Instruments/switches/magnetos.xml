@@ -13,12 +13,15 @@
     <type>material</type>
     <object-name>base</object-name>
     <object-name>Switch-Magneto</object-name>
+    <condition>
+      <property>/controls/lighting/instrument-lights</property>
+      <property>/controls/electric/battery-switch</property>
+    </condition>
     <emission>
-      <red>   0.9 </red>
-      <green> 0.5 </green>
-      <blue>  0.2 </blue>
-<!--  <factor-prop>/controls/lighting/instruments-norm</factor-prop> -->
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <factor-prop>/controls/lighting/luminosite-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
     </emission>
   </animation>
 

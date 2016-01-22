@@ -2,8 +2,8 @@
 
 var flapsDown = controls.flapsDown;
 controls.flapsDown = func(v){
-	var volts = getprop("systems/electrical/outputs/flaps");
-	#print("Flap Volts: ",volts);
+  var volts = getprop("systems/electrical/outputs/flaps");
+  #print("Flap Volts: ",volts);
         flapsDown(volts > 16 ? v : 0);
 }
 
@@ -17,4 +17,3 @@ controls.adjMixture = func {
     }
     else print ("mixture can't be adjusted for now");
 }
-

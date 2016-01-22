@@ -1,6 +1,6 @@
 AC3Db
 MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
-MATERIAL "transparent.001" rgb 0.547091 0.565624 0.595981 amb 0 0 0 emis 0 0 0 spec 1 1 1 shi 64 trans 0.85
+MATERIAL "transparent" rgb 1 1 1 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 64 trans 0.85
 OBJECT world
 kids 5
 OBJECT poly
@@ -10,7 +10,7 @@ data 4
 face
 texture "EGT-OAT.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 33
 -0.005663 0.018137 -0.018137
 -0.005663 0.01425 -0.021327
@@ -246,7 +246,7 @@ data 4
 fond
 texture "EGT-OAT.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 96
 -0.004 0.018137 -0.018137
 -0.004 0.01425 -0.021327
@@ -801,7 +801,7 @@ data 4
 ptrL
 texture "EGT-OAT.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 14
 -0.003441 -0.009769 0.011364
 -0.003441 -0.005591 0.015671
@@ -895,7 +895,7 @@ data 4
 ptrR
 texture "EGT-OAT.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 14
 -0.003441 -0.005886 -0.008366
 -0.003441 -0.002775 -0.013496
@@ -987,7 +987,7 @@ name "vitre"
 loc 0 0 -0
 data 5
 vitre
-crease 30.000001
+crease 180.000005
 numvert 34
 -0.001925 0 -0
 -0.000927 0.023318 -0.015581

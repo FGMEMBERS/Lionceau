@@ -15,7 +15,7 @@ var gps_display = [];
 var instrumenttimer = func {
     settimer(func {
         radiodisplay();
-	instrumenttimer()
+  instrumenttimer()
     }, UPDATE_PERIOD);
 }
 
