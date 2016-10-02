@@ -2,7 +2,7 @@
 
 <PropertyList>
 
-  <sim include="Systems/views.xml">
+  <sim include="views.xml">
 
     <fuel-fraction>0.75</fuel-fraction>
 
@@ -25,12 +25,6 @@
       <visibility archive="y">false</visibility>
     </panel>
 
-    <flaps>
-      <setting> 0.00 </setting>
-      <setting> 0.50 </setting>
-      <setting> 1.00 </setting>
-    </flaps>
-    
     <multiplay>
       <chat_display>1</chat_display>
       <generic> 
@@ -64,10 +58,6 @@
       </generic>
     </multiplay>
     
-    <help include="Systems/help.xml"/>
-
-    <menubar include="Dialogs/lionceau-menu.xml"/>
-    
     <weight n="0">
       <name>Pilot</name>
       <weight-lb>175</weight-lb>
@@ -86,11 +76,17 @@
       <max-lb>45</max-lb>
     </weight>
 
+    <help include="help.xml"/>
+
+    <menubar include="../Dialogs/lionceau-menu.xml"/>
+    
+    <flaps include="flaps.xml"/>
+    
   </sim>
 
-  <input include="Systems/lionceau-keyboard.xml"/>
+  <input include="lionceau-keyboard.xml"/>
   
-  <controls include="Systems/controls.xml"/>
+  <controls include="controls.xml"/>
 
   <nasal>
     <doors>

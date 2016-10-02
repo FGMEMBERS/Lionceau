@@ -20,7 +20,7 @@
 
   <!-- working for Rembrandt -->
   <effect>
-    <inherits-from>Aircraft/Lionceau/Models/Effects/Glass/glass</inherits-from>
+    <inherits-from>Effects/model-transparent</inherits-from>
     <object-name>intverriere</object-name>
     <object-name>intverriere2</object-name>
   </effect>

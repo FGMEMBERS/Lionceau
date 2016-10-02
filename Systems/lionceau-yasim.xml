@@ -3,13 +3,15 @@
 <!-- APM 20 Lionceau - 2010 Emmanuel BARANGER
      3D model by Emmanuel BARANGER
      FDM by Sebastien MARQUE, Pierre GEOFFROY
-     Updated by BARANGER Emmanuel            
+     Updated by BARANGER Emmanuel
      24-12-2009 Updated by BARANGER Emmanuel using Melchior script
      updated 04-04-2010 by BARANGER Emmanuel
      updated 10-10-2010 by BARANGER Emmanuel
      updated 04-01-2013 by BARANGER Emmanuel
      updated 18-01-2016 by BARANGER Emmanuel
-     
+     updated 20-09-2016 by BURRACO Patricio correcting speeds and consumption
+     updated 23-09-2016 by BARANGER Emmanuel new fuselage definition
+
      sources            : http://en.wikipedia.org/wiki/APM_20_Lionceau
                         : http://www.apm.aero/apm20_3.php
 
@@ -21,9 +23,8 @@
      Cruise speed       : 230 km/h    ( 124 kts ) at 1680 m ( 5500 ft )
      Never exceed speed : 250 km/h    ( 135 kts )
      Airfoil            : NACA 63418
-     Fuel capacity      : 65 l 
+     Fuel capacity      : 66 l 
 -->
-
 <airplane mass="838" version="YASIM_VERSION_CURRENT">
 
   <!-- Approach configuration -->
@@ -36,7 +37,8 @@
   </approach>
 
   <!-- Cruise configuration -->
-  <cruise speed="113" alt="6000" fuel="0.5">
+  # orig speed 113 alt 6000 fuel 0.6
+  <cruise speed="113" alt="5500" fuel="0.64">
     <control-setting axis="/controls/engines/engine[0]/throttle" value="1.0"/>
     <control-setting axis="/controls/engines/engine[0]/mixture" value="0.65"/> <!-- Ground adjustment only -->
     <solve-weight idx="0" weight="170"/>
@@ -47,7 +49,25 @@
   <cockpit x="1.099" y="0.256" z="0.369"/>
 
   <!-- Fuselage -->
-  <fuselage  ax="2.948" ay="0" az="-0.125" bx="-3.107" by="0" bz="-0.132" width="1.065" taper="0.2" midpoint="0.35"/>
+  <fuselage ax=" 2.948" ay=" 0.000" az="-0.125" bx=" 2.637" by=" 0.085" bz="-0.192" width="0.540" taper="0.4" midpoint="1"/>
+  <fuselage ax=" 2.669" ay=" 0.093" az="-0.199" bx=" 2.200" by=" 0.170" bz="-0.242" width="0.653" taper="0.8" midpoint="1"/>
+  <fuselage ax=" 2.254" ay=" 0.170" az="-0.242" bx=" 0.004" by=" 0.170" bz="-0.242" width="0.650" taper="1.0" midpoint="1"/>
+  <fuselage ax=" 0.004" ay=" 0.170" az="-0.242" bx="-3.125" by=" 0.000" bz="-0.228" width="0.650" taper="0.1" midpoint="0"/>
+
+  <fuselage ax=" 1.575" ay=" 0.144" az="-0.223" bx=" 1.103" by=" 0.144" bz=" 0.073" width="0.776" taper="1.0" midpoint="1"/>
+  <fuselage ax=" 1.175" ay=" 0.144" az=" 0.049" bx=" 0.635" by=" 0.144" bz=" 0.165" width="0.776" taper="1.0" midpoint="1"/>
+  <fuselage ax=" 0.739" ay=" 0.144" az=" 0.165" bx=" 0.001" by=" 0.170" bz=" 0.121" width="0.776" taper="0.8" midpoint="0"/>
+  <fuselage ax=" 0.001" ay=" 0.170" az=" 0.121" bx="-3.125" by=" 0.000" bz="-0.068" width="0.650" taper="0.1" midpoint="0"/>
+
+  <fuselage ax=" 2.948" ay=" 0.000" az="-0.125" bx=" 2.637" by="-0.085" bz="-0.192" width="0.540" taper="0.4" midpoint="1"/>
+  <fuselage ax=" 2.669" ay="-0.093" az="-0.199" bx=" 2.200" by="-0.170" bz="-0.242" width="0.653" taper="0.8" midpoint="1"/>
+  <fuselage ax=" 2.254" ay="-0.170" az="-0.242" bx=" 0.004" by="-0.170" bz="-0.242" width="0.650" taper="1.0" midpoint="1"/>
+  <fuselage ax=" 0.004" ay="-0.170" az="-0.242" bx="-3.125" by=" 0.000" bz="-0.228" width="0.650" taper="0.1" midpoint="0"/>
+
+  <fuselage ax=" 1.575" ay="-0.144" az="-0.223" bx=" 1.103" by="-0.144" bz=" 0.073" width="0.776" taper="1.0" midpoint="1"/>
+  <fuselage ax=" 1.175" ay="-0.144" az=" 0.049" bx=" 0.635" by="-0.144" bz=" 0.165" width="0.776" taper="1.0" midpoint="1"/>
+  <fuselage ax=" 0.739" ay="-0.144" az=" 0.165" bx=" 0.001" by="-0.170" bz=" 0.121" width="0.776" taper="0.8" midpoint="0"/>
+  <fuselage ax=" 0.001" ay="-0.170" az=" 0.121" bx="-3.125" by=" 0.000" bz="-0.068" width="0.650" taper="0.1" midpoint="0"/>
 
   <wing x="0.660" y="0" z="-0.497" 
         chord="1.346" 
@@ -56,14 +76,16 @@
         dihedral="2.58" 
         camber="0.005"
         sweep="-1.8">
-        <stall aoa="20" width="1" peak="1.5"/>
+        # orig aoa 20 widht 1 p 1,5
+        <stall aoa="13" width="0.7" peak="1.5"/>
+        # modificado por patricio drag orig en los dos 1.1
         <flap0 start="0.12" end="0.67" lift="1.2" drag="1.1"/>
-        <flap1 start="0.67" end="0.95" lift="1.2" drag="1.1"/>
+        <flap1 start="0.67" end="0.95" lift="1.2" drag="1.23"/>
 
         <control-input axis="/controls/flight/flaps" control="FLAP0"/>
         <control-input axis="/controls/flight/aileron" control="FLAP1" split="true"/>
         <control-input axis="/controls/flight/aileron-trim" control="FLAP1" split="true"/>
- 
+
         <control-output control="FLAP0" prop="/surface-positions/flap-pos-norm"/>
         <control-output control="FLAP1" side="left" prop="/surface-positions/left-aileron-pos-norm"/>
         <control-output control="FLAP1" side="right" prop="/surface-positions/right-aileron-pos-norm"/>
@@ -80,8 +102,9 @@
 
          <control-input axis="/controls/flight/elevator" control="FLAP0"/>
          <control-input axis="/controls/flight/elevator-trim" control="FLAP0"/>
-
-         <control-output control="FLAP0" prop="/surface-positions/elevator-pos-norm"/>
+ 
+         # editado por patricio min y max - remover hasta la barra
+         <control-output control="FLAP0" prop="/surface-positions/elevator-pos-norm" min="1.4" max="-1.4"/>
   </hstab>
 
   <vstab x="-2.553" y="0" z=".126" 
@@ -110,18 +133,20 @@
                  displacement      : 1211.2 cm 3 ( 73.91 in3 )
                  compression       : 7:1
                  diameter          : 1,64 m
-       noise (dB): 66,0 (ICAO chapter 10, annex 16), 76,4 (ICAO chapter 10, annex 10.4a)
+                 cruise power orig 58
+
+                 noise (dB): 66,0 (ICAO chapter 10, annex 16), 76,4 (ICAO chapter 10, annex 10.4a)
   -->
   <propeller x="2.374" y="0" z="-0.225" 
              mass="132.3" 
              moment="2.69"  
              radius="0.82"
-             cruise-speed="94" 
-             cruise-rpm="2112"
-             cruise-alt="6000" 
+             cruise-speed="75"
+             cruise-rpm="2114"
+             cruise-alt="6000"
              cruise-power="58"
              takeoff-power="81" 
-             takeoff-rpm="2552"
+             takeoff-rpm="2555"
              gear-ratio="0.440" >
              <actionpt x="3.058" y="0.0" z="-0.112" />
              <piston-engine  eng-rpm="5800"  
@@ -164,8 +189,8 @@
   </gear>
 
   <!-- Pilot, copilot, baggage -->
-  <weight x="1.118" y="-0.265" z="-0.107" mass-prop="/sim/weight[0]/weight-lb"/>
-  <weight x="1.118" y=" 0.265" z="-0.107" mass-prop="/sim/weight[1]/weight-lb"/>
+  <weight x="1.218" y="-0.265" z="-0.107" mass-prop="/sim/weight[0]/weight-lb"/>
+  <weight x="1.218" y=" 0.265" z="-0.107" mass-prop="/sim/weight[1]/weight-lb"/>
   <weight x="0.827" y=" 0.000" z=" 0.049" mass-prop="/sim/weight[2]/weight-lb"/>
 
   <!-- Fuel

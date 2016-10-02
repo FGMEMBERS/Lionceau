@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<PropertyList include="lionceau-base.xml">
+<PropertyList include="Systems/lionceau-base.xml">
 
   <sim>
     
     <description>Lionceau APM20 (YASim)</description>
     <author>Emmanuel BARANGER (3D/FDM), Sebastien MARQUE (Instruments), Laurent HAYVEL (Texture)</author>
+    
     <aircraft-version>0.3</aircraft-version>
     <status>Alpha</status>
     
     <flight-model archive="y">yasim</flight-model>
-    <aero archive="y">lionceau-yasim</aero>
+    <aero archive="y">Systems/lionceau-yasim</aero>
     
     <rating>
       <FDM type="int">     3 </FDM>
