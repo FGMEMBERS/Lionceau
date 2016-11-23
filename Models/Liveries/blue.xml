@@ -7,8 +7,8 @@
     <model>
       
       <livery>
-        <name type="string">Love is all</name>
-        <texture>Liveries/1024x1024/Love-is-all.png</texture>
+        <name type="string">Blue</name>
+        <texture>Liveries/1024x1024/blue.png</texture>
         <specular>
           <red>   0.3 </red>
           <green> 0.3 </green>
@@ -16,7 +16,7 @@
         </specular>
       </livery>
       <livery-panel>
-        <texture>Liveries/Panel/panel.png</texture>
+        <texture>Liveries/Panel/blue-panel.png</texture>
         <specular>
           <red>   0.3 </red>
           <green> 0.3 </green>
@@ -24,7 +24,7 @@
         </specular>
       </livery-panel>
       <livery-immat>
-        <texture>Liveries/Immat/immat.png</texture>
+        <texture>Liveries/Immat/blue-immat.png</texture>
         <specular>
           <red>   0.3 </red>
           <green> 0.3 </green>

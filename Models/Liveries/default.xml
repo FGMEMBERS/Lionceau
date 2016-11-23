@@ -15,6 +15,22 @@
           <blue>  0.3 </blue>
         </specular>
       </livery>
+      <livery-panel>
+        <texture>Liveries/Panel/panel.png</texture>
+        <specular>
+          <red>   0.3 </red>
+          <green> 0.3 </green>
+          <blue>  0.3 </blue>
+        </specular>
+      </livery-panel>
+      <livery-immat>
+        <texture>Liveries/Immat/immat.png</texture>
+        <specular>
+          <red>   0.3 </red>
+          <green> 0.3 </green>
+          <blue>  0.3 </blue>
+        </specular>
+      </livery-immat>
     </model>
     
   </sim>
